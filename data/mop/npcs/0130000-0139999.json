@@ -1,0 +1,11 @@
+{
+ "flavor": "mop",
+ "kind": "npcs",
+ "bucket": "0130000-0139999",
+ "count": 3,
+ "records": [
+{"key":"Brann Bronzebeard","kind":"npc","ids":[136645],"name":"Brann Bronzebeard","coords":[{"map":81,"x":46.1,"y":78.8,"exact_version":false,"via":"body"}],"source":{"wiki":{"page":"Brann Bronzebeard","revid":6918576}}},
+{"key":"Jastor Gallywix","kind":"npc","ids":[137087],"name":"Jastor Gallywix","coords":[],"source":{"wiki":{"page":"Jastor Gallywix","revid":6954208}}},
+{"key":"Halford Wyrmbane","kind":"npc","ids":[139791,144024],"name":"Halford Wyrmbane","coords":[{"map":115,"x":78.6,"y":48.0,"exact_version":false,"via":"npclocations"},{"map":217,"x":44.6,"y":33.0,"exact_version":false,"via":"npclocations"},{"map":84,"x":27.6,"y":21.6,"exact_version":false,"via":"npclocations"}],"source":{"wiki":{"page":"Halford Wyrmbane","revid":6883915}}}
+ ]
+}

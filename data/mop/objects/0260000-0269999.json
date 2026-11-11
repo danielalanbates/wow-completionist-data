@@ -1,0 +1,9 @@
+{
+ "flavor": "mop",
+ "kind": "objects",
+ "bucket": "0260000-0269999",
+ "count": 1,
+ "records": [
+{"key":"Crate of Mandrake Essence","kind":"object","ids":[267600],"name":"Crate of Mandrake Essence","coords":[{"map":179,"x":32.8,"y":66.4,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"Crate of Mandrake Essence","revid":5774970}}}
+ ]
+}

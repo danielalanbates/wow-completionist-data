@@ -1,0 +1,10 @@
+{
+ "flavor": "mop",
+ "kind": "npcs",
+ "bucket": "0270000-0279999",
+ "count": 2,
+ "records": [
+{"key":"Calder Gray","kind":"npc","ids":[270038],"name":"Calder Gray","coords":[{"map":199,"x":42.6,"y":70.2,"exact_version":true,"via":"npclocations"},{"map":241,"x":51.0,"y":61.6,"exact_version":false,"via":"npclocations"},{"map":241,"x":51.0,"y":57.0,"exact_version":false,"via":"npclocations"}],"source":{"wiki":{"page":"Calder Gray","revid":6913253}}},
+{"key":"Timothy Jones","kind":"npc","ids":[275350],"name":"Timothy Jones","coords":[{"map":42,"x":44.7,"y":70.2,"exact_version":false,"via":"location"}],"source":{"wiki":{"page":"Timothy Jones","revid":6913674}}}
+ ]
+}

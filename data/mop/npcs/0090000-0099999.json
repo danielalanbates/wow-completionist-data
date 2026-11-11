@@ -1,0 +1,9 @@
+{
+ "flavor": "mop",
+ "kind": "npcs",
+ "bucket": "0090000-0099999",
+ "count": 1,
+ "records": [
+{"key":"Ariok","kind":"npc","ids":[91421],"name":"Ariok","coords":[{"map":36,"x":17.4,"y":51.6,"exact_version":false,"via":"npclocations"},{"map":36,"x":44.6,"y":44.6,"exact_version":false,"via":"npclocations"},{"map":36,"x":54.6,"y":24.6,"exact_version":false,"via":"npclocations"}],"source":{"wiki":{"page":"Ariok","revid":6928726}}}
+ ]
+}

@@ -1,0 +1,9 @@
+{
+ "flavor": "mop",
+ "kind": "quests",
+ "bucket": "023000-023999",
+ "count": 1,
+ "records": [
+{"id":23733,"name":"Rites of the Earthmother","flavors":["mop","retail"],"faction":"Horde","level":null,"min_level":null,"type":null,"category":"Red Cloud Mesa","zone_map":7,"zone_map_source":"coords","classes":[],"races":[],"profession":null,"is_breadcrumb":null,"auto_accept":false,"start":[{"kind":"npc","ids":[2981],"name":"Chief Hawkwind","page":"Chief Hawkwind","faction":null,"coords":[{"map":462,"x":27.6,"y":28.4}],"coord_source":{"type":"wiki","page":"Chief Hawkwind","revid":6941438,"via":"entity-page"},"exact_version":false}],"end":[{"kind":"npc","ids":[36803],"name":"Dyami Windsoar","page":"Dyami Windsoar","faction":null,"coords":[{"map":7,"x":41.2,"y":76.1}],"coord_source":{"type":"wiki","page":"Dyami Windsoar","revid":6194113,"via":"entity-page"},"exact_version":false}],"end_same_as_start":false,"start_item":null,"objectives_text":"Speak to Dyami Windsoar atop Fargaze Mesa.","objectives_source":null,"objectives":[],"prerequisites":{"required":[[24861]],"breadcrumb":[],"optional":[],"in_progress":[],"inferred_from_next":[],"basis":"single"},"next":[24215],"source":{"wiki":{"page":"Rites of the Earthmother (4)","revid":5850030},"db2":{"table":"QuestV2","build":"wow_classic 5.5.4.70631"}}}
+ ]
+}

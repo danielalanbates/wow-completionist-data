@@ -1,0 +1,9 @@
+{
+ "flavor": "mop",
+ "kind": "npcs",
+ "bucket": "0240000-0249999",
+ "count": 1,
+ "records": [
+{"key":"Thisalee Crow","kind":"npc","ids":[242174,242439],"name":"Thisalee Crow","coords":[{"map":83,"x":59.0,"y":50.5,"exact_version":false,"via":"npclocations"},{"map":198,"x":56.3,"y":36.9,"exact_version":false,"via":"npclocations"}],"source":{"wiki":{"page":"Thisalee Crow","revid":6922477}}}
+ ]
+}

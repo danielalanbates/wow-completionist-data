@@ -1,0 +1,9 @@
+{
+ "flavor": "mop",
+ "kind": "objects",
+ "bucket": "0110000-0119999",
+ "count": 1,
+ "records": [
+{"key":"Intrepid's Locked Strongbox","kind":"object","ids":[112948],"name":"Intrepid's Locked Strongbox","coords":[{"map":56,"x":14.3,"y":24.0,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"Intrepid's Locked Strongbox","revid":5647370}}}
+ ]
+}

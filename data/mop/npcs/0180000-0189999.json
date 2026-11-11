@@ -1,0 +1,9 @@
+{
+ "flavor": "mop",
+ "kind": "npcs",
+ "bucket": "0180000-0189999",
+ "count": 1,
+ "records": [
+{"key":"Bolvar Fordragon","kind":"npc","ids":[184079],"name":"Bolvar Fordragon","coords":[],"source":{"wiki":{"page":"Bolvar Fordragon","revid":6939395}}}
+ ]
+}

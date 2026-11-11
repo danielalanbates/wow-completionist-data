@@ -1,0 +1,10 @@
+{
+ "flavor": "mop",
+ "kind": "npcs",
+ "bucket": "0080000-0089999",
+ "count": 2,
+ "records": [
+{"key":"Darkspear Loyalist","kind":"npc","ids":[86884],"name":"Darkspear Loyalist","coords":[],"source":{"wiki":{"page":"Darkspear Loyalist","revid":6937108}}},
+{"key":"Kranosh","kind":"npc","ids":[88705],"name":"Kranosh","coords":[],"source":{"wiki":{"page":"Kranosh","revid":5720284}}}
+ ]
+}

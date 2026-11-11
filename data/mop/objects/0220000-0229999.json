@@ -1,0 +1,20 @@
+{
+ "flavor": "mop",
+ "kind": "objects",
+ "bucket": "0220000-0229999",
+ "count": 12,
+ "records": [
+{"key":"Sunken Treasure","kind":"object","ids":[220832],"name":"Sunken Treasure","coords":[{"map":554,"x":40.4,"y":93.0,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"Sunken Treasure","revid":6760899}}},
+{"key":"Gleaming Treasure Chest","kind":"object","ids":[220901],"name":"Gleaming Treasure Chest","coords":[{"map":554,"x":49.0,"y":69.0,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"Gleaming Treasure Chest","revid":6760897}}},
+{"key":"Rope-Bound Treasure Chest","kind":"object","ids":[220902],"name":"Rope-Bound Treasure Chest","coords":[{"map":554,"x":54.0,"y":47.0,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"Rope-Bound Treasure Chest","revid":6700372}}},
+{"key":"Mist-Covered Treasure Chest","kind":"object","ids":[220908],"name":"Mist-Covered Treasure Chest","coords":[{"map":554,"x":58.0,"y":60.0,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"Mist-Covered Treasure Chest","revid":6760898}}},
+{"key":"Blackguard's Jetsam","kind":"object","ids":[220986],"name":"Blackguard's Jetsam","coords":[{"map":554,"x":22.7,"y":58.9,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"Blackguard's Jetsam","revid":6760896}}},
+{"key":"Gleaming Treasure Satchel","kind":"object","ids":[221036],"name":"Gleaming Treasure Satchel","coords":[{"map":554,"x":70.0,"y":80.0,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"Gleaming Treasure Satchel","revid":5713352}}},
+{"key":"Old Sign Fragment","kind":"object","ids":[221376],"name":"Old Sign Fragment","coords":[{"map":554,"x":52.1,"y":46.1,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"Old Sign Fragment","revid":5713487}}},
+{"key":"Lin Family Scroll","kind":"object","ids":[221413],"name":"Lin Family Scroll","coords":[],"source":{"wiki":{"page":"Lin Family Scroll","revid":6420867}}},
+{"key":"Skull-Covered Chest","kind":"object","ids":[221617],"name":"Skull-Covered Chest","coords":[{"map":555,"x":62.7,"y":35.1,"exact_version":false,"via":"lead"},{"map":554,"x":46.7,"y":32.3,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"Skull-Covered Chest","revid":6760893}}},
+{"key":"Sturdy Chest","kind":"object","ids":[221671],"name":"Sturdy Chest","coords":[{"map":554,"x":28.2,"y":35.2,"exact_version":false,"via":"lead"},{"map":554,"x":26.7,"y":64.9,"exact_version":false,"via":"lead"},{"map":554,"x":64.4,"y":70.2,"exact_version":false,"via":"lead"},{"map":554,"x":59.0,"y":49.2,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"Sturdy Chest","revid":6760891}}},
+{"key":"Blazing Chest","kind":"object","ids":[221673],"name":"Blazing Chest","coords":[{"map":554,"x":47.0,"y":26.8,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"Blazing Chest","revid":6760895}}},
+{"key":"Smoldering Chest","kind":"object","ids":[223119],"name":"Smoldering Chest","coords":[{"map":554,"x":54.0,"y":78.1,"exact_version":false,"via":"lead"},{"map":554,"x":69.0,"y":33.0,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"Smoldering Chest","revid":6760894}}}
+ ]
+}

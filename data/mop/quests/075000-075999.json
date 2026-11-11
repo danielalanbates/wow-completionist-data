@@ -1,0 +1,9 @@
+{
+ "flavor": "mop",
+ "kind": "quests",
+ "bucket": "075000-075999",
+ "count": 1,
+ "records": [
+{"id":75491,"name":"Glub","flavors":["mop"],"faction":"Both","level":80,"min_level":1,"type":null,"category":"Uncategorized","zone_map":224,"zone_map_source":"coords","classes":[],"races":[],"profession":null,"is_breadcrumb":null,"auto_accept":false,"start":[{"kind":"npc","ids":[17249],"name":"Landro Longshot","page":"Landro Longshot","faction":null,"coords":[{"map":210,"x":42.6,"y":71.6}],"coord_source":{"type":"wiki","page":"Landro Longshot","revid":6953047,"via":"entity-page"},"exact_version":true},{"kind":"unknown","ids":[],"name":"Innkeeper","page":"Innkeeper","faction":null,"coords":[],"coord_source":null,"exact_version":null}],"end":[{"kind":"npc","ids":[17249],"name":"Landro Longshot","page":"Landro Longshot","faction":null,"coords":[{"map":210,"x":42.6,"y":71.6}],"coord_source":{"type":"wiki","page":"Landro Longshot","revid":6953047,"via":"entity-page"},"exact_version":true},{"kind":"unknown","ids":[],"name":"Innkeeper","page":"Innkeeper","faction":null,"coords":[],"coord_source":null,"exact_version":null}],"end_same_as_start":true,"start_item":null,"objectives_text":null,"objectives_source":null,"objectives":[],"prerequisites":{"required":[],"breadcrumb":[],"optional":[],"in_progress":[],"inferred_from_next":[],"basis":"none"},"next":[],"source":{"wiki":{"page":"Glub (quest)","revid":6793223},"db2":{"table":"QuestV2","build":"wow_classic 5.5.4.70631"}}}
+ ]
+}
