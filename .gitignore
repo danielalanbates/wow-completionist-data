@@ -1,0 +1,12 @@
+# build outputs (tools/build_db.py build)
+build/
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+# editors / OS
+.DS_Store
+*.swp
+.idea/
+.vscode/
