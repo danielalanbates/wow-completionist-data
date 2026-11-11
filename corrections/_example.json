@@ -24,15 +24,15 @@
    "evidence": "In game, Classic Era 1.15.x, fresh character."
   },
   {
-   "id": "all-npc-example-coords",
-   "flavor": "all",
+   "id": "era-npc-jitters-coords",
+   "flavor": "era",
    "kind": "npc",
    "key": "Jitters",
    "op": "set",
    "path": "/coords",
-   "value": [{"map": 1431, "x": 18.0, "y": 56.0, "exact_version": true, "via": "correction"}],
+   "value": [{"map": 1431, "x": 18.0, "y": 56.0}],
    "reason": "NPC page has no location.",
-   "evidence": "In game on each client listed; flavor 'all' skips clients that do not have the record."
+   "evidence": "Checked in game on Classic Era 1.15.x. Map ids and x/y belong to one client, so a coordinate fix names one flavor (repeat the entry per client); exact_version, via, confidence and correction are filled in by the build."
   }
  ]
 }

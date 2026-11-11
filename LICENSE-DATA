@@ -20,8 +20,12 @@ CHANGES MADE (CC BY-SA 4.0 section 3(a)(1)(B))
 The Warcraft Wiki pages were not copied as articles. Their {{Questbox}}, {{Npcbox}}, {{Npclocations}},
 {{Coords}} and {{#data:Achievementtip}} fields, ==Objectives== bullets and lead sentences were parsed into
 structured records; coordinates were moved from the wiki's map onto each game client's own maps (through world
-coordinates, see docs/SCHEMA.md); free-text `previous` fields were split into required / any-of / breadcrumb /
-optional prerequisites; quests were assigned to game clients by rules that combine wiki patch notes with Blizzard
+coordinates, see docs/SCHEMA.md), each untagged coordinate read on the current or the pre-Cataclysm map according
+to Blizzard's positions for the same NPC, and rated by how well it agrees with them; on retail, wiki end points more
+than 50 yards from Blizzard's turn-in pin were replaced by the pin (the replaced point is kept in the record);
+free-text `previous` fields were split into required / any-of / breadcrumb / optional prerequisites, with
+faction-specific alternatives marked; quest ids that several wiki pages claim were left out, split into faction
+versions or flagged; quests were assigned to game clients by rules that combine wiki patch notes with Blizzard
 client data; and the result was combined with Blizzard client data and with community corrections. Wiki text that
 appears in the data is limited to names, short objective lines and the plain text of `previous` fields. The data is
 not endorsed by Warcraft Wiki or its contributors.
@@ -35,8 +39,8 @@ endorsed by Blizzard Entertainment.
 Some fields come from World of Warcraft client data tables (DB2) as exported by wago.tools at the pinned builds
 listed in data/meta.json: quest ids per client (QuestV2), retail quest map pins (QuestPOIBlob, QuestPOIPoint),
 retail quest objectives (QuestObjective), achievement names, descriptions, categories, points and criteria
-(Achievement, Achievement_Category, Criteria, CriteriaTree), mission records (GarrMission) and map geometry
-(UiMap, UiMapAssignment). Records that use them name the table and build (`source.db2`, `coord_source`).
+(Achievement, Achievement_Category, Criteria, CriteriaTree), mission records (GarrMission), map geometry
+(UiMap, UiMapAssignment) and flight points (TaxiNodes, used to check coordinates). Records that use them name the table and build (`source.db2`, `coord_source`).
 That material belongs to Blizzard Entertainment and is included as factual reference data so that addons and
 tools can work with the game. The CC BY-SA 4.0 licence above covers the contributions of this project and of the
 Warcraft Wiki contributors; it does not grant, and cannot grant, any rights in Blizzard Entertainment's material.

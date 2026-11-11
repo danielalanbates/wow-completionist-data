@@ -36,7 +36,7 @@ The build applies every file in name order, entries in file order, after all gen
 | Field | Meaning |
 |---|---|
 | `id` | Unique name for the correction. Suggested: `<client>-<kind>-<key>-<what>`. |
-| `flavor` | `era`, `tbc`, `mop`, `retail`, `forever`, or `all` (applies wherever the record exists, skips the rest). |
+| `flavor` | `era`, `tbc`, `mop`, `retail`, `forever`, or `all` (applies wherever the record exists, skips the rest). Coordinate fixes always name one client: map ids and x/y differ between clients, so repeat the entry per client. `all` suits prerequisites, names and removals. |
 | `kind` | `quest`, `npc`, `object`, `achievement` or `mission`. |
 | `key` | The record's id (quests, achievements, missions) or its `key` (npcs and objects: the wiki page title). |
 | `op` | `set` (replace a value or create an object member), `add` (insert into a list at an index, or `-` to append; or add an object member), `remove`. |
@@ -46,8 +46,12 @@ The build applies every file in name order, entries in file order, after all gen
 | `evidence` | How you know: client and version you checked in game, a wiki revision link, a screenshot in the PR. Expected; validation warns without it. |
 
 What the build does for you: a correction that sets a `.../coords` list also sets that object's `coord_source` to
-`{"type": "correction", "correction": "<id>"}` and `exact_version` to `true`; every corrected record lists the
-correction ids it received in `corrections`.
+`{"type": "correction", "correction": "<id>"}`, `exact_version` to `true` and `confidence` to `"high"`; on an NPC or
+object record each new point gets `exact_version: true`, `via: "correction"`, `confidence: "high"` and
+`correction: "<id>"` unless you give them. Every corrected record lists the correction ids it received in
+`corrections`. The build refuses a correction that does not apply or that leaves a record off the schema (a
+point off its map, x/y outside 0-100, a wrong type); `tools/validate.py` also checks that prerequisites resolve and
+that every requirement can be met by some faction.
 
 ### Common fixes
 
@@ -59,7 +63,10 @@ correction ids it received in `corrections`.
   of 456 / 789. `add` `/prerequisites/breadcrumb/-` with a quest id for a breadcrumb. Every id must be a quest of
   the same client.
 * **A quest that is not in a client:** `remove` with an empty path.
-* **An NPC's spawn points:** `set` `/coords` on the `npc` record (points need `exact_version` and `via`).
+* **An NPC's spawn points:** `set` `/coords` on the `npc` record with `flavor` set to one client, e.g.
+  `[{"map": 1431, "x": 18.0, "y": 56.0}]`.
+* **A point marked `confidence: "low"` that you checked in game:** set the coordinates (as above) even if they do
+  not change; the correction makes the point `high` and records your evidence.
 
 Look up a record's current content in its bucket file (`data/<client>/quests/<id range>.json`) or in
 `build/completionist.sqlite` after `python3 tools/build_db.py build`.
