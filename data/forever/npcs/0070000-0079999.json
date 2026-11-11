@@ -1,0 +1,12 @@
+{
+ "flavor": "forever",
+ "kind": "npcs",
+ "bucket": "0070000-0079999",
+ "count": 4,
+ "records": [
+{"key":"Al'tabim the All-Seeing","kind":"npc","ids":[70000],"name":"Al'tabim the All-Seeing","coords":[],"source":{"wiki":{"page":"Al'tabim the All-Seeing","revid":6701402}}},
+{"key":"Molthor","kind":"npc","ids":[70003,14875],"name":"Molthor","coords":[],"source":{"wiki":{"page":"Molthor","revid":6701298}}},
+{"key":"Natoj","kind":"npc","ids":[73917,14392],"name":"Natoj","coords":[],"source":{"wiki":{"page":"Natoj","revid":6577383}}},
+{"key":"Monte Gazlowe","kind":"npc","ids":[78323],"name":"Monte Gazlowe","coords":[{"map":1413,"x":62.7,"y":36.2,"exact_version":true,"via":"npclocations"},{"map":1413,"x":62.2,"y":37.8,"exact_version":false,"via":"npclocations"},{"map":1411,"x":42.9,"y":17.8,"exact_version":false,"via":"npclocations"}],"source":{"wiki":{"page":"Monte Gazlowe","revid":6943372}}}
+ ]
+}

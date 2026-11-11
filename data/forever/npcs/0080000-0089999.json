@@ -1,0 +1,9 @@
+{
+ "flavor": "forever",
+ "kind": "npcs",
+ "bucket": "0080000-0089999",
+ "count": 1,
+ "records": [
+{"key":"Darren Malvew","kind":"npc","ids":[84563,2382,20366],"name":"Darren Malvew","coords":[],"source":{"wiki":{"page":"Darren Malvew","revid":6579220}}}
+ ]
+}

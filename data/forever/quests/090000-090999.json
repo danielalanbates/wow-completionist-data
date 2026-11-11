@@ -1,0 +1,9 @@
+{
+ "flavor": "forever",
+ "kind": "quests",
+ "bucket": "090000-090999",
+ "count": 1,
+ "records": [
+{"id":90902,"name":"Rediscovering the Light","flavors":["forever"],"faction":"Horde","level":2,"min_level":2,"type":null,"category":"Paladin","zone_map":1420,"zone_map_source":"coords","classes":["Paladin"],"races":["Undead"],"profession":null,"is_breadcrumb":null,"auto_accept":false,"start":[{"kind":"npc","ids":[244808],"name":"Aramis Hammerhand","page":"Aramis Hammerhand","faction":null,"coords":[{"map":1420,"x":31.1,"y":66.4}],"coord_source":{"type":"wiki","page":"Rediscovering the Light","revid":6966967,"via":"questbox"},"exact_version":false}],"end":[{"kind":"npc","ids":[244808],"name":"Aramis Hammerhand","page":"Aramis Hammerhand","faction":null,"coords":[{"map":1420,"x":31.1,"y":66.4}],"coord_source":{"type":"wiki","page":"Rediscovering the Light","revid":6966967,"via":"questbox"},"exact_version":false}],"end_same_as_start":true,"start_item":null,"objectives_text":"Heal 5 Injured Deathguard with your Holy Light ability.","objectives_source":"wiki","objectives":[{"index":1,"kind":"item","text":"Injured Deathguard healed (5)","count":5,"optional":false,"target":{"kind":"npc","ids":[259377],"name":"Injured Deathguard","page":"Injured Deathguard"},"coords":[],"coord_source":null,"exact_version":null}],"prerequisites":{"required":[],"breadcrumb":[],"optional":[98601],"in_progress":[],"inferred_from_next":[],"basis":"single"},"next":[91208],"source":{"wiki":{"page":"Rediscovering the Light","revid":6966967},"db2":{"table":"QuestV2","build":"wowf 1.60.1.70790"}}}
+ ]
+}

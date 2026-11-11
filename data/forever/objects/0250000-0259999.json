@@ -1,0 +1,9 @@
+{
+ "flavor": "forever",
+ "kind": "objects",
+ "bucket": "0250000-0259999",
+ "count": 1,
+ "records": [
+{"key":"Scribbled Note","kind":"object","ids":[252529],"name":"Scribbled Note","coords":[],"source":{"wiki":{"page":"Scribbled Note","revid":5742858}}}
+ ]
+}

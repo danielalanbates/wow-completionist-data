@@ -1,0 +1,32 @@
+{
+ "flavor": "forever",
+ "kind": "objects",
+ "bucket": "0140000-0149999",
+ "count": 24,
+ "records": [
+{"key":"Spectral Lockbox","kind":"object","ids":[141980],"name":"Spectral Lockbox","coords":[{"map":1435,"x":33.5,"y":66.0,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Spectral Lockbox","revid":6050232}}},
+{"key":"Egg-O-Matic","kind":"object","ids":[142071],"name":"Egg-O-Matic","coords":[{"map":1446,"x":52.4,"y":27.0,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Egg-O-Matic","revid":6089643}}},
+{"key":"Wanted Poster (Steamwheedle Port)","kind":"object","ids":[142122],"name":"Wanted Poster","coords":[],"source":{"wiki":{"page":"Wanted Poster (Steamwheedle Port)","revid":6036178}}},
+{"key":"Rin'ji's Secret","kind":"object","ids":[142127],"name":"Rin'ji's Secret","coords":[{"map":1425,"x":86.3,"y":59.1,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Rin'ji's Secret","revid":6841876}}},
+{"key":"Solarsal Gazebo","kind":"object","ids":[142179],"name":"Solarsal Gazebo","coords":[{"map":1444,"x":26.3,"y":52.3,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Solarsal Gazebo","revid":5647644}}},
+{"key":"Stolen Cargo","kind":"object","ids":[142181],"name":"Stolen Cargo","coords":[{"map":1446,"x":73.2,"y":46.6,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"Stolen Cargo","revid":5645374}}},
+{"key":"Uldum Pedestal","kind":"object","ids":[142343],"name":"Uldum Pedestal","coords":[{"map":1446,"x":37.7,"y":81.4,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Uldum Pedestal","revid":5644940}}},
+{"key":"Sparklematic 5200","kind":"object","ids":[142487],"name":"Sparklematic 5200","coords":[],"source":{"wiki":{"page":"Sparklematic 5200","revid":6572863}}},
+{"key":"Feralas: A History","kind":"object","ids":[142958],"name":"Feralas: A History","coords":[{"map":1438,"x":55.3,"y":91.4,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Feralas: A History","revid":6839510}}},
+{"key":"Equinex Monolith","kind":"object","ids":[144063],"name":"Equinex Monolith","coords":[{"map":1444,"x":38.8,"y":13.1,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"Equinex Monolith","revid":6350310}}},
+{"key":"First Witherbark Cage","kind":"object","ids":[144066],"name":"First Witherbark Cage","coords":[{"map":1425,"x":23.2,"y":58.6,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"First Witherbark Cage","revid":5647685}}},
+{"key":"Second Witherbark Cage","kind":"object","ids":[144067],"name":"Second Witherbark Cage","coords":[{"map":1425,"x":23.1,"y":58.6,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"Second Witherbark Cage","revid":5647686}}},
+{"key":"Third Witherbark Cage","kind":"object","ids":[144068],"name":"Third Witherbark Cage","coords":[{"map":1425,"x":32.0,"y":57.5,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"Third Witherbark Cage","revid":5647687}}},
+{"key":"Sharpbeak's Cage","kind":"object","ids":[144070],"name":"Sharpbeak's Cage","coords":[{"map":1425,"x":53.4,"y":67.0,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"Sharpbeak's Cage","revid":5647690}}},
+{"key":"Highvale Records","kind":"object","ids":[144071],"name":"Highvale Records","coords":[{"map":1425,"x":31.9,"y":46.6,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"Highvale Records","revid":5645372}}},
+{"key":"Highvale Notes","kind":"object","ids":[144072],"name":"Highvale Notes","coords":[{"map":1425,"x":29.5,"y":48.5,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"Highvale Notes","revid":5645370}}},
+{"key":"Highvale Report","kind":"object","ids":[144073],"name":"Highvale Report","coords":[{"map":1425,"x":28.4,"y":46.1,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"Highvale Report","revid":5645371}}},
+{"key":"Stolen Silver Lockbox","kind":"object","ids":[147557],"name":"Stolen Silver Lockbox","coords":[{"map":1413,"x":60.0,"y":30.5,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"Stolen Silver Lockbox","revid":5712254}}},
+{"key":"Altar of Suntara","kind":"object","ids":[148498],"name":"Altar of Suntara","coords":[],"source":{"wiki":{"page":"Altar of Suntara","revid":6350193}}},
+{"key":"A Conspicuous Gravestone","kind":"object","ids":[148504],"name":"A Conspicuous Gravestone","coords":[{"map":1446,"x":53.9,"y":29.0,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"A Conspicuous Gravestone","revid":6794397}}},
+{"key":"Essence Font (object)","kind":"object","ids":[148512],"name":"Essence Font","coords":[],"source":{"wiki":{"page":"Essence Font (object)","revid":6348639}}},
+{"key":"Altar of Hakkar","kind":"object","ids":[148836],"name":"Altar of Hakkar","coords":[],"source":{"wiki":{"page":"Altar of Hakkar","revid":6036845}}},
+{"key":"Idol of Hakkar","kind":"object","ids":[148838],"name":"Idol of Hakkar","coords":[],"source":{"wiki":{"page":"Idol of Hakkar","revid":5647390}}},
+{"key":"Hoard of the Black Dragonflight","kind":"object","ids":[149502],"name":"Hoard of the Black Dragonflight","coords":[{"map":1427,"x":38.9,"y":38.9,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Hoard of the Black Dragonflight","revid":5647746}}}
+ ]
+}

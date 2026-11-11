@@ -1,0 +1,16 @@
+{
+ "flavor": "tbc",
+ "kind": "npcs",
+ "bucket": "0110000-0119999",
+ "count": 8,
+ "records": [
+{"key":"Millhouse Manastorm","kind":"npc","ids":[110750,107757],"name":"Millhouse Manastorm","coords":[],"source":{"wiki":{"page":"Millhouse Manastorm","revid":6932847}}},
+{"key":"Rexxar","kind":"npc","ids":[110975],"name":"Rexxar","coords":[{"map":1949,"x":51.8,"y":58.4,"exact_version":true,"via":"npclocations"},{"map":1458,"x":55.8,"y":91.8,"exact_version":false,"via":"npclocations"},{"map":1411,"x":52.0,"y":42.0,"exact_version":false,"via":"npclocations"},{"map":1444,"x":45.4,"y":7.4,"exact_version":false,"via":"npclocations"}],"source":{"wiki":{"page":"Rexxar","revid":6965173}}},
+{"key":"Shade of Akama","kind":"npc","ids":[111912],"name":"Shade of Akama","coords":[],"source":{"wiki":{"page":"Shade of Akama","revid":6907068}}},
+{"key":"Solenor the Slayer","kind":"npc","ids":[113056],"name":"Solenor the Slayer","coords":[],"source":{"wiki":{"page":"Solenor the Slayer","revid":6902696}}},
+{"key":"Archmage Alturus","kind":"npc","ids":[114667,17613],"name":"Archmage Alturus","coords":[{"map":1430,"x":46.0,"y":75.0,"exact_version":false,"via":"location"}],"source":{"wiki":{"page":"Archmage Alturus","revid":6918563}}},
+{"key":"Archmage Leryda","kind":"npc","ids":[115029,18253],"name":"Archmage Leryda","coords":[],"source":{"wiki":{"page":"Archmage Leryda","revid":6614304}}},
+{"key":"Simone the Seductress","kind":"npc","ids":[117850],"name":"Simone the Seductress","coords":[],"source":{"wiki":{"page":"Simone the Seductress","revid":6902759}}},
+{"key":"Magatha Grimtotem","kind":"npc","ids":[119067,119068,120389],"name":"Magatha Grimtotem","coords":[{"map":1456,"x":70.6,"y":30.6,"exact_version":false,"via":"npclocations"}],"source":{"wiki":{"page":"Magatha Grimtotem","revid":6909398}}}
+ ]
+}

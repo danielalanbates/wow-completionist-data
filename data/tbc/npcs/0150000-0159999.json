@@ -1,0 +1,9 @@
+{
+ "flavor": "tbc",
+ "kind": "npcs",
+ "bucket": "0150000-0159999",
+ "count": 1,
+ "records": [
+{"key":"La'gar Brewshout","kind":"npc","ids":[155194],"name":"La'gar Brewshout","coords":[],"source":{"wiki":{"page":"La'gar Brewshout","revid":6932439}}}
+ ]
+}

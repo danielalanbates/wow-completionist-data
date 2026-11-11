@@ -1,0 +1,12 @@
+{
+ "flavor": "tbc",
+ "kind": "objects",
+ "bucket": "0110000-0119999",
+ "count": 4,
+ "records": [
+{"key":"Talvash's Scrying Bowl","kind":"object","ids":[112877],"name":"Talvash's Scrying Bowl","coords":[],"source":{"wiki":{"page":"Talvash's Scrying Bowl","revid":6349886}}},
+{"key":"Dusty Shelf","kind":"object","ids":[112888],"name":"Dusty Shelf","coords":[{"map":1421,"x":65.3,"y":24.8,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Dusty Shelf","revid":5644029}}},
+{"key":"Intrepid's Locked Strongbox","kind":"object","ids":[112948],"name":"Intrepid's Locked Strongbox","coords":[{"map":1437,"x":14.3,"y":24.0,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"Intrepid's Locked Strongbox","revid":5647370}}},
+{"key":"Brazier of Everfount","kind":"object","ids":[113791],"name":"Brazier of Everfount","coords":[{"map":1421,"x":38.3,"y":44.6,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Brazier of Everfount","revid":5647817}}}
+ ]
+}

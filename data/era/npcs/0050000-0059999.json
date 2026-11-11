@@ -1,0 +1,10 @@
+{
+ "flavor": "era",
+ "kind": "npcs",
+ "bucket": "0050000-0059999",
+ "count": 2,
+ "records": [
+{"key":"Tooga","kind":"npc","ids":[52425],"name":"Tooga","coords":[],"source":{"wiki":{"page":"Tooga","revid":6957050}}},
+{"key":"Fandral Staghelm","kind":"npc","ids":[54241,52800],"name":"Fandral Staghelm","coords":[],"source":{"wiki":{"page":"Fandral Staghelm","revid":6943490}}}
+ ]
+}

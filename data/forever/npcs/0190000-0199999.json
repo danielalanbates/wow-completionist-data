@@ -1,0 +1,9 @@
+{
+ "flavor": "forever",
+ "kind": "npcs",
+ "bucket": "0190000-0199999",
+ "count": 1,
+ "records": [
+{"key":"Chronormu","kind":"npc","ids":[190285],"name":"Chronormu","coords":[{"map":1422,"x":39.4,"y":66.8,"exact_version":true,"via":"npclocations"},{"map":1423,"x":33.7,"y":63.3,"exact_version":false,"via":"npclocations"},{"map":1453,"x":75.3,"y":9.3,"exact_version":false,"via":"npclocations"}],"source":{"wiki":{"page":"Chronormu","revid":6964660}}}
+ ]
+}

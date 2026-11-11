@@ -1,0 +1,9 @@
+{
+ "flavor": "forever",
+ "kind": "quests",
+ "bucket": "086000-086999",
+ "count": 1,
+ "records": [
+{"id":86784,"name":"Sticks and Bones","flavors":["forever"],"faction":"Horde","level":7,"min_level":4,"type":null,"category":"Tirisfal Glades","zone_map":1420,"zone_map_source":"category","classes":[],"races":[],"profession":null,"is_breadcrumb":null,"auto_accept":false,"start":[{"kind":"npc","ids":[1742,186035,186036],"name":"Deathguard Bartholomew","page":"Deathguard Bartholomew","faction":null,"coords":[{"map":1420,"x":58.5,"y":51.4}],"coord_source":{"type":"wiki","page":"Sticks and Bones (Forever)","revid":6967736,"via":"questbox"},"exact_version":false}],"end":[{"kind":"npc","ids":[265812],"name":"Eleanor Shackleton","page":"Eleanor Shackleton","faction":null,"coords":[{"map":1420,"x":57.3,"y":55.5}],"coord_source":{"type":"wiki","page":"Sticks and Bones (Forever)","revid":6967736,"via":"questbox"},"exact_version":false}],"end_same_as_start":false,"start_item":null,"objectives_text":"Collect 6 Dry Branches and bring them to Eleanor Shackleton.","objectives_source":"wiki","objectives":[{"index":1,"kind":"item","text":"Dry Branch (6)","count":6,"optional":false,"target":{"kind":"unknown","ids":[],"name":"Dry Branch","page":"Dry Branch"},"coords":[],"coord_source":null,"exact_version":null},{"index":2,"kind":"provided","text":"Collecting Basket (quest item) (provided)","count":null,"optional":false,"target":{"kind":"unknown","ids":[],"name":"Collecting Basket","page":"Collecting Basket (quest item)"},"coords":[],"coord_source":null,"exact_version":null}],"prerequisites":{"required":[],"breadcrumb":[],"optional":[],"in_progress":[],"inferred_from_next":[],"basis":"none"},"next":[],"source":{"wiki":{"page":"Sticks and Bones (Forever)","revid":6967736},"db2":{"table":"QuestV2","build":"wowf 1.60.1.70790"}}}
+ ]
+}

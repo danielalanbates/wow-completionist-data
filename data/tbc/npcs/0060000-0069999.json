@@ -1,0 +1,10 @@
+{
+ "flavor": "tbc",
+ "kind": "npcs",
+ "bucket": "0060000-0069999",
+ "count": 2,
+ "records": [
+{"key":"Garrosh Hellscream","kind":"npc","ids":[68072],"name":"Garrosh Hellscream","coords":[],"source":{"wiki":{"page":"Garrosh Hellscream","revid":6941523}}},
+{"key":"Varian Wrynn","kind":"npc","ids":[68399],"name":"Varian Wrynn","coords":[],"source":{"wiki":{"page":"Varian Wrynn","revid":6937361}}}
+ ]
+}

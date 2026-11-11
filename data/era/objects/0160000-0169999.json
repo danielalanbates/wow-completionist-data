@@ -1,0 +1,17 @@
+{
+ "flavor": "era",
+ "kind": "objects",
+ "bucket": "0160000-0169999",
+ "count": 9,
+ "records": [
+{"key":"A Wrecked Raft","kind":"object","ids":[161505],"name":"A Wrecked Raft","coords":[{"map":1449,"x":63.1,"y":68.5,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"A Wrecked Raft","revid":5645394}}},
+{"key":"Monument of Franclorn Forgewright","kind":"object","ids":[164689],"name":"Monument of Franclorn Forgewright","coords":[],"source":{"wiki":{"page":"Monument of Franclorn Forgewright","revid":6350466}}},
+{"key":"WANTED (Badlands)","kind":"object","ids":[164867],"name":"WANTED","coords":[{"map":1418,"x":3.8,"y":47.5,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"WANTED (Badlands)","revid":5647195}}},
+{"key":"KILL ON SIGHT","kind":"object","ids":[164868],"name":"KILL ON SIGHT","coords":[{"map":1418,"x":4.0,"y":46.9,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"KILL ON SIGHT","revid":5647194}}},
+{"key":"Spectral Chalice","kind":"object","ids":[164869],"name":"Spectral Chalice","coords":[],"source":{"wiki":{"page":"Spectral Chalice","revid":6279218}}},
+{"key":"Wrecked Row Boat","kind":"object","ids":[164909],"name":"Wrecked Row Boat","coords":[{"map":1444,"x":45.5,"y":64.9,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Wrecked Row Boat","revid":6842076}}},
+{"key":"Ornate Chest","kind":"object","ids":[164910],"name":"Ornate Chest","coords":[{"map":1449,"x":50.2,"y":50.0,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Ornate Chest","revid":5647914}}},
+{"key":"Large Leather Backpacks","kind":"object","ids":[164953],"name":"Large Leather Backpacks","coords":[{"map":1444,"x":73.3,"y":56.3,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Large Leather Backpacks","revid":5647643}}},
+{"key":"Zukk'ash Pod","kind":"object","ids":[164954],"name":"Zukk'ash Pod","coords":[{"map":1444,"x":72.1,"y":63.8,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Zukk'ash Pod","revid":6594978}}}
+ ]
+}

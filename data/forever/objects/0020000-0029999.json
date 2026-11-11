@@ -1,0 +1,14 @@
+{
+ "flavor": "forever",
+ "kind": "objects",
+ "bucket": "0020000-0029999",
+ "count": 6,
+ "records": [
+{"key":"Gizmorium Shipping Crate","kind":"object","ids":[20727],"name":"Gizmorium Shipping Crate","coords":[{"map":1445,"x":54.1,"y":56.2,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"Gizmorium Shipping Crate","revid":5647473}}},
+{"key":"Rizzle's Unguarded Plans","kind":"object","ids":[20805],"name":"Rizzle's Unguarded Plans","coords":[],"source":{"wiki":{"page":"Rizzle's Unguarded Plans","revid":6304408}}},
+{"key":"Loose Dirt","kind":"object","ids":[20985],"name":"Loose Dirt","coords":[{"map":1445,"x":55.4,"y":26.0,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"Loose Dirt","revid":5644789}}},
+{"key":"Black Shield","kind":"object","ids":[20992],"name":"Black Shield","coords":[{"map":1445,"x":29.6,"y":48.6,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"Black Shield","revid":5640407}}},
+{"key":"Yuriv's Tombstone","kind":"object","ids":[24776],"name":"Yuriv's Tombstone","coords":[{"map":1421,"x":44.2,"y":42.6,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"Yuriv's Tombstone","revid":6519935}}},
+{"key":"Caravan Chest","kind":"object","ids":[28024],"name":"Caravan Chest","coords":[{"map":1435,"x":64.5,"y":18.4,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Caravan Chest","revid":5647841}}}
+ ]
+}

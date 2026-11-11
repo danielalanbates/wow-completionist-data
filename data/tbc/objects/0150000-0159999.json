@@ -1,0 +1,11 @@
+{
+ "flavor": "tbc",
+ "kind": "objects",
+ "bucket": "0150000-0159999",
+ "count": 3,
+ "records": [
+{"key":"Wanted Poster (Gadgetzan)","kind":"object","ids":[150075],"name":"Wanted Poster","coords":[],"source":{"wiki":{"page":"Wanted Poster (Gadgetzan)","revid":6036175}}},
+{"key":"Kaldorei Tome of Summoning","kind":"object","ids":[151286],"name":"Kaldorei Tome of Summoning","coords":[{"map":1447,"x":59.5,"y":31.3,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Kaldorei Tome of Summoning","revid":5645831}}},
+{"key":"Belnistrasz's Brazier","kind":"object","ids":[152097],"name":"Belnistrasz's Brazier","coords":[],"source":{"wiki":{"page":"Belnistrasz's Brazier","revid":6708197}}}
+ ]
+}

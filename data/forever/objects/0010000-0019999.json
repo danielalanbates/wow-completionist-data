@@ -1,0 +1,24 @@
+{
+ "flavor": "forever",
+ "kind": "objects",
+ "bucket": "0010000-0019999",
+ "count": 16,
+ "records": [
+{"key":"Scrying Bowl","kind":"object","ids":[10076],"name":"Scrying Bowl","coords":[],"source":{"wiki":{"page":"Scrying Bowl","revid":6595170}}},
+{"key":"Mathystra Relic","kind":"object","ids":[12654],"name":"Mathystra Relic","coords":[],"source":{"wiki":{"page":"Mathystra Relic","revid":6450187}}},
+{"key":"Twilight Tome (object)","kind":"object","ids":[12666],"name":"Twilight Tome","coords":[{"map":1439,"x":38.6,"y":68.1,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Twilight Tome (object)","revid":6967745}}},
+{"key":"Ancient Flame (Classic)","kind":"object","ids":[16393],"name":"Ancient Flame","coords":[{"map":1439,"x":42.0,"y":61.0,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Ancient Flame (Classic)","revid":5650903}}},
+{"key":"Buzzbox 827","kind":"object","ids":[17182],"name":"Buzzbox 827","coords":[],"source":{"wiki":{"page":"Buzzbox 827","revid":6791305}}},
+{"key":"Buzzbox 411","kind":"object","ids":[17183],"name":"Buzzbox 411","coords":[{"map":1439,"x":41.0,"y":28.0,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Buzzbox 411","revid":6791306}}},
+{"key":"Buzzbox 323","kind":"object","ids":[17184],"name":"Buzzbox 323","coords":[{"map":1439,"x":51.0,"y":24.0,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Buzzbox 323","revid":6791360}}},
+{"key":"Buzzbox 525","kind":"object","ids":[17185],"name":"Buzzbox 525","coords":[{"map":1439,"x":41.0,"y":80.0,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Buzzbox 525","revid":6791357}}},
+{"key":"The Lay of Ameth'Aran","kind":"object","ids":[17188],"name":"The Lay of Ameth'Aran","coords":[{"map":1439,"x":41.6,"y":60.6,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"The Lay of Ameth'Aran","revid":6841826}}},
+{"key":"The Fall of Ameth'Aran","kind":"object","ids":[17189],"name":"The Fall of Ameth'Aran","coords":[{"map":1439,"x":41.0,"y":64.8,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"The Fall of Ameth'Aran","revid":6841827}}},
+{"key":"Hidden Shrine","kind":"object","ids":[19024],"name":"Hidden Shrine","coords":[{"map":1440,"x":56.4,"y":49.2,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"Hidden Shrine","revid":6293760}}},
+{"key":"Tome of Mel'Thandris","kind":"object","ids":[19027],"name":"Tome of Mel'Thandris","coords":[{"map":1440,"x":50.4,"y":39.0,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Tome of Mel'Thandris","revid":5647164}}},
+{"key":"Sleepers' Cache","kind":"object","ids":[19596],"name":"Sleepers' Cache","coords":[{"map":1442,"x":25.6,"y":11.4,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Sleepers' Cache","revid":5647822}}},
+{"key":"Druids' Cache","kind":"object","ids":[19597],"name":"Druids' Cache","coords":[{"map":1442,"x":29.5,"y":15.8,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Druids' Cache","revid":5647821}}},
+{"key":"Barrow Cache","kind":"object","ids":[19598],"name":"Barrow Cache","coords":[{"map":1442,"x":27.9,"y":13.8,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Barrow Cache","revid":5647820}}},
+{"key":"Talon Den Hoard","kind":"object","ids":[19599],"name":"Talon Den Hoard","coords":[{"map":1442,"x":26.6,"y":10.8,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Talon Den Hoard","revid":5647823}}}
+ ]
+}

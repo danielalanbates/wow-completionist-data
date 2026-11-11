@@ -1,0 +1,9 @@
+{
+ "flavor": "forever",
+ "kind": "objects",
+ "bucket": "0260000-0269999",
+ "count": 1,
+ "records": [
+{"key":"Cooking Fire (ability)","kind":"object","ids":[266354],"name":"Cooking Fire","coords":[],"source":{"wiki":{"page":"Cooking Fire (ability)","revid":6693310}}}
+ ]
+}

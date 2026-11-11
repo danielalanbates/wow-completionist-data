@@ -1,0 +1,23 @@
+{
+ "flavor": "forever",
+ "kind": "objects",
+ "bucket": "0180000-0189999",
+ "count": 15,
+ "records": [
+{"key":"Battered Tackle Box","kind":"object","ids":[180366],"name":"Battered Tackle Box","coords":[],"source":{"wiki":{"page":"Battered Tackle Box","revid":5647060}}},
+{"key":"Wanted Poster: Deathclasp","kind":"object","ids":[180448],"name":"Wanted Poster: Deathclasp","coords":[{"map":1451,"x":47.0,"y":40.8,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"Wanted Poster: Deathclasp","revid":5645050}}},
+{"key":"Sandy Cookbook","kind":"object","ids":[180503],"name":"Sandy Cookbook","coords":[{"map":1451,"x":31.5,"y":49.1,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"Sandy Cookbook","revid":5644669}}},
+{"key":"Keg","kind":"object","ids":[180570],"name":"Keg","coords":[{"map":1424,"x":51.3,"y":58.9,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Keg","revid":6937852}}},
+{"key":"Crystalline Tear","kind":"object","ids":[180633],"name":"Crystalline Tear","coords":[{"map":1451,"x":20.6,"y":100.0,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"Crystalline Tear","revid":6348461}}},
+{"key":"Inconspicuous Crate","kind":"object","ids":[180642],"name":"Inconspicuous Crate","coords":[{"map":1421,"x":46.2,"y":86.6,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Inconspicuous Crate","revid":5645051}}},
+{"key":"Freshly Dug Dirt","kind":"object","ids":[180652],"name":"Freshly Dug Dirt","coords":[],"source":{"wiki":{"page":"Freshly Dug Dirt","revid":5644686}}},
+{"key":"Xandivious' Demon Bag","kind":"object","ids":[180671],"name":"Xandivious' Demon Bag","coords":[{"map":1452,"x":68.4,"y":26.5,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"Xandivious' Demon Bag","revid":6849623}}},
+{"key":"Holly Preserver","kind":"object","ids":[180715],"name":"Holly Preserver","coords":[],"source":{"wiki":{"page":"Holly Preserver","revid":6555721}}},
+{"key":"The Scarab Gong","kind":"object","ids":[180717],"name":"The Scarab Gong","coords":[{"map":1451,"x":26.8,"y":90.2,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"The Scarab Gong","revid":6467305}}},
+{"key":"Fragrant Cauldron","kind":"object","ids":[181073],"name":"Fragrant Cauldron","coords":[{"map":1416,"x":89.2,"y":74.9,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Fragrant Cauldron","revid":6781732}}},
+{"key":"Flame of Dire Maul","kind":"object","ids":[181346],"name":"Flame of Dire Maul","coords":[],"source":{"wiki":{"page":"Flame of Dire Maul","revid":6417022}}},
+{"key":"Flame of Blackrock Spire","kind":"object","ids":[181347],"name":"Flame of Blackrock Spire","coords":[],"source":{"wiki":{"page":"Flame of Blackrock Spire","revid":6508347}}},
+{"key":"Flame of Stratholme","kind":"object","ids":[181348],"name":"Flame of Stratholme","coords":[],"source":{"wiki":{"page":"Flame of Stratholme","revid":5781758}}},
+{"key":"Flame of the Scholomance","kind":"object","ids":[181349],"name":"Flame of the Scholomance","coords":[],"source":{"wiki":{"page":"Flame of the Scholomance","revid":5781759}}}
+ ]
+}

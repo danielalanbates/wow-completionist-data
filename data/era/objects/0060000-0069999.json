@@ -1,0 +1,11 @@
+{
+ "flavor": "era",
+ "kind": "objects",
+ "bucket": "0060000-0069999",
+ "count": 3,
+ "records": [
+{"key":"Brazier of the Dormant Flame","kind":"object","ids":[61934],"name":"Brazier of the Dormant Flame","coords":[{"map":1411,"x":38.9,"y":58.2,"exact_version":true,"via":"lead"},{"map":1432,"x":31.9,"y":64.5,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Brazier of the Dormant Flame","revid":6943493}}},
+{"key":"Regulator Valve","kind":"object","ids":[61935],"name":"Regulator Valve","coords":[{"map":1413,"x":52.3,"y":11.4,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"Regulator Valve","revid":5647218}}},
+{"key":"Fuel Control Valve","kind":"object","ids":[61936],"name":"Fuel Control Valve","coords":[{"map":1413,"x":52.4,"y":11.4,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"Fuel Control Valve","revid":5647217}}}
+ ]
+}

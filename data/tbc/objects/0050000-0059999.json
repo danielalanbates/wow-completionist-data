@@ -1,0 +1,10 @@
+{
+ "flavor": "tbc",
+ "kind": "objects",
+ "bucket": "0050000-0059999",
+ "count": 2,
+ "records": [
+{"key":"Malem Chest","kind":"object","ids":[50961],"name":"Malem Chest","coords":[{"map":1443,"x":56.6,"y":17.8,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Malem Chest","revid":6594976}}},
+{"key":"The Charred Oak","kind":"object","ids":[50982],"name":"The Charred Oak","coords":[{"map":1427,"x":54.6,"y":50.7,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"The Charred Oak","revid":5647744}}}
+ ]
+}

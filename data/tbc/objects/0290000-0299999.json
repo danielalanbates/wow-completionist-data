@@ -1,0 +1,9 @@
+{
+ "flavor": "tbc",
+ "kind": "objects",
+ "bucket": "0290000-0299999",
+ "count": 1,
+ "records": [
+{"key":"Abyssal Scepter","kind":"object","ids":[293901],"name":"Abyssal Scepter","coords":[],"source":{"wiki":{"page":"Abyssal Scepter","revid":6504319}}}
+ ]
+}

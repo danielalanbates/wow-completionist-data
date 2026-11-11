@@ -1,0 +1,11 @@
+{
+ "flavor": "tbc",
+ "kind": "npcs",
+ "bucket": "0160000-0169999",
+ "count": 3,
+ "records": [
+{"key":"Gelbin Mekkatorque","kind":"npc","ids":[162802],"name":"Gelbin Mekkatorque","coords":[],"source":{"wiki":{"page":"Gelbin Mekkatorque","revid":6904069}}},
+{"key":"Houndmaster Loksey","kind":"npc","ids":[162955],"name":"Houndmaster Loksey","coords":[],"source":{"wiki":{"page":"Houndmaster Loksey","revid":6455372}}},
+{"key":"Thrall","kind":"npc","ids":[167827,177589],"name":"Thrall","coords":[],"source":{"wiki":{"page":"Thrall","revid":6964667}}}
+ ]
+}

@@ -1,0 +1,9 @@
+{
+ "flavor": "era",
+ "kind": "npcs",
+ "bucket": "0060000-0069999",
+ "count": 1,
+ "records": [
+{"key":"Varian Wrynn","kind":"npc","ids":[68399],"name":"Varian Wrynn","coords":[],"source":{"wiki":{"page":"Varian Wrynn","revid":6937361}}}
+ ]
+}

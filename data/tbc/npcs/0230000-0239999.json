@@ -1,0 +1,10 @@
+{
+ "flavor": "tbc",
+ "kind": "npcs",
+ "bucket": "0230000-0239999",
+ "count": 2,
+ "records": [
+{"key":"Renzik \"The Shiv\"","kind":"npc","ids":[232617],"name":"Renzik \"The Shiv\"","coords":[{"map":1453,"x":79.8,"y":50.1,"exact_version":false,"via":"npclocations"},{"map":1458,"x":80.8,"y":44.8,"exact_version":false,"via":"npclocations"}],"source":{"wiki":{"page":"Renzik \"The Shiv\"","revid":6908383}}},
+{"key":"Fleet Master Seahorn","kind":"npc","ids":[235849],"name":"Fleet Master Seahorn","coords":[{"map":1434,"x":27.5,"y":76.9,"exact_version":true,"via":"npclocations"}],"source":{"wiki":{"page":"Fleet Master Seahorn","revid":6963754}}}
+ ]
+}

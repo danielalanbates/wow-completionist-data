@@ -1,0 +1,9 @@
+{
+ "flavor": "era",
+ "kind": "npcs",
+ "bucket": "0190000-0199999",
+ "count": 1,
+ "records": [
+{"key":"Chronormu","kind":"npc","ids":[190285],"name":"Chronormu","coords":[{"map":1422,"x":39.4,"y":66.8,"exact_version":true,"via":"npclocations"},{"map":1423,"x":39.3,"y":74.5,"exact_version":false,"via":"npclocations"},{"map":1429,"x":32.3,"y":7.1,"exact_version":false,"via":"npclocations"}],"source":{"wiki":{"page":"Chronormu","revid":6964660}}}
+ ]
+}

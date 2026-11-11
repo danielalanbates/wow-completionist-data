@@ -1,0 +1,12 @@
+{
+ "flavor": "tbc",
+ "kind": "npcs",
+ "bucket": "0050000-0059999",
+ "count": 4,
+ "records": [
+{"key":"Tooga","kind":"npc","ids":[52425],"name":"Tooga","coords":[],"source":{"wiki":{"page":"Tooga","revid":6957050}}},
+{"key":"Fandral Staghelm","kind":"npc","ids":[54241,52800],"name":"Fandral Staghelm","coords":[],"source":{"wiki":{"page":"Fandral Staghelm","revid":6943490}}},
+{"key":"Stone Guard Stok'ton","kind":"npc","ids":[54606,54931,55136],"name":"Stone Guard Stok'ton","coords":[],"source":{"wiki":{"page":"Stone Guard Stok'ton","revid":6353274}}},
+{"key":"Watcher Jhang","kind":"npc","ids":[54667],"name":"Watcher Jhang","coords":[],"source":{"wiki":{"page":"Watcher Jhang","revid":6571002}}}
+ ]
+}

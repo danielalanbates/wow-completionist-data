@@ -1,0 +1,10 @@
+{
+ "flavor": "tbc",
+ "kind": "npcs",
+ "bucket": "0080000-0089999",
+ "count": 2,
+ "records": [
+{"key":"Darren Malvew","kind":"npc","ids":[84563,2382,20366],"name":"Darren Malvew","coords":[],"source":{"wiki":{"page":"Darren Malvew","revid":6579220}}},
+{"key":"Huraan","kind":"npc","ids":[84570],"name":"Huraan","coords":[],"source":{"wiki":{"page":"Huraan","revid":6353445}}}
+ ]
+}

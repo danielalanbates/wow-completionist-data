@@ -1,0 +1,9 @@
+{
+ "flavor": "tbc",
+ "kind": "npcs",
+ "bucket": "0220000-0229999",
+ "count": 1,
+ "records": [
+{"key":"Holiday Enthusiast","kind":"npc","ids":[220865,220307,220870],"name":"Holiday Enthusiast","coords":[],"source":{"wiki":{"page":"Holiday Enthusiast","revid":6937792}}}
+ ]
+}

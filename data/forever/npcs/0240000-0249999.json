@@ -1,0 +1,28 @@
+{
+ "flavor": "forever",
+ "kind": "npcs",
+ "bucket": "0240000-0249999",
+ "count": 20,
+ "records": [
+{"key":"Aramis Hammerhand","kind":"npc","ids":[244808],"name":"Aramis Hammerhand","coords":[{"map":1420,"x":31.1,"y":66.4,"exact_version":true,"via":"location"}],"source":{"wiki":{"page":"Aramis Hammerhand","revid":6964490}}},
+{"key":"Arcanic Enigma","kind":"npc","ids":[246016],"name":"Arcanic Enigma","coords":[],"source":{"wiki":{"page":"Arcanic Enigma","revid":6952379}}},
+{"key":"Frightened Paladin","kind":"npc","ids":[246143],"name":"Frightened Paladin","coords":[{"map":1420,"x":27.7,"y":63.8,"exact_version":true,"via":"location"}],"source":{"wiki":{"page":"Frightened Paladin","revid":6908731}}},
+{"key":"Shari Stilwell","kind":"npc","ids":[246152],"name":"Shari Stilwell","coords":[{"map":1420,"x":60.2,"y":52.6,"exact_version":true,"via":"location"}],"source":{"wiki":{"page":"Shari Stilwell","revid":6967749}}},
+{"key":"Breton Samuels","kind":"npc","ids":[246349],"name":"Breton Samuels","coords":[{"map":1420,"x":21.8,"y":45.2,"exact_version":true,"via":"location"}],"source":{"wiki":{"page":"Breton Samuels","revid":6908858}}},
+{"key":"Danitha Morr","kind":"npc","ids":[246378],"name":"Danitha Morr","coords":[{"map":1420,"x":22.1,"y":44.7,"exact_version":true,"via":"location"}],"source":{"wiki":{"page":"Danitha Morr","revid":6967085}}},
+{"key":"Hilda the Breaker","kind":"npc","ids":[246389],"name":"Hilda the Breaker","coords":[{"map":1420,"x":22.0,"y":47.2,"exact_version":true,"via":"location"}],"source":{"wiki":{"page":"Hilda the Breaker","revid":6908754}}},
+{"key":"Jorin Croge","kind":"npc","ids":[246393],"name":"Jorin Croge","coords":[{"map":1420,"x":22.7,"y":44.7,"exact_version":true,"via":"location"}],"source":{"wiki":{"page":"Jorin Croge","revid":6908714}}},
+{"key":"Ander Solliden","kind":"npc","ids":[246394],"name":"Ander Solliden","coords":[],"source":{"wiki":{"page":"Ander Solliden","revid":6925588}}},
+{"key":"Mana Echo","kind":"npc","ids":[246600],"name":"Mana Echo","coords":[],"source":{"wiki":{"page":"Mana Echo","revid":6932700}}},
+{"key":"Saturated Remnant","kind":"npc","ids":[247001],"name":"Saturated Remnant","coords":[],"source":{"wiki":{"page":"Saturated Remnant","revid":6932711}}},
+{"key":"Seeking Remnant","kind":"npc","ids":[247003],"name":"Seeking Remnant","coords":[],"source":{"wiki":{"page":"Seeking Remnant","revid":6932716}}},
+{"key":"Atrexis the Grave Knight","kind":"npc","ids":[247126],"name":"Atrexis the Grave Knight","coords":[],"source":{"wiki":{"page":"Atrexis the Grave Knight","revid":6952377}}},
+{"key":"Daniel (Forever)","kind":"npc","ids":[247229],"name":"Daniel","coords":[{"map":1429,"x":49.5,"y":40.7,"exact_version":true,"via":"location"}],"source":{"wiki":{"page":"Daniel (Forever)","revid":6967405}}},
+{"key":"Blixie Fitzwink","kind":"npc","ids":[248248],"name":"Blixie Fitzwink","coords":[],"source":{"wiki":{"page":"Blixie Fitzwink","revid":6967045}}},
+{"key":"Ormin Pelford","kind":"npc","ids":[248265],"name":"Ormin Pelford","coords":[{"map":1429,"x":76.5,"y":71.9,"exact_version":true,"via":"location"}],"source":{"wiki":{"page":"Ormin Pelford","revid":6931019}}},
+{"key":"Lumina Windsinger","kind":"npc","ids":[248755,259620],"name":"Lumina Windsinger","coords":[{"map":1421,"x":65.6,"y":23.4,"exact_version":true,"via":"lead"},{"map":1421,"x":43.2,"y":41.0,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Lumina Windsinger","revid":6963525}}},
+{"key":"Trevan Rol","kind":"npc","ids":[248840],"name":"Trevan Rol","coords":[{"map":1421,"x":43.4,"y":41.0,"exact_version":true,"via":"location"}],"source":{"wiki":{"page":"Trevan Rol","revid":6963537}}},
+{"key":"Yala Windwatcher","kind":"npc","ids":[249363],"name":"Yala Windwatcher","coords":[{"map":2521,"x":47.3,"y":21.9,"exact_version":false,"via":"location"}],"source":{"wiki":{"page":"Yala Windwatcher","revid":6880820}}},
+{"key":"Odd Child","kind":"npc","ids":[249713],"name":"Odd Child","coords":[],"source":{"wiki":{"page":"Odd Child","revid":6949960}}}
+ ]
+}

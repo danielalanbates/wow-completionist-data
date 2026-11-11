@@ -1,0 +1,10 @@
+{
+ "flavor": "forever",
+ "kind": "npcs",
+ "bucket": "0180000-0189999",
+ "count": 2,
+ "records": [
+{"key":"Bolvar Fordragon","kind":"npc","ids":[184079],"name":"Bolvar Fordragon","coords":[],"source":{"wiki":{"page":"Bolvar Fordragon","revid":6939395}}},
+{"key":"Avelina Lilly","kind":"npc","ids":[185333],"name":"Avelina Lilly","coords":[{"map":1421,"x":63.6,"y":65.6,"exact_version":false,"via":"location"}],"source":{"wiki":{"page":"Avelina Lilly","revid":6898767}}}
+ ]
+}
