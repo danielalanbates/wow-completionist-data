@@ -83,6 +83,7 @@ class Addon:
                 sys.exit(f"addon input missing: {p.relative_to(self.root) if p.is_relative_to(self.root) else p} "
                          f"(run the addon's tools/wiki pipeline first, see docs/HANDOFF.md)")
         sys.path.insert(0, str(self.wiki_dir))
+        sys.dont_write_bytecode = True   # no __pycache__ files inside the addon checkout
         import gen_wiki_guides  # noqa: E402  (imports wikimaps, gen_spine)
         import wikimaps  # noqa: E402
         import wikitext  # noqa: E402
