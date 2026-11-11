@@ -31,7 +31,7 @@
 {"key":"Fallen Kelp Bud","kind":"object","ids":[325912],"name":"Fallen Kelp Bud","coords":[],"source":{"wiki":{"page":"Fallen Kelp Bud","revid":6665987}}},
 {"key":"Poisonous Spiral Leaf","kind":"object","ids":[325914],"name":"Poisonous Spiral Leaf","coords":[],"source":{"wiki":{"page":"Poisonous Spiral Leaf","revid":5774629}}},
 {"key":"Golden Cogpaste","kind":"object","ids":[325976],"name":"Golden Cogpaste","coords":[],"source":{"wiki":{"page":"Golden Cogpaste","revid":6091540}}},
-{"key":"Void Cache","kind":"object","ids":[326026],"name":"Void Cache","coords":[{"map":1355,"x":56.0,"y":15.0,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Void Cache","revid":5794039}}},
+{"key":"Void Cache","kind":"object","ids":[326026],"name":"Void Cache","coords":[{"map":1355,"x":56.0,"y":15.0,"exact_version":true,"via":"lead","read_as":"retail","read_by":"zone-default","confidence":"medium"}],"source":{"wiki":{"page":"Void Cache","revid":5794039}}},
 {"key":"Recyclerizer DX-82","kind":"object","ids":[326027],"name":"Recyclerizer DX-82","coords":[],"source":{"wiki":{"page":"Recyclerizer DX-82","revid":5778184}}},
 {"key":"Azerite Weapons Cache","kind":"object","ids":[326393],"name":"Azerite Weapons Cache","coords":[],"source":{"wiki":{"page":"Azerite Weapons Cache","revid":6896322}}},
 {"key":"Catapult (Exile's Reach)","kind":"object","ids":[326651],"name":"Catapult","coords":[],"source":{"wiki":{"page":"Catapult (Exile's Reach)","revid":5791079}}},

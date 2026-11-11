@@ -4,10 +4,10 @@
  "bucket": "0020000-0029999",
  "count": 5,
  "records": [
-{"key":"Loose Dirt","kind":"object","ids":[20985],"name":"Loose Dirt","coords":[{"map":70,"x":55.4,"y":26.0,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Loose Dirt","revid":5644789}}},
-{"key":"Black Shield","kind":"object","ids":[20992],"name":"Black Shield","coords":[{"map":70,"x":29.6,"y":48.6,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Black Shield","revid":5640407}}},
-{"key":"Hoofprints","kind":"object","ids":[21015],"name":"Hoofprints","coords":[{"map":70,"x":29.7,"y":47.7,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Hoofprints","revid":5640409}}},
-{"key":"Theramore Guard Badge","kind":"object","ids":[21042],"name":"Theramore Guard Badge","coords":[{"map":70,"x":29.8,"y":48.2,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Theramore Guard Badge","revid":5616672}}},
-{"key":"Yuriv's Tombstone","kind":"object","ids":[24776],"name":"Yuriv's Tombstone","coords":[{"map":21,"x":44.2,"y":42.6,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Yuriv's Tombstone","revid":6519935}}}
+{"key":"Loose Dirt","kind":"object","ids":[20985],"name":"Loose Dirt","coords":[{"map":70,"x":55.4,"y":26.0,"exact_version":true,"via":"lead","read_as":"retail","read_by":"zone-default","confidence":"medium"}],"source":{"wiki":{"page":"Loose Dirt","revid":5644789}}},
+{"key":"Black Shield","kind":"object","ids":[20992],"name":"Black Shield","coords":[{"map":70,"x":29.6,"y":48.6,"exact_version":true,"via":"lead","read_as":"retail","read_by":"zone-default","confidence":"medium"}],"source":{"wiki":{"page":"Black Shield","revid":5640407}}},
+{"key":"Hoofprints","kind":"object","ids":[21015],"name":"Hoofprints","coords":[{"map":70,"x":29.7,"y":47.7,"exact_version":true,"via":"lead","read_as":"retail","read_by":"zone-default","confidence":"medium"}],"source":{"wiki":{"page":"Hoofprints","revid":5640409}}},
+{"key":"Theramore Guard Badge","kind":"object","ids":[21042],"name":"Theramore Guard Badge","coords":[{"map":70,"x":29.8,"y":48.2,"exact_version":true,"via":"lead","read_as":"retail","read_by":"zone-default","confidence":"medium"}],"source":{"wiki":{"page":"Theramore Guard Badge","revid":5616672}}},
+{"key":"Yuriv's Tombstone","kind":"object","ids":[24776],"name":"Yuriv's Tombstone","coords":[{"map":21,"x":44.2,"y":42.6,"exact_version":true,"via":"lead","read_as":"retail","read_by":"zone-default","confidence":"low"}],"source":{"wiki":{"page":"Yuriv's Tombstone","revid":6519935}}}
  ]
 }

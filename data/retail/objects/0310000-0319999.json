@@ -9,14 +9,14 @@
 {"key":"Lamp (Quel'Danas)","kind":"object","ids":[310636],"name":"Lamp","coords":[],"source":{"wiki":{"page":"Lamp (Quel'Danas)","revid":6649681}}},
 {"key":"Molten Metal","kind":"object","ids":[310658],"name":"Molten Metal","coords":[],"source":{"wiki":{"page":"Molten Metal","revid":6265471}}},
 {"key":"Old Lock","kind":"object","ids":[310663],"name":"Old Lock","coords":[],"source":{"wiki":{"page":"Old Lock","revid":6266436}}},
-{"key":"Loose Mud","kind":"object","ids":[310664],"name":"Loose Mud","coords":[{"map":37,"x":33.0,"y":64.0,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Loose Mud","revid":5768731}}},
-{"key":"Muddy Tracks","kind":"object","ids":[310665],"name":"Muddy Tracks","coords":[{"map":37,"x":35.0,"y":63.0,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Muddy Tracks","revid":5768733}}},
-{"key":"Ripped Webbing","kind":"object","ids":[310671],"name":"Ripped Webbing","coords":[{"map":49,"x":26.0,"y":65.0,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Ripped Webbing","revid":5768747}}},
+{"key":"Loose Mud","kind":"object","ids":[310664],"name":"Loose Mud","coords":[{"map":37,"x":33.0,"y":64.0,"exact_version":true,"via":"lead","read_as":"retail","read_by":"zone-default","confidence":"medium"}],"source":{"wiki":{"page":"Loose Mud","revid":5768731}}},
+{"key":"Muddy Tracks","kind":"object","ids":[310665],"name":"Muddy Tracks","coords":[{"map":37,"x":35.0,"y":63.0,"exact_version":true,"via":"lead","read_as":"retail","read_by":"zone-default","confidence":"medium"}],"source":{"wiki":{"page":"Muddy Tracks","revid":5768733}}},
+{"key":"Ripped Webbing","kind":"object","ids":[310671],"name":"Ripped Webbing","coords":[{"map":49,"x":26.0,"y":65.0,"exact_version":true,"via":"lead","read_as":"retail","read_by":"zone-default","confidence":"low"}],"source":{"wiki":{"page":"Ripped Webbing","revid":5768747}}},
 {"key":"Spy Gear","kind":"object","ids":[310747],"name":"Spy Gear","coords":[],"source":{"wiki":{"page":"Spy Gear","revid":6766693}}},
 {"key":"Bwondsamdi's Death Gate to Icecrown","kind":"object","ids":[311151],"name":"Bwondsamdi's Death Gate to Icecrown","coords":[],"source":{"wiki":{"page":"Bwondsamdi's Death Gate to Icecrown","revid":5793975}}},
 {"key":"Ancient Tablet (Dun Morogh)","kind":"object","ids":[311155],"name":"Ancient Tablet","coords":[],"source":{"wiki":{"page":"Ancient Tablet (Dun Morogh)","revid":6841735}}},
 {"key":"Bwondsamdi's Death Gate","kind":"object","ids":[311159],"name":"Bwondsamdi's Death Gate","coords":[],"source":{"wiki":{"page":"Bwondsamdi's Death Gate","revid":5793978}}},
-{"key":"Spider Ichor (object)","kind":"object","ids":[311206],"name":"Spider Ichor","coords":[{"map":49,"x":29.0,"y":68.0,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Spider Ichor (object)","revid":6655681}}},
+{"key":"Spider Ichor (object)","kind":"object","ids":[311206],"name":"Spider Ichor","coords":[{"map":49,"x":29.0,"y":68.0,"exact_version":true,"via":"lead","read_as":"retail","read_by":"zone-default","confidence":"low"}],"source":{"wiki":{"page":"Spider Ichor (object)","revid":6655681}}},
 {"key":"Xal'atath, Blade of the Black Empire (quest item)","kind":"object","ids":[311218],"name":"Xal'atath, Blade of the Black Empire","coords":[],"source":{"wiki":{"page":"Xal'atath, Blade of the Black Empire (quest item)","revid":5853169}}},
 {"key":"Bot Scrambler","kind":"object","ids":[311583],"name":"Bot Scrambler","coords":[],"source":{"wiki":{"page":"Bot Scrambler","revid":5779702}}},
 {"key":"Treant Sapling (Darkshore)","kind":"object","ids":[312045],"name":"Treant Sapling","coords":[],"source":{"wiki":{"page":"Treant Sapling (Darkshore)","revid":5774092}}},
@@ -32,9 +32,9 @@
 {"key":"Prototype Arcane Engine","kind":"object","ids":[316412],"name":"Prototype Arcane Engine","coords":[],"source":{"wiki":{"page":"Prototype Arcane Engine","revid":5787207}}},
 {"key":"Soul Gem (Darkshore)","kind":"object","ids":[316703],"name":"Soul Gem","coords":[],"source":{"wiki":{"page":"Soul Gem (Darkshore)","revid":6726058}}},
 {"key":"Heavy Lumber","kind":"object","ids":[316821],"name":"Heavy Lumber","coords":[],"source":{"wiki":{"page":"Heavy Lumber","revid":5786403}}},
-{"key":"Buzzbox 854","kind":"object","ids":[319207],"name":"Buzzbox 854","coords":[{"map":62,"x":55.6,"y":23.9,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Buzzbox 854","revid":6791363}}},
-{"key":"Buzzbox 111","kind":"object","ids":[319208],"name":"Buzzbox 111","coords":[{"map":62,"x":41.3,"y":47.6,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Buzzbox 111","revid":6791364}}},
-{"key":"Buzzbox 627","kind":"object","ids":[319209],"name":"Buzzbox 627","coords":[{"map":62,"x":36.9,"y":65.5,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Buzzbox 627","revid":6791365}}},
-{"key":"Buzzbox 456","kind":"object","ids":[319210],"name":"Buzzbox 456","coords":[{"map":62,"x":40.8,"y":81.2,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Buzzbox 456","revid":5771770}}}
+{"key":"Buzzbox 854","kind":"object","ids":[319207],"name":"Buzzbox 854","coords":[{"map":62,"x":55.6,"y":23.9,"exact_version":true,"via":"lead","read_as":"retail","read_by":"zone-default","confidence":"low"}],"source":{"wiki":{"page":"Buzzbox 854","revid":6791363}}},
+{"key":"Buzzbox 111","kind":"object","ids":[319208],"name":"Buzzbox 111","coords":[{"map":62,"x":41.3,"y":47.6,"exact_version":true,"via":"lead","read_as":"retail","read_by":"zone-default","confidence":"low"}],"source":{"wiki":{"page":"Buzzbox 111","revid":6791364}}},
+{"key":"Buzzbox 627","kind":"object","ids":[319209],"name":"Buzzbox 627","coords":[{"map":62,"x":36.9,"y":65.5,"exact_version":true,"via":"lead","read_as":"retail","read_by":"zone-default","confidence":"low"}],"source":{"wiki":{"page":"Buzzbox 627","revid":6791365}}},
+{"key":"Buzzbox 456","kind":"object","ids":[319210],"name":"Buzzbox 456","coords":[{"map":62,"x":40.8,"y":81.2,"exact_version":true,"via":"lead","read_as":"retail","read_by":"zone-default","confidence":"low"}],"source":{"wiki":{"page":"Buzzbox 456","revid":5771770}}}
  ]
 }

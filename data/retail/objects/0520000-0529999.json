@@ -4,11 +4,11 @@
  "bucket": "0520000-0529999",
  "count": 6,
  "records": [
-{"key":"Bounty: Liberation of Undermine","kind":"object","ids":[525434],"name":"Bounty: Liberation of Undermine","coords":[{"map":2339,"x":52.5,"y":45.9,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Bounty: Liberation of Undermine","revid":6600275}}},
-{"key":"Memorial Plaque (Eversong Woods)","kind":"object","ids":[526903],"name":"Memorial Plaque","coords":[{"map":94,"x":48.0,"y":88.2,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Memorial Plaque (Eversong Woods)","revid":6681302}}},
+{"key":"Bounty: Liberation of Undermine","kind":"object","ids":[525434],"name":"Bounty: Liberation of Undermine","coords":[{"map":2339,"x":52.5,"y":45.9,"exact_version":true,"via":"lead","read_as":"retail","read_by":"zone-default","confidence":"medium"}],"source":{"wiki":{"page":"Bounty: Liberation of Undermine","revid":6600275}}},
+{"key":"Memorial Plaque (Eversong Woods)","kind":"object","ids":[526903],"name":"Memorial Plaque","coords":[{"map":94,"x":48.0,"y":88.2,"exact_version":true,"via":"lead","read_as":"retail","read_by":"zone-default","confidence":"low"}],"source":{"wiki":{"page":"Memorial Plaque (Eversong Woods)","revid":6681302}}},
 {"key":"Basket of Spell Reagents","kind":"object","ids":[527363],"name":"Basket of Spell Reagents","coords":[],"source":{"wiki":{"page":"Basket of Spell Reagents","revid":6653477}}},
 {"key":"Thrumming Amulet","kind":"object","ids":[527364],"name":"Thrumming Amulet","coords":[],"source":{"wiki":{"page":"Thrumming Amulet","revid":6653476}}},
 {"key":"Arcane Sword","kind":"object","ids":[527365],"name":"Arcane Sword","coords":[],"source":{"wiki":{"page":"Arcane Sword","revid":6653517}}},
-{"key":"Ethereal Voidforged Container","kind":"object","ids":[527414],"name":"Ethereal Voidforged Container","coords":[{"map":2371,"x":52.1,"y":68.4,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Ethereal Voidforged Container","revid":6450582}}}
+{"key":"Ethereal Voidforged Container","kind":"object","ids":[527414],"name":"Ethereal Voidforged Container","coords":[{"map":2371,"x":52.1,"y":68.4,"exact_version":true,"via":"lead","read_as":"retail","read_by":"zone-default","confidence":"medium"}],"source":{"wiki":{"page":"Ethereal Voidforged Container","revid":6450582}}}
  ]
 }

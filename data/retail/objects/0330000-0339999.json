@@ -23,7 +23,7 @@
 {"key":"Korinna's Allaying Crook","kind":"object","ids":[335637],"name":"Korinna's Allaying Crook","coords":[],"source":{"wiki":{"page":"Korinna's Allaying Crook","revid":5788501}}},
 {"key":"Compendium of Arrival","kind":"object","ids":[335697],"name":"Compendium of Arrival","coords":[],"source":{"wiki":{"page":"Compendium of Arrival","revid":6158648}}},
 {"key":"Pure Thought Vesper","kind":"object","ids":[335698],"name":"Pure Thought Vesper","coords":[],"source":{"wiki":{"page":"Pure Thought Vesper","revid":6159277}}},
-{"key":"Adrima's Lily","kind":"object","ids":[336680],"name":"Adrima's Lily","coords":[{"map":1533,"x":54.0,"y":79.5,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Adrima's Lily","revid":6665885}}},
+{"key":"Adrima's Lily","kind":"object","ids":[336680],"name":"Adrima's Lily","coords":[{"map":1533,"x":54.0,"y":79.5,"exact_version":true,"via":"lead","read_as":"retail","read_by":"zone-default","confidence":"medium"}],"source":{"wiki":{"page":"Adrima's Lily","revid":6665885}}},
 {"key":"Depleted Wildseed","kind":"object","ids":[337092],"name":"Depleted Wildseed","coords":[],"source":{"wiki":{"page":"Depleted Wildseed","revid":6776591}}},
 {"key":"The Eternal Flame","kind":"object","ids":[337094],"name":"The Eternal Flame","coords":[],"source":{"wiki":{"page":"The Eternal Flame","revid":6159272}}},
 {"key":"Crate of Ritual Vestments","kind":"object","ids":[338487],"name":"Crate of Ritual Vestments","coords":[],"source":{"wiki":{"page":"Crate of Ritual Vestments","revid":6159326}}},

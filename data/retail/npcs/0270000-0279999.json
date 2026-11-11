@@ -4,8 +4,8 @@
  "bucket": "0270000-0279999",
  "count": 3,
  "records": [
-{"key":"Calder Gray","kind":"npc","ids":[270038],"name":"Calder Gray","coords":[{"map":199,"x":42.6,"y":70.2,"exact_version":true,"via":"npclocations"},{"map":241,"x":51.0,"y":61.6,"exact_version":true,"via":"npclocations"},{"map":241,"x":51.0,"y":57.0,"exact_version":true,"via":"npclocations"}],"source":{"wiki":{"page":"Calder Gray","revid":6913253}}},
+{"key":"Calder Gray","kind":"npc","ids":[270038],"name":"Calder Gray","coords":[{"map":199,"x":42.6,"y":70.2,"exact_version":true,"via":"npclocations","read_as":"retail","read_by":"check","confidence":"high","check":{"against":"QuestPOIBlob","build":"wow 12.1.5.70783","id":49952,"yards":1,"quest":24619}},{"map":241,"x":51.0,"y":61.6,"exact_version":true,"via":"npclocations","read_as":"retail","read_by":"zone-default","confidence":"medium"},{"map":241,"x":51.0,"y":57.0,"exact_version":true,"via":"npclocations","read_as":"retail","read_by":"zone-default","confidence":"medium"}],"source":{"wiki":{"page":"Calder Gray","revid":6913253}}},
 {"key":"Seh'ka the Sturdy","kind":"npc","ids":[270845],"name":"Seh'ka the Sturdy","coords":[],"source":{"wiki":{"page":"Seh'ka the Sturdy","revid":6872181}}},
-{"key":"Timothy Jones","kind":"npc","ids":[275350],"name":"Timothy Jones","coords":[{"map":41,"x":40.8,"y":34.5,"exact_version":true,"via":"location"}],"source":{"wiki":{"page":"Timothy Jones","revid":6913674}}}
+{"key":"Timothy Jones","kind":"npc","ids":[275350],"name":"Timothy Jones","coords":[{"map":41,"x":40.8,"y":34.5,"exact_version":true,"via":"location","read_as":"retail","read_by":"default","confidence":"medium"}],"source":{"wiki":{"page":"Timothy Jones","revid":6913674}}}
  ]
 }

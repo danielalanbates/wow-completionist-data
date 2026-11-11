@@ -7,7 +7,7 @@
 {"key":"Archival Repository","kind":"object","ids":[432948],"name":"Archival Repository","coords":[],"source":{"wiki":{"page":"Archival Repository","revid":6634315}}},
 {"key":"Convenient Grapnel","kind":"object","ids":[433682],"name":"Convenient Grapnel","coords":[],"source":{"wiki":{"page":"Convenient Grapnel","revid":6635538}}},
 {"key":"Pottery Jar","kind":"object","ids":[433922],"name":"Pottery Jar","coords":[],"source":{"wiki":{"page":"Pottery Jar","revid":6634332}}},
-{"key":"Illuminated Footlocker","kind":"object","ids":[437211],"name":"Illuminated Footlocker","coords":[{"map":2215,"x":58.4,"y":27.2,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Illuminated Footlocker","revid":6638455}}},
+{"key":"Illuminated Footlocker","kind":"object","ids":[437211],"name":"Illuminated Footlocker","coords":[{"map":2215,"x":58.4,"y":27.2,"exact_version":true,"via":"lead","read_as":"retail","read_by":"zone-default","confidence":"low"}],"source":{"wiki":{"page":"Illuminated Footlocker","revid":6638455}}},
 {"key":"Horde Banner (Dornogal)","kind":"object","ids":[437550],"name":"Horde Banner","coords":[],"source":{"wiki":{"page":"Horde Banner (Dornogal)","revid":6637252}}},
 {"key":"Alliance Banner (Dornogal)","kind":"object","ids":[437551],"name":"Alliance Banner","coords":[],"source":{"wiki":{"page":"Alliance Banner (Dornogal)","revid":6637241}}}
  ]

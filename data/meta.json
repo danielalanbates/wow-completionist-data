@@ -1,5 +1,5 @@
 {
- "schema_version": 1,
+ "schema_version": 2,
  "generator": "tools/build_db.py export",
  "flavors": {
   "era": "Classic Era (1.15.x)",
@@ -13,7 +13,7 @@
    "site": "https://warcraft.wiki.gg",
    "licence": "CC BY-SA 4.0",
    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "pages_used": 62770,
+   "pages_used": 62924,
    "pages_without_revid": 0,
    "oldest_revision": "2019-08-26T02:44:06Z",
    "newest_revision": "2026-11-07T23:35:01Z"
@@ -22,21 +22,23 @@
    "era": {
     "build": "wow_classic_era 1.15.9.70576",
     "tables": [
-     "QuestV2"
+     "QuestV2",
+     "TaxiNodes"
     ],
     "maps": {
      "tables": "UiMap + UiMapAssignment",
-     "build": "1.15.7.61582"
+     "build": "1.15.9.70576"
     }
    },
    "tbc": {
     "build": "wow_anniversary 2.5.6.70577",
     "tables": [
-     "QuestV2"
+     "QuestV2",
+     "TaxiNodes"
     ],
     "maps": {
      "tables": "UiMap + UiMapAssignment",
-     "build": "2.5.6.69110"
+     "build": "2.5.6.70577"
     }
    },
    "mop": {
@@ -46,11 +48,12 @@
      "Achievement_Category",
      "Criteria",
      "CriteriaTree",
-     "QuestV2"
+     "QuestV2",
+     "TaxiNodes"
     ],
     "maps": {
      "tables": "UiMap + UiMapAssignment",
-     "build": "5.5.4.69383"
+     "build": "5.5.4.70631"
     }
    },
    "retail": {
@@ -64,17 +67,19 @@
      "QuestObjective",
      "QuestPOIBlob",
      "QuestPOIPoint",
-     "QuestV2"
+     "QuestV2",
+     "TaxiNodes"
     ],
     "maps": {
      "tables": "UiMap + UiMapAssignment",
-     "build": "12.1.0.69382"
+     "build": "12.1.5.70783"
     }
    },
    "forever": {
     "build": "wowf 1.60.1.70790",
     "tables": [
-     "QuestV2"
+     "QuestV2",
+     "TaxiNodes"
     ],
     "maps": {
      "tables": "UiMap + UiMapAssignment",
@@ -83,20 +88,2136 @@
    }
   }
  },
+ "coordinate_reading": {
+  "rule": "docs/SCHEMA.md#coordinates; tools/cgdata/evidence.py",
+  "checked_against": {
+   "QuestPOIBlob": "wow 12.1.5.70783",
+   "TaxiNodes": {
+    "era": "wow_classic_era 1.15.9.70576",
+    "tbc": "wow_anniversary 2.5.6.70577",
+    "mop": "wow_classic 5.5.4.70631",
+    "retail": "wow 12.1.5.70783",
+    "forever": "wowf 1.60.1.70790"
+   }
+  },
+  "npc_pages_with_turnin_pins": 3670,
+  "flight_master_pages": 226,
+  "tolerance_yd": 50.0,
+  "zone_min": 3,
+  "conflict_share": 0.25,
+  "npc_page_rows": {
+   "untagged_rows_with_evidence": 2448,
+   "verdicts": {
+    "classic": 26,
+    "conflict": 248,
+    "either": 245,
+    "no-evidence": 719,
+    "retail": 1210
+   },
+   "zones_read_as_classic": [
+    "arathihighlands",
+    "dunmorogh"
+   ],
+   "zones_mostly_conflicting": [
+    "abyssaldepths",
+    "ardenweald",
+    "azsuna",
+    "darkshore",
+    "dazaralor",
+    "desolace",
+    "dreadwastes",
+    "emeralddream",
+    "eversongwoods",
+    "felwood",
+    "gilneas",
+    "gilneascity",
+    "gorgrond",
+    "hallowfall",
+    "korthia",
+    "ohnahranplains",
+    "orgrimmar",
+    "silverpineforest",
+    "suramar",
+    "thaldraszus",
+    "thehinterlands",
+    "thewakingshores",
+    "valeofeternalblossoms",
+    "valleyofthefourwinds",
+    "valsharah"
+   ],
+   "zones_fields": [
+    "checked",
+    "retail",
+    "classic",
+    "conflict"
+   ],
+   "zones": {
+    "abyssaldepths": [
+     5,
+     0,
+     0,
+     2
+    ],
+    "amirdrassil": [
+     3,
+     0,
+     0,
+     2
+    ],
+    "antoranwastes": [
+     1,
+     0,
+     0,
+     0
+    ],
+    "arathihighlands": [
+     14,
+     6,
+     7,
+     1
+    ],
+    "arcantina": [
+     3,
+     0,
+     0,
+     0
+    ],
+    "ardenweald": [
+     18,
+     0,
+     0,
+     12
+    ],
+    "ashenvale": [
+     51,
+     0,
+     0,
+     4
+    ],
+    "azjkahet": [
+     12,
+     0,
+     0,
+     2
+    ],
+    "azshara": [
+     36,
+     32,
+     0,
+     4
+    ],
+    "azsuna": [
+     17,
+     0,
+     0,
+     5
+    ],
+    "azuremystisle": [
+     28,
+     0,
+     0,
+     0
+    ],
+    "badlands": [
+     11,
+     10,
+     0,
+     1
+    ],
+    "bastion": [
+     1,
+     0,
+     0,
+     0
+    ],
+    "bladesedgemountains": [
+     21,
+     0,
+     0,
+     3
+    ],
+    "blastedlands": [
+     9,
+     7,
+     0,
+     2
+    ],
+    "bloodmystisle": [
+     8,
+     0,
+     0,
+     0
+    ],
+    "boralus": [
+     7,
+     0,
+     0,
+     1
+    ],
+    "boreantundra": [
+     37,
+     0,
+     0,
+     1
+    ],
+    "brokenshore": [
+     7,
+     0,
+     0,
+     1
+    ],
+    "burningsteppes": [
+     16,
+     11,
+     1,
+     4
+    ],
+    "campnarache": [
+     1,
+     0,
+     0,
+     0
+    ],
+    "cavernsoftime": [
+     1,
+     0,
+     0,
+     1
+    ],
+    "cityofthreads": [
+     2,
+     0,
+     0,
+     0
+    ],
+    "coldridgevalley": [
+     1,
+     0,
+     0,
+     1
+    ],
+    "crystalsongforest": [
+     1,
+     0,
+     0,
+     0
+    ],
+    "darkshore": [
+     21,
+     14,
+     0,
+     7
+    ],
+    "darnassus": [
+     2,
+     0,
+     0,
+     0
+    ],
+    "dazaralor": [
+     8,
+     0,
+     0,
+     5
+    ],
+    "deadwindpass": [
+     2,
+     0,
+     0,
+     0
+    ],
+    "deepholm": [
+     14,
+     0,
+     0,
+     2
+    ],
+    "desolace": [
+     14,
+     0,
+     0,
+     4
+    ],
+    "dornogal": [
+     4,
+     0,
+     0,
+     0
+    ],
+    "dragonblight": [
+     35,
+     0,
+     0,
+     2
+    ],
+    "dreadscarrift": [
+     1,
+     0,
+     0,
+     0
+    ],
+    "dreadwastes": [
+     9,
+     0,
+     0,
+     3
+    ],
+    "drustvar": [
+     3,
+     0,
+     0,
+     1
+    ],
+    "dunmorogh": [
+     11,
+     3,
+     6,
+     2
+    ],
+    "durotar": [
+     30,
+     0,
+     0,
+     3
+    ],
+    "duskwood": [
+     12,
+     0,
+     0,
+     1
+    ],
+    "dustwallowmarsh": [
+     11,
+     0,
+     0,
+     2
+    ],
+    "easternplaguelands": [
+     9,
+     7,
+     0,
+     2
+    ],
+    "echoisles": [
+     2,
+     0,
+     0,
+     0
+    ],
+    "elwynnforest": [
+     20,
+     0,
+     0,
+     1
+    ],
+    "emeralddream": [
+     20,
+     0,
+     0,
+     9
+    ],
+    "eredath": [
+     1,
+     0,
+     0,
+     0
+    ],
+    "eversongwoods": [
+     9,
+     0,
+     0,
+     8
+    ],
+    "exilesreach": [
+     5,
+     0,
+     0,
+     0
+    ],
+    "eyeofazshara": [
+     1,
+     0,
+     0,
+     0
+    ],
+    "felwood": [
+     10,
+     6,
+     1,
+     3
+    ],
+    "feralas": [
+     23,
+     0,
+     0,
+     3
+    ],
+    "founderspoint": [
+     8,
+     0,
+     0,
+     0
+    ],
+    "frostfireridge": [
+     1,
+     0,
+     0,
+     0
+    ],
+    "frostwall": [
+     1,
+     0,
+     0,
+     0
+    ],
+    "ghostlands": [
+     23,
+     0,
+     0,
+     0
+    ],
+    "gilneas": [
+     9,
+     0,
+     0,
+     6
+    ],
+    "gilneascity": [
+     6,
+     0,
+     0,
+     2
+    ],
+    "gorgrond": [
+     13,
+     0,
+     0,
+     5
+    ],
+    "grizzlyhills": [
+     27,
+     0,
+     0,
+     0
+    ],
+    "halloftheguardian": [
+     1,
+     0,
+     0,
+     0
+    ],
+    "hallowfall": [
+     11,
+     0,
+     0,
+     3
+    ],
+    "harandar": [
+     1,
+     0,
+     0,
+     0
+    ],
+    "heartoftheforest": [
+     2,
+     0,
+     0,
+     1
+    ],
+    "helheim": [
+     1,
+     0,
+     0,
+     0
+    ],
+    "hellfirepeninsula": [
+     27,
+     0,
+     0,
+     2
+    ],
+    "highmountain": [
+     25,
+     0,
+     0,
+     0
+    ],
+    "hillsbradfoothills": [
+     3,
+     3,
+     0,
+     0
+    ],
+    "howlingfjord": [
+     35,
+     0,
+     0,
+     1
+    ],
+    "icecrown": [
+     17,
+     0,
+     0,
+     3
+    ],
+    "ironforge": [
+     4,
+     0,
+     0,
+     0
+    ],
+    "isleofdorn": [
+     3,
+     0,
+     0,
+     1
+    ],
+    "isleofqueldanas": [
+     1,
+     0,
+     0,
+     1
+    ],
+    "karesh": [
+     7,
+     0,
+     0,
+     0
+    ],
+    "kelptharforest": [
+     6,
+     0,
+     0,
+     1
+    ],
+    "kezan": [
+     2,
+     0,
+     0,
+     0
+    ],
+    "korthia": [
+     4,
+     0,
+     0,
+     2
+    ],
+    "krasarangwilds": [
+     8,
+     0,
+     0,
+     2
+    ],
+    "krokuun": [
+     4,
+     0,
+     0,
+     0
+    ],
+    "kunlaisummit": [
+     9,
+     0,
+     0,
+     0
+    ],
+    "lochmodan": [
+     6,
+     0,
+     0,
+     0
+    ],
+    "lunarfall": [
+     2,
+     0,
+     0,
+     0
+    ],
+    "maldraxxus": [
+     16,
+     0,
+     0,
+     2
+    ],
+    "mechagonisland": [
+     11,
+     0,
+     0,
+     0
+    ],
+    "moonglade": [
+     8,
+     0,
+     0,
+     0
+    ],
+    "mounthyjal": [
+     19,
+     0,
+     0,
+     4
+    ],
+    "mulgore": [
+     9,
+     2,
+     0,
+     2
+    ],
+    "nagrand": [
+     20,
+     0,
+     0,
+     3
+    ],
+    "nazjatar": [
+     2,
+     0,
+     0,
+     0
+    ],
+    "nazmir": [
+     3,
+     0,
+     0,
+     1
+    ],
+    "netherlighttemple": [
+     2,
+     0,
+     0,
+     0
+    ],
+    "netherstorm": [
+     17,
+     0,
+     0,
+     0
+    ],
+    "newtinkertown": [
+     1,
+     0,
+     0,
+     1
+    ],
+    "northernbarrens": [
+     24,
+     19,
+     1,
+     4
+    ],
+    "northernstranglethorn": [
+     6,
+     0,
+     0,
+     1
+    ],
+    "northshire": [
+     2,
+     0,
+     0,
+     1
+    ],
+    "ohnahranplains": [
+     20,
+     0,
+     0,
+     9
+    ],
+    "orgrimmar": [
+     12,
+     6,
+     1,
+     4
+    ],
+    "oribos": [
+     4,
+     0,
+     0,
+     1
+    ],
+    "plaguelandsthescarletenclave": [
+     2,
+     0,
+     0,
+     1
+    ],
+    "razorwindshores": [
+     7,
+     0,
+     0,
+     0
+    ],
+    "redridgemountains": [
+     7,
+     6,
+     0,
+     1
+    ],
+    "revendreth": [
+     7,
+     0,
+     0,
+     0
+    ],
+    "ruinsofgilneas": [
+     2,
+     0,
+     0,
+     1
+    ],
+    "searinggorge": [
+     5,
+     0,
+     0,
+     1
+    ],
+    "seatoftheprimus": [
+     6,
+     0,
+     0,
+     0
+    ],
+    "shadowglen": [
+     1,
+     0,
+     0,
+     0
+    ],
+    "shadowmoonvalley": [
+     14,
+     0,
+     0,
+     3
+    ],
+    "shattrathcity": [
+     3,
+     0,
+     0,
+     0
+    ],
+    "shimmeringexpanse": [
+     2,
+     0,
+     0,
+     0
+    ],
+    "sholazarbasin": [
+     12,
+     0,
+     0,
+     0
+    ],
+    "silithus": [
+     3,
+     3,
+     0,
+     0
+    ],
+    "silvermooncity": [
+     1,
+     0,
+     0,
+     1
+    ],
+    "silverpineforest": [
+     6,
+     0,
+     0,
+     2
+    ],
+    "sirenisle": [
+     3,
+     0,
+     0,
+     0
+    ],
+    "skyhold": [
+     1,
+     0,
+     0,
+     0
+    ],
+    "southernbarrens": [
+     28,
+     0,
+     0,
+     2
+    ],
+    "spiresofarak": [
+     18,
+     0,
+     0,
+     1
+    ],
+    "stonetalonmountains": [
+     31,
+     26,
+     0,
+     4
+    ],
+    "stormheim": [
+     11,
+     0,
+     0,
+     0
+    ],
+    "stormsongvalley": [
+     8,
+     0,
+     0,
+     1
+    ],
+    "stormwindcity": [
+     22,
+     17,
+     0,
+     5
+    ],
+    "stranglethornvale": [
+     2,
+     0,
+     2,
+     0
+    ],
+    "suramar": [
+     8,
+     0,
+     0,
+     4
+    ],
+    "swampofsorrows": [
+     8,
+     5,
+     0,
+     0
+    ],
+    "talador": [
+     15,
+     0,
+     0,
+     2
+    ],
+    "tanaris": [
+     3,
+     1,
+     0,
+     1
+    ],
+    "tazavesh": [
+     4,
+     0,
+     0,
+     1
+    ],
+    "teldrassil": [
+     11,
+     5,
+     5,
+     1
+    ],
+    "telogrusrift": [
+     1,
+     0,
+     0,
+     1
+    ],
+    "terokkarforest": [
+     11,
+     0,
+     0,
+     0
+    ],
+    "thaldraszus": [
+     9,
+     0,
+     0,
+     5
+    ],
+    "theazurespan": [
+     5,
+     0,
+     0,
+     0
+    ],
+    "thecapeofstranglethorn": [
+     12,
+     0,
+     0,
+     1
+    ],
+    "thedreamgrove": [
+     1,
+     0,
+     0,
+     0
+    ],
+    "theexodar": [
+     1,
+     0,
+     0,
+     0
+    ],
+    "thehinterlands": [
+     7,
+     0,
+     0,
+     3
+    ],
+    "thejadeforest": [
+     11,
+     0,
+     0,
+     0
+    ],
+    "thelostisles": [
+     2,
+     0,
+     0,
+     1
+    ],
+    "themaw": [
+     2,
+     0,
+     0,
+     0
+    ],
+    "theprimalistfuture": [
+     1,
+     0,
+     0,
+     0
+    ],
+    "theringingdeeps": [
+     6,
+     0,
+     0,
+     0
+    ],
+    "thestormpeaks": [
+     28,
+     0,
+     0,
+     3
+    ],
+    "theveiledstair": [
+     1,
+     0,
+     0,
+     0
+    ],
+    "thewakingshores": [
+     10,
+     0,
+     0,
+     3
+    ],
+    "thewanderingisle": [
+     1,
+     0,
+     0,
+     1
+    ],
+    "thousandneedles": [
+     15,
+     0,
+     0,
+     1
+    ],
+    "thunderbluff": [
+     4,
+     0,
+     0,
+     0
+    ],
+    "thundertotem": [
+     1,
+     0,
+     0,
+     0
+    ],
+    "timelessisle": [
+     6,
+     0,
+     0,
+     0
+    ],
+    "tiragardesound": [
+     6,
+     0,
+     0,
+     0
+    ],
+    "tirisfalglades": [
+     13,
+     0,
+     0,
+     2
+    ],
+    "toldagor": [
+     1,
+     0,
+     0,
+     0
+    ],
+    "townlongsteppes": [
+     5,
+     0,
+     0,
+     0
+    ],
+    "trueshotlodge": [
+     1,
+     0,
+     0,
+     0
+    ],
+    "twilighthighlands": [
+     50,
+     0,
+     0,
+     7
+    ],
+    "uldum": [
+     9,
+     0,
+     0,
+     1
+    ],
+    "undercity": [
+     1,
+     0,
+     0,
+     0
+    ],
+    "undermine": [
+     21,
+     0,
+     0,
+     0
+    ],
+    "ungorocrater": [
+     5,
+     0,
+     0,
+     0
+    ],
+    "valdrakken": [
+     9,
+     0,
+     0,
+     1
+    ],
+    "valeofeternalblossoms": [
+     9,
+     0,
+     0,
+     4
+    ],
+    "valleyofthefourwinds": [
+     5,
+     0,
+     0,
+     2
+    ],
+    "valleyoftrials": [
+     1,
+     0,
+     0,
+     0
+    ],
+    "valsharah": [
+     9,
+     0,
+     0,
+     3
+    ],
+    "vashjir": [
+     1,
+     0,
+     0,
+     0
+    ],
+    "voidstorm": [
+     4,
+     0,
+     0,
+     0
+    ],
+    "voldun": [
+     46,
+     0,
+     0,
+     5
+    ],
+    "westernplaguelands": [
+     4,
+     0,
+     0,
+     0
+    ],
+    "westfall": [
+     11,
+     0,
+     0,
+     1
+    ],
+    "wetlands": [
+     10,
+     0,
+     0,
+     0
+    ],
+    "wintergrasp": [
+     2,
+     0,
+     0,
+     0
+    ],
+    "winterspring": [
+     16,
+     15,
+     1,
+     0
+    ],
+    "zangarmarsh": [
+     13,
+     0,
+     0,
+     0
+    ],
+    "zaralekcavern": [
+     5,
+     0,
+     0,
+     0
+    ],
+    "zerethmortis": [
+     8,
+     0,
+     0,
+     0
+    ],
+    "zulaman": [
+     11,
+     0,
+     0,
+     1
+    ],
+    "zuldazar": [
+     7,
+     0,
+     0,
+     1
+    ],
+    "zuldrak": [
+     29,
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  "quest_page_rows": {
+   "untagged_rows_with_evidence": 7759,
+   "verdicts": {
+    "classic": 1,
+    "conflict": 1052,
+    "either": 514,
+    "no-evidence": 585,
+    "retail": 5607
+   },
+   "zones_read_as_classic": [],
+   "zones_mostly_conflicting": [
+    "azjkahet",
+    "darkshore",
+    "deadwindpass",
+    "desolace",
+    "dustwallowmarsh",
+    "echoisles",
+    "emeralddream",
+    "felwood",
+    "feralas",
+    "frostfireridge",
+    "isleofdorn",
+    "shimmeringexpanse",
+    "sinfall",
+    "suramar",
+    "talador",
+    "tanaris",
+    "themaw",
+    "theringingdeeps",
+    "vaultofsouls",
+    "zuldazar"
+   ],
+   "zones_fields": [
+    "checked",
+    "retail",
+    "classic",
+    "conflict"
+   ],
+   "zones": {
+    "abyssaldepths": [
+     1,
+     0,
+     0,
+     1
+    ],
+    "alittlepatience": [
+     1,
+     0,
+     0,
+     0
+    ],
+    "amirdrassil": [
+     26,
+     0,
+     0,
+     4
+    ],
+    "antoranwastes": [
+     3,
+     0,
+     0,
+     1
+    ],
+    "arathihighlands": [
+     2,
+     2,
+     0,
+     0
+    ],
+    "arcantina": [
+     2,
+     0,
+     0,
+     0
+    ],
+    "ardenweald": [
+     166,
+     0,
+     0,
+     37
+    ],
+    "ashenvale": [
+     3,
+     0,
+     0,
+     0
+    ],
+    "azjkahet": [
+     127,
+     0,
+     0,
+     69
+    ],
+    "azmerloth": [
+     9,
+     0,
+     0,
+     0
+    ],
+    "azsuna": [
+     45,
+     0,
+     0,
+     9
+    ],
+    "azuremystisle": [
+     27,
+     0,
+     0,
+     0
+    ],
+    "bastion": [
+     196,
+     0,
+     0,
+     35
+    ],
+    "blastedlands": [
+     53,
+     53,
+     0,
+     0
+    ],
+    "boralus": [
+     1,
+     0,
+     0,
+     0
+    ],
+    "boreantundra": [
+     50,
+     0,
+     0,
+     0
+    ],
+    "brokenisles": [
+     8,
+     0,
+     0,
+     0
+    ],
+    "brokenshore": [
+     23,
+     0,
+     0,
+     1
+    ],
+    "burningsteppes": [
+     90,
+     87,
+     0,
+     3
+    ],
+    "cityofthreads": [
+     30,
+     0,
+     0,
+     6
+    ],
+    "crystalsongforest": [
+     7,
+     0,
+     0,
+     0
+    ],
+    "dalaran": [
+     6,
+     0,
+     0,
+     0
+    ],
+    "darkshore": [
+     11,
+     8,
+     0,
+     3
+    ],
+    "darnassus": [
+     3,
+     2,
+     0,
+     1
+    ],
+    "dazaralor": [
+     4,
+     0,
+     0,
+     1
+    ],
+    "deadwindpass": [
+     10,
+     0,
+     0,
+     3
+    ],
+    "deepholm": [
+     26,
+     0,
+     0,
+     2
+    ],
+    "desolace": [
+     16,
+     0,
+     0,
+     6
+    ],
+    "dornogal": [
+     76,
+     0,
+     0,
+     5
+    ],
+    "dreadscarrift": [
+     2,
+     0,
+     0,
+     0
+    ],
+    "dreadwastes": [
+     173,
+     0,
+     0,
+     23
+    ],
+    "drustvar": [
+     9,
+     0,
+     0,
+     2
+    ],
+    "dunmorogh": [
+     110,
+     104,
+     0,
+     6
+    ],
+    "durotar": [
+     46,
+     0,
+     0,
+     2
+    ],
+    "duskwood": [
+     54,
+     0,
+     0,
+     0
+    ],
+    "dustwallowmarsh": [
+     7,
+     0,
+     0,
+     2
+    ],
+    "echoisles": [
+     13,
+     0,
+     0,
+     4
+    ],
+    "elwynnforest": [
+     15,
+     0,
+     0,
+     0
+    ],
+    "elysianhold": [
+     56,
+     0,
+     0,
+     5
+    ],
+    "emeralddream": [
+     98,
+     0,
+     0,
+     29
+    ],
+    "eredath": [
+     15,
+     0,
+     0,
+     0
+    ],
+    "exilesreach": [
+     53,
+     0,
+     0,
+     5
+    ],
+    "felwood": [
+     7,
+     2,
+     0,
+     2
+    ],
+    "feralas": [
+     7,
+     0,
+     0,
+     4
+    ],
+    "frostfireridge": [
+     51,
+     0,
+     0,
+     13
+    ],
+    "frostwall": [
+     16,
+     0,
+     0,
+     1
+    ],
+    "ghostlands": [
+     64,
+     0,
+     0,
+     0
+    ],
+    "gilneas": [
+     92,
+     0,
+     0,
+     10
+    ],
+    "gilneascity": [
+     31,
+     0,
+     0,
+     0
+    ],
+    "gorgrond": [
+     138,
+     0,
+     0,
+     26
+    ],
+    "greenstonequarry": [
+     2,
+     0,
+     0,
+     1
+    ],
+    "grizzlyhills": [
+     2,
+     0,
+     0,
+     0
+    ],
+    "halloftheguardian": [
+     2,
+     0,
+     0,
+     0
+    ],
+    "hallowfall": [
+     91,
+     0,
+     0,
+     22
+    ],
+    "harandar": [
+     1,
+     0,
+     0,
+     0
+    ],
+    "heartoftheforest": [
+     40,
+     0,
+     0,
+     5
+    ],
+    "hellfirepeninsula": [
+     7,
+     0,
+     0,
+     0
+    ],
+    "highmountain": [
+     4,
+     0,
+     0,
+     0
+    ],
+    "howlingfjord": [
+     2,
+     0,
+     0,
+     0
+    ],
+    "icecrown": [
+     20,
+     0,
+     0,
+     1
+    ],
+    "ironforge": [
+     4,
+     0,
+     0,
+     0
+    ],
+    "isleofdorn": [
+     143,
+     0,
+     0,
+     39
+    ],
+    "isleofthunder": [
+     23,
+     0,
+     0,
+     2
+    ],
+    "karesh": [
+     282,
+     0,
+     0,
+     24
+    ],
+    "kelptharforest": [
+     73,
+     0,
+     0,
+     11
+    ],
+    "kezan": [
+     32,
+     0,
+     0,
+     0
+    ],
+    "korthia": [
+     71,
+     0,
+     0,
+     8
+    ],
+    "krasarangwilds": [
+     76,
+     0,
+     0,
+     5
+    ],
+    "krokuun": [
+     27,
+     0,
+     0,
+     3
+    ],
+    "kunlaisummit": [
+     147,
+     0,
+     0,
+     16
+    ],
+    "lochmodan": [
+     28,
+     0,
+     0,
+     0
+    ],
+    "lunarfall": [
+     12,
+     0,
+     0,
+     0
+    ],
+    "maldraxxus": [
+     221,
+     0,
+     0,
+     40
+    ],
+    "mechagonisland": [
+     1,
+     0,
+     0,
+     0
+    ],
+    "moonglade": [
+     1,
+     0,
+     0,
+     0
+    ],
+    "mounthyjal": [
+     173,
+     0,
+     0,
+     19
+    ],
+    "nagrand": [
+     9,
+     0,
+     0,
+     0
+    ],
+    "nazmir": [
+     9,
+     0,
+     0,
+     0
+    ],
+    "netherstorm": [
+     14,
+     0,
+     0,
+     0
+    ],
+    "newtinkertown": [
+     6,
+     0,
+     0,
+     0
+    ],
+    "northernbarrens": [
+     1,
+     1,
+     0,
+     0
+    ],
+    "northernstranglethorn": [
+     27,
+     0,
+     0,
+     3
+    ],
+    "ohnahranplains": [
+     183,
+     0,
+     0,
+     29
+    ],
+    "orgrimmar": [
+     10,
+     9,
+     0,
+     0
+    ],
+    "oribos": [
+     60,
+     0,
+     0,
+     13
+    ],
+    "prankstershollow": [
+     1,
+     0,
+     0,
+     0
+    ],
+    "redridgemountains": [
+     40,
+     29,
+     0,
+     7
+    ],
+    "revendreth": [
+     129,
+     0,
+     0,
+     24
+    ],
+    "ruinsofgilneas": [
+     14,
+     0,
+     0,
+     1
+    ],
+    "ruinsofkorune": [
+     1,
+     0,
+     0,
+     1
+    ],
+    "seatoftheprimus": [
+     45,
+     0,
+     0,
+     1
+    ],
+    "shadowglen": [
+     14,
+     0,
+     0,
+     0
+    ],
+    "shadowmoonvalley": [
+     3,
+     0,
+     0,
+     1
+    ],
+    "shimmeringexpanse": [
+     18,
+     0,
+     0,
+     5
+    ],
+    "sholazarbasin": [
+     2,
+     0,
+     0,
+     0
+    ],
+    "shrineofsevenstars": [
+     2,
+     0,
+     0,
+     0
+    ],
+    "silverpineforest": [
+     15,
+     0,
+     0,
+     0
+    ],
+    "sinfall": [
+     16,
+     0,
+     0,
+     6
+    ],
+    "sirenisle": [
+     25,
+     0,
+     0,
+     5
+    ],
+    "skyhold": [
+     1,
+     0,
+     0,
+     0
+    ],
+    "southernbarrens": [
+     21,
+     0,
+     0,
+     0
+    ],
+    "spiresofarak": [
+     129,
+     0,
+     0,
+     17
+    ],
+    "stonetalonmountains": [
+     16,
+     15,
+     0,
+     0
+    ],
+    "stormheim": [
+     30,
+     0,
+     0,
+     2
+    ],
+    "stormsongvalley": [
+     20,
+     0,
+     0,
+     5
+    ],
+    "stormwindcity": [
+     34,
+     29,
+     0,
+     5
+    ],
+    "suramar": [
+     35,
+     0,
+     0,
+     9
+    ],
+    "swampofsorrows": [
+     47,
+     20,
+     0,
+     0
+    ],
+    "talador": [
+     128,
+     0,
+     0,
+     33
+    ],
+    "tanaris": [
+     11,
+     7,
+     0,
+     4
+    ],
+    "tazavesh": [
+     43,
+     0,
+     0,
+     2
+    ],
+    "teldrassil": [
+     5,
+     4,
+     1,
+     0
+    ],
+    "telogrusrift": [
+     1,
+     0,
+     0,
+     0
+    ],
+    "thaldraszus": [
+     151,
+     0,
+     0,
+     35
+    ],
+    "theazurespan": [
+     167,
+     0,
+     0,
+     21
+    ],
+    "theblackempire": [
+     1,
+     0,
+     0,
+     0
+    ],
+    "thecapeofstranglethorn": [
+     14,
+     0,
+     0,
+     1
+    ],
+    "thedreamgrove": [
+     3,
+     0,
+     0,
+     1
+    ],
+    "theforgottenvault": [
+     1,
+     0,
+     0,
+     0
+    ],
+    "thegnollwar": [
+     1,
+     0,
+     0,
+     0
+    ],
+    "thehinterlands": [
+     2,
+     0,
+     0,
+     0
+    ],
+    "thejadeforest": [
+     205,
+     0,
+     0,
+     9
+    ],
+    "thelostisles": [
+     11,
+     0,
+     0,
+     0
+    ],
+    "themaw": [
+     69,
+     0,
+     0,
+     18
+    ],
+    "theprimalistfuture": [
+     6,
+     0,
+     0,
+     0
+    ],
+    "theringingdeeps": [
+     147,
+     0,
+     0,
+     85
+    ],
+    "thestormpeaks": [
+     8,
+     0,
+     0,
+     1
+    ],
+    "thewakingshores": [
+     130,
+     0,
+     0,
+     13
+    ],
+    "thousandneedles": [
+     114,
+     0,
+     0,
+     0
+    ],
+    "thundertotem": [
+     1,
+     0,
+     0,
+     0
+    ],
+    "timelessisle": [
+     19,
+     0,
+     0,
+     0
+    ],
+    "tiragardesound": [
+     1,
+     0,
+     0,
+     0
+    ],
+    "tirisfalglades": [
+     78,
+     0,
+     0,
+     2
+    ],
+    "tomboflights": [
+     1,
+     0,
+     0,
+     0
+    ],
+    "townlongsteppes": [
+     117,
+     0,
+     0,
+     9
+    ],
+    "trueshotlodge": [
+     2,
+     0,
+     0,
+     0
+    ],
+    "twilighthighlands": [
+     233,
+     0,
+     0,
+     17
+    ],
+    "uldum": [
+     154,
+     0,
+     0,
+     18
+    ],
+    "umbralhalls": [
+     5,
+     0,
+     0,
+     1
+    ],
+    "undermine": [
+     144,
+     0,
+     0,
+     36
+    ],
+    "valdrakken": [
+     83,
+     0,
+     0,
+     6
+    ],
+    "valeofeternalblossoms": [
+     4,
+     0,
+     0,
+     0
+    ],
+    "valleyofthefourwinds": [
+     116,
+     0,
+     0,
+     7
+    ],
+    "valleyoftrials": [
+     3,
+     0,
+     0,
+     0
+    ],
+    "valsharah": [
+     53,
+     0,
+     0,
+     10
+    ],
+    "vaultofsouls": [
+     8,
+     0,
+     0,
+     5
+    ],
+    "voidscarcavern": [
+     5,
+     0,
+     0,
+     1
+    ],
+    "voidstorm": [
+     6,
+     0,
+     0,
+     0
+    ],
+    "voldun": [
+     3,
+     0,
+     0,
+     0
+    ],
+    "westfall": [
+     37,
+     0,
+     0,
+     2
+    ],
+    "wetlands": [
+     63,
+     0,
+     0,
+     0
+    ],
+    "winterspring": [
+     1,
+     1,
+     0,
+     0
+    ],
+    "zangarmarsh": [
+     6,
+     0,
+     0,
+     0
+    ],
+    "zaralekcavern": [
+     127,
+     0,
+     0,
+     30
+    ],
+    "zerethmortis": [
+     128,
+     0,
+     0,
+     30
+    ],
+    "zulaman": [
+     2,
+     0,
+     0,
+     0
+    ],
+    "zuldazar": [
+     15,
+     0,
+     0,
+     4
+    ]
+   }
+  }
+ },
  "counts": {
   "era": {
-   "quests": 3299,
-   "npcs": 2136,
+   "quests": 3296,
+   "npcs": 2134,
    "objects": 367,
    "achievements": 0,
    "missions": 0,
    "maps": 54,
    "questv2": 4807,
-   "questv2_excluded_by_wiki": 692,
+   "questv2_excluded_by_wiki": 695,
+   "questv2_excluded_ambiguous_id": 3,
    "questv2_without_wiki_page": 816,
+   "faction_twins": 2,
+   "id_conflicts": 23,
    "addon_crosscheck": {
     "addon_flavor_quests": 3299,
-    "addon_only": 0,
+    "addon_only": 3,
+    "addon_only_ambiguous": 3,
     "data_only": 0,
     "prereq_quests": 1622,
     "prereq_same_ids_as_addon": 1621
@@ -104,100 +2225,132 @@
    "prerequisite_split": {
     "prereq_breadcrumb_split": 2,
     "prereq_optional_split": 7,
-    "prereq_multi_group": 22
+    "prereq_multi_group": 20,
+    "prereq_faction_merged": 2,
+    "prereq_link_to_other_page_of_id": 0,
+    "prereq_other_faction_to_own_faction_page": 0,
+    "prereq_other_faction_dropped": 0
    }
   },
   "tbc": {
-   "quests": 5021,
+   "quests": 5018,
    "npcs": 3453,
    "objects": 546,
    "achievements": 0,
    "missions": 0,
    "maps": 182,
    "questv2": 6160,
-   "questv2_excluded_by_wiki": 285,
+   "questv2_excluded_by_wiki": 288,
+   "questv2_excluded_ambiguous_id": 3,
    "questv2_without_wiki_page": 854,
+   "faction_twins": 6,
+   "id_conflicts": 28,
    "addon_crosscheck": {
     "addon_flavor_quests": 5021,
-    "addon_only": 0,
+    "addon_only": 3,
+    "addon_only_ambiguous": 3,
     "data_only": 0,
     "prereq_quests": 2495,
-    "prereq_same_ids_as_addon": 2493
+    "prereq_same_ids_as_addon": 2492
    },
    "prerequisite_split": {
     "prereq_breadcrumb_split": 2,
     "prereq_optional_split": 8,
-    "prereq_multi_group": 40
+    "prereq_multi_group": 38,
+    "prereq_faction_merged": 2,
+    "prereq_link_to_other_page_of_id": 1,
+    "prereq_other_faction_to_own_faction_page": 0,
+    "prereq_other_faction_dropped": 0
    }
   },
   "mop": {
-   "quests": 10562,
-   "npcs": 6787,
+   "quests": 10552,
+   "npcs": 6786,
    "objects": 1035,
    "achievements": 3998,
    "missions": 0,
    "maps": 530,
    "questv2": 17140,
-   "questv2_excluded_by_wiki": 3682,
+   "questv2_excluded_by_wiki": 3692,
+   "questv2_excluded_ambiguous_id": 10,
    "questv2_without_wiki_page": 2896,
+   "faction_twins": 51,
+   "id_conflicts": 65,
    "addon_crosscheck": {
     "addon_flavor_quests": 10562,
-    "addon_only": 0,
+    "addon_only": 10,
+    "addon_only_ambiguous": 10,
     "data_only": 0,
-    "prereq_quests": 6386,
-    "prereq_same_ids_as_addon": 6367
+    "prereq_quests": 6380,
+    "prereq_same_ids_as_addon": 6353
    },
    "prerequisite_split": {
     "prereq_breadcrumb_split": 6,
     "prereq_optional_split": 73,
-    "prereq_multi_group": 614
+    "prereq_multi_group": 604,
+    "prereq_faction_merged": 4,
+    "prereq_link_to_other_page_of_id": 6,
+    "prereq_other_faction_to_own_faction_page": 0,
+    "prereq_other_faction_dropped": 2
    }
   },
   "retail": {
-   "quests": 29498,
-   "npcs": 15305,
+   "quests": 29480,
+   "npcs": 15313,
    "objects": 2949,
    "achievements": 14139,
    "missions": 1757,
-   "maps": 1950,
+   "maps": 1956,
    "questv2": 66552,
-   "questv2_excluded_by_wiki": 5392,
+   "questv2_excluded_by_wiki": 5410,
+   "questv2_excluded_ambiguous_id": 18,
    "questv2_without_wiki_page": 31662,
+   "faction_twins": 171,
+   "id_conflicts": 134,
    "addon_crosscheck": {
     "addon_flavor_quests": 26642,
-    "addon_only": 0,
+    "addon_only": 14,
+    "addon_only_ambiguous": 14,
     "data_only": 0,
-    "prereq_quests": 16849,
-    "prereq_same_ids_as_addon": 16822
+    "prereq_quests": 16837,
+    "prereq_same_ids_as_addon": 16798
    },
    "prerequisite_split": {
     "prereq_breadcrumb_split": 33,
     "prereq_optional_split": 153,
-    "prereq_multi_group": 2042
+    "prereq_multi_group": 2027,
+    "prereq_faction_merged": 8,
+    "prereq_link_to_other_page_of_id": 6,
+    "prereq_other_faction_to_own_faction_page": 1,
+    "prereq_other_faction_dropped": 5
    },
    "retail_turnin_check": {
-    "compared": 6549,
-    "over_50_yd": 693
+    "compared": 7286,
+    "over_50_yd_replaced_by_pin": 1011
    },
    "retail_poi_blobs": {
     "blobs": 45132,
-    "skipped_map_not_in_maps_file": 26,
-    "skipped_off_map": 77
+    "skipped_map_not_in_maps_file": 2,
+    "skipped_off_map": 74
    }
   },
   "forever": {
-   "quests": 3486,
-   "npcs": 2264,
+   "quests": 3483,
+   "npcs": 2262,
    "objects": 372,
    "achievements": 0,
    "missions": 0,
    "maps": 60,
    "questv2": 6616,
-   "questv2_excluded_by_wiki": 693,
+   "questv2_excluded_by_wiki": 696,
+   "questv2_excluded_ambiguous_id": 3,
    "questv2_without_wiki_page": 2437,
+   "faction_twins": 2,
+   "id_conflicts": 23,
    "addon_crosscheck": {
     "addon_flavor_quests": 3486,
-    "addon_only": 0,
+    "addon_only": 3,
+    "addon_only_ambiguous": 3,
     "data_only": 0,
     "prereq_quests": 1702,
     "prereq_same_ids_as_addon": 1701
@@ -205,7 +2358,11 @@
    "prerequisite_split": {
     "prereq_breadcrumb_split": 3,
     "prereq_optional_split": 10,
-    "prereq_multi_group": 24
+    "prereq_multi_group": 22,
+    "prereq_faction_merged": 2,
+    "prereq_link_to_other_page_of_id": 0,
+    "prereq_other_faction_to_own_faction_page": 0,
+    "prereq_other_faction_dropped": 0
    }
   }
  }

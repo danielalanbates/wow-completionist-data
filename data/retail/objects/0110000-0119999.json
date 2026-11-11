@@ -4,6 +4,6 @@
  "bucket": "0110000-0119999",
  "count": 1,
  "records": [
-{"key":"Intrepid's Locked Strongbox","kind":"object","ids":[112948],"name":"Intrepid's Locked Strongbox","coords":[{"map":56,"x":14.3,"y":24.0,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Intrepid's Locked Strongbox","revid":5647370}}}
+{"key":"Intrepid's Locked Strongbox","kind":"object","ids":[112948],"name":"Intrepid's Locked Strongbox","coords":[{"map":56,"x":14.3,"y":24.0,"exact_version":true,"via":"lead","read_as":"retail","read_by":"check","confidence":"high","check":{"against":"QuestPOIBlob","build":"wow 12.1.5.70783","id":47705,"yards":3,"quest":25818}}],"source":{"wiki":{"page":"Intrepid's Locked Strongbox","revid":5647370}}}
  ]
 }

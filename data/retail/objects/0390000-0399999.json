@@ -4,7 +4,7 @@
  "bucket": "0390000-0399999",
  "count": 8,
  "records": [
-{"key":"Chest of the Flights","kind":"object","ids":[392591],"name":"Chest of the Flights","coords":[{"map":2133,"x":56.0,"y":3.1,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Chest of the Flights","revid":6241294}}},
+{"key":"Chest of the Flights","kind":"object","ids":[392591],"name":"Chest of the Flights","coords":[{"map":2133,"x":56.0,"y":3.1,"exact_version":true,"via":"lead","read_as":"retail","read_by":"zone-default","confidence":"medium"}],"source":{"wiki":{"page":"Chest of the Flights","revid":6241294}}},
 {"key":"Prisoner Transfer Notes","kind":"object","ids":[393963],"name":"Prisoner Transfer Notes","coords":[],"source":{"wiki":{"page":"Prisoner Transfer Notes","revid":6132158}}},
 {"key":"Interrogation Notes","kind":"object","ids":[393964],"name":"Interrogation Notes","coords":[],"source":{"wiki":{"page":"Interrogation Notes","revid":6132157}}},
 {"key":"Prisoner Update Notes","kind":"object","ids":[393965],"name":"Prisoner Update Notes","coords":[],"source":{"wiki":{"page":"Prisoner Update Notes","revid":6132159}}},

@@ -7,6 +7,6 @@
 {"key":"Smoke Bomb (Broken Shore)","kind":"object","ids":[120075],"name":"Smoke Bomb","coords":[],"source":{"wiki":{"page":"Smoke Bomb (Broken Shore)","revid":5769390}}},
 {"key":"Enchanted Lodestone","kind":"object","ids":[122597],"name":"Enchanted Lodestone","coords":[],"source":{"wiki":{"page":"Enchanted Lodestone","revid":5770306}}},
 {"key":"Unwanted Memory","kind":"object","ids":[122683],"name":"Unwanted Memory","coords":[],"source":{"wiki":{"page":"Unwanted Memory","revid":6848977}}},
-{"key":"Ooze Covered Thorium Vein","kind":"object","ids":[123848],"name":"Ooze Covered Thorium Vein","coords":[{"map":78,"x":50.0,"y":81.6,"exact_version":true,"via":"lead"},{"map":69,"x":74.2,"y":61.8,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Ooze Covered Thorium Vein","revid":6337178}}}
+{"key":"Ooze Covered Thorium Vein","kind":"object","ids":[123848],"name":"Ooze Covered Thorium Vein","coords":[{"map":78,"x":50.0,"y":81.6,"exact_version":true,"via":"lead","read_as":"retail","read_by":"zone-default","confidence":"medium"},{"map":69,"x":74.2,"y":61.8,"exact_version":true,"via":"lead","read_as":"retail","read_by":"zone-default","confidence":"medium"}],"source":{"wiki":{"page":"Ooze Covered Thorium Vein","revid":6337178}}}
  ]
 }

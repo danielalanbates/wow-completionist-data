@@ -5,6 +5,6 @@
  "count": 2,
  "records": [
 {"key":"Vilescar Weapon Rack","kind":"object","ids":[641440],"name":"Vilescar Weapon Rack","coords":[],"source":{"wiki":{"page":"Vilescar Weapon Rack","revid":6903433}}},
-{"key":"Faintly Glowing Gem","kind":"object","ids":[641565],"name":"Faintly Glowing Gem","coords":[{"map":2509,"x":48.0,"y":51.8,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Faintly Glowing Gem","revid":6851765}}}
+{"key":"Faintly Glowing Gem","kind":"object","ids":[641565],"name":"Faintly Glowing Gem","coords":[{"map":2509,"x":48.0,"y":51.8,"exact_version":true,"via":"lead","read_as":"retail","read_by":"default","confidence":"medium"}],"source":{"wiki":{"page":"Faintly Glowing Gem","revid":6851765}}}
  ]
 }

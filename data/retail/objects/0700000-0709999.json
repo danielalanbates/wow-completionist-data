@@ -4,6 +4,6 @@
  "bucket": "0700000-0709999",
  "count": 1,
  "records": [
-{"key":"Amani Tablet","kind":"object","ids":[701639],"name":"Amani Tablet","coords":[{"map":94,"x":62.9,"y":72.0,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Amani Tablet","revid":6938043}}}
+{"key":"Amani Tablet","kind":"object","ids":[701639],"name":"Amani Tablet","coords":[{"map":94,"x":62.9,"y":72.0,"exact_version":true,"via":"lead","read_as":"retail","read_by":"zone-default","confidence":"low"}],"source":{"wiki":{"page":"Amani Tablet","revid":6938043}}}
  ]
 }

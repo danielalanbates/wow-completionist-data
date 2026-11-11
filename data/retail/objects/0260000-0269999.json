@@ -5,7 +5,7 @@
  "count": 9,
  "records": [
 {"key":"Nightborne Teleporter","kind":"object","ids":[266056],"name":"Nightborne Teleporter","coords":[],"source":{"wiki":{"page":"Nightborne Teleporter","revid":5787847}}},
-{"key":"Crate of Mandrake Essence","kind":"object","ids":[267600],"name":"Crate of Mandrake Essence","coords":[{"map":1271,"x":32.8,"y":66.4,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Crate of Mandrake Essence","revid":5774970}}},
+{"key":"Crate of Mandrake Essence","kind":"object","ids":[267600],"name":"Crate of Mandrake Essence","coords":[{"map":1271,"x":32.8,"y":66.4,"exact_version":true,"via":"lead","read_as":"retail","read_by":"check","confidence":"high","check":{"against":"QuestPOIBlob","build":"wow 12.1.5.70783","id":50508,"yards":1,"quest":14320}}],"source":{"wiki":{"page":"Crate of Mandrake Essence","revid":5774970}}},
 {"key":"Saltwater Crane Egg","kind":"object","ids":[267600],"name":"Saltwater Crane Egg","coords":[],"source":{"wiki":{"page":"Saltwater Crane Egg","revid":6023230}}},
 {"key":"Harpy Nest","kind":"object","ids":[267778],"name":"Harpy Nest","coords":[],"source":{"wiki":{"page":"Harpy Nest","revid":5770057}}},
 {"key":"Vital Supplies","kind":"object","ids":[267953],"name":"Vital Supplies","coords":[],"source":{"wiki":{"page":"Vital Supplies","revid":5744445}}},

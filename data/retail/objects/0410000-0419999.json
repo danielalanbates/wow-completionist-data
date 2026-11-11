@@ -5,7 +5,7 @@
  "count": 17,
  "records": [
 {"key":"Ageless Blossom","kind":"object","ids":[410045],"name":"Ageless Blossom","coords":[],"source":{"wiki":{"page":"Ageless Blossom","revid":6232001}}},
-{"key":"Boon of Aviana","kind":"object","ids":[411066],"name":"Boon of Aviana","coords":[{"map":2200,"x":64.2,"y":19.2,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Boon of Aviana","revid":5931409}}},
+{"key":"Boon of Aviana","kind":"object","ids":[411066],"name":"Boon of Aviana","coords":[{"map":2200,"x":64.2,"y":19.2,"exact_version":true,"via":"lead","read_as":"retail","read_by":"zone-default","confidence":"low"}],"source":{"wiki":{"page":"Boon of Aviana","revid":5931409}}},
 {"key":"Freydrin's Shillelagh","kind":"object","ids":[411571],"name":"Freydrin's Shillelagh","coords":[],"source":{"wiki":{"page":"Freydrin's Shillelagh","revid":6682978}}},
 {"key":"Prepared Wood","kind":"object","ids":[411821],"name":"Prepared Wood","coords":[],"source":{"wiki":{"page":"Prepared Wood","revid":6641590}}},
 {"key":"Rush'kah Paint","kind":"object","ids":[411822],"name":"Rush'kah Paint","coords":[],"source":{"wiki":{"page":"Rush'kah Paint","revid":6641720}}},
