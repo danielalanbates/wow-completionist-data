@@ -5,6 +5,6 @@
  "count": 2,
  "records": [
 {"key":"Jergosh the Invoker","kind":"npc","ids":[109608],"name":"Jergosh the Invoker","coords":[],"source":{"wiki":{"page":"Jergosh the Invoker","revid":6368544}}},
-{"key":"Tyranis Malem","kind":"npc","ids":[109964],"name":"Tyranis Malem","coords":[{"map":1443,"x":52.8,"y":29.6,"exact_version":true,"via":"npclocations"}],"source":{"wiki":{"page":"Tyranis Malem","revid":6711130}}}
+{"key":"Tyranis Malem","kind":"npc","ids":[109964],"name":"Tyranis Malem","coords":[{"map":1443,"x":52.8,"y":29.6,"exact_version":true,"via":"npclocations","read_as":"classic","read_by":"tag","confidence":"low"}],"source":{"wiki":{"page":"Tyranis Malem","revid":6711130}}}
  ]
 }

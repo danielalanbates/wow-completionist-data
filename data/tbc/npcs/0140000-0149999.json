@@ -6,6 +6,6 @@
  "records": [
 {"key":"Nathanos Blightcaller","kind":"npc","ids":[140105],"name":"Nathanos Blightcaller","coords":[],"source":{"wiki":{"page":"Nathanos Blightcaller","revid":6857643}}},
 {"key":"Falstad Wildhammer","kind":"npc","ids":[141541],"name":"Falstad Wildhammer","coords":[],"source":{"wiki":{"page":"Falstad Wildhammer","revid":6756760}}},
-{"key":"Lor'themar Theron","kind":"npc","ids":[145005,155140,153680],"name":"Lor'themar Theron","coords":[{"map":1954,"x":54.0,"y":20.6,"exact_version":true,"via":"npclocations"}],"source":{"wiki":{"page":"Lor'themar Theron","revid":6955902}}}
+{"key":"Lor'themar Theron","kind":"npc","ids":[145005,155140,153680],"name":"Lor'themar Theron","coords":[{"map":1954,"x":54.0,"y":20.6,"exact_version":true,"via":"npclocations","read_as":"tbc","read_by":"tag","confidence":"medium"}],"source":{"wiki":{"page":"Lor'themar Theron","revid":6955902}}}
  ]
 }

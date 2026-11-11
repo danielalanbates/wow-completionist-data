@@ -7,8 +7,8 @@
 {"key":"Sir Thomas","kind":"npc","ids":[211008],"name":"Sir Thomas","coords":[],"source":{"wiki":{"page":"Sir Thomas","revid":6492642}}},
 {"key":"Velen","kind":"npc","ids":[211830],"name":"Velen","coords":[],"source":{"wiki":{"page":"Velen","revid":6938166}}},
 {"key":"Magni Bronzebeard","kind":"npc","ids":[214890],"name":"Magni Bronzebeard","coords":[],"source":{"wiki":{"page":"Magni Bronzebeard","revid":6943516}}},
-{"key":"Bashana Runetotem","kind":"npc","ids":[215369],"name":"Bashana Runetotem","coords":[{"map":1456,"x":71.0,"y":34.2,"exact_version":true,"via":"npclocations"}],"source":{"wiki":{"page":"Bashana Runetotem","revid":6941671}}},
-{"key":"Moira Thaurissan","kind":"npc","ids":[217676],"name":"Moira Thaurissan","coords":[{"map":1455,"x":39.6,"y":56.8,"exact_version":false,"via":"npclocations"}],"source":{"wiki":{"page":"Moira Thaurissan","revid":6713957}}},
-{"key":"Gurgthock","kind":"npc","ids":[218246],"name":"Gurgthock","coords":[{"map":1951,"x":42.8,"y":20.6,"exact_version":false,"via":"npclocations"}],"source":{"wiki":{"page":"Gurgthock","revid":6930109}}}
+{"key":"Bashana Runetotem","kind":"npc","ids":[215369],"name":"Bashana Runetotem","coords":[{"map":1456,"x":71.0,"y":34.2,"exact_version":true,"via":"npclocations","read_as":"retail","read_by":"zone-default","confidence":"medium"}],"source":{"wiki":{"page":"Bashana Runetotem","revid":6941671}}},
+{"key":"Moira Thaurissan","kind":"npc","ids":[217676],"name":"Moira Thaurissan","coords":[{"map":1455,"x":39.6,"y":56.8,"exact_version":false,"via":"npclocations","read_as":"retail","read_by":"check","confidence":"medium"}],"source":{"wiki":{"page":"Moira Thaurissan","revid":6713957}}},
+{"key":"Gurgthock","kind":"npc","ids":[218246],"name":"Gurgthock","coords":[{"map":1951,"x":42.8,"y":20.6,"exact_version":false,"via":"npclocations","read_as":"retail","read_by":"check","confidence":"medium"}],"source":{"wiki":{"page":"Gurgthock","revid":6930109}}}
  ]
 }

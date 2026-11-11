@@ -5,6 +5,6 @@
  "count": 2,
  "records": [
 {"key":"Bounty Board (Elwynn Forest)","kind":"object","ids":[203733],"name":"Bounty Board","coords":[],"source":{"wiki":{"page":"Bounty Board (Elwynn Forest)","revid":5706643}}},
-{"key":"Twilight's Hammer Crate","kind":"object","ids":[206597],"name":"Twilight's Hammer Crate","coords":[{"map":1427,"x":23.1,"y":35.5,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"Twilight's Hammer Crate","revid":5601247}}}
+{"key":"Twilight's Hammer Crate","kind":"object","ids":[206597],"name":"Twilight's Hammer Crate","coords":[{"map":1427,"x":23.1,"y":35.5,"exact_version":false,"via":"lead","read_as":"retail","read_by":"zone-default","confidence":"low"}],"source":{"wiki":{"page":"Twilight's Hammer Crate","revid":5601247}}}
  ]
 }

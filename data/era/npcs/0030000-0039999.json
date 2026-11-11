@@ -5,12 +5,12 @@
  "count": 8,
  "records": [
 {"key":"Sentinel Tysha Moonblade","kind":"npc","ids":[32965,3639,33249],"name":"Sentinel Tysha Moonblade","coords":[],"source":{"wiki":{"page":"Sentinel Tysha Moonblade","revid":6906761}}},
-{"key":"Balthule Shadowstrike","kind":"npc","ids":[32966,3661],"name":"Balthule Shadowstrike","coords":[{"map":1439,"x":52.2,"y":26.2,"exact_version":false,"via":"location"}],"source":{"wiki":{"page":"Balthule Shadowstrike","revid":6579711}}},
-{"key":"Ranger Glynda Nal'Shea","kind":"npc","ids":[32971,103646,2930],"name":"Ranger Glynda Nal'Shea","coords":[{"map":1439,"x":49.8,"y":21.2,"exact_version":false,"via":"location"}],"source":{"wiki":{"page":"Ranger Glynda Nal'Shea","revid":6943441}}},
-{"key":"Captain Tarkan","kind":"npc","ids":[34559,139916],"name":"Captain Tarkan","coords":[{"map":1440,"x":50.0,"y":67.6,"exact_version":false,"via":"location"}],"source":{"wiki":{"page":"Captain Tarkan","revid":5697121}}},
+{"key":"Balthule Shadowstrike","kind":"npc","ids":[32966,3661],"name":"Balthule Shadowstrike","coords":[{"map":1439,"x":52.2,"y":26.2,"exact_version":false,"via":"location","read_as":"retail","read_by":"zone-default","confidence":"low"}],"source":{"wiki":{"page":"Balthule Shadowstrike","revid":6579711}}},
+{"key":"Ranger Glynda Nal'Shea","kind":"npc","ids":[32971,103646,2930],"name":"Ranger Glynda Nal'Shea","coords":[{"map":1439,"x":49.8,"y":21.2,"exact_version":false,"via":"location","read_as":"retail","read_by":"zone-default","confidence":"low"}],"source":{"wiki":{"page":"Ranger Glynda Nal'Shea","revid":6943441}}},
+{"key":"Captain Tarkan","kind":"npc","ids":[34559,139916],"name":"Captain Tarkan","coords":[{"map":1440,"x":50.0,"y":67.6,"exact_version":false,"via":"location","read_as":"retail","read_by":"zone-default","confidence":"low"}],"source":{"wiki":{"page":"Captain Tarkan","revid":5697121}}},
 {"key":"Kolkar Centaur","kind":"npc","ids":[36144,4632],"name":"Kolkar Centaur","coords":[],"source":{"wiki":{"page":"Kolkar Centaur","revid":6369128}}},
-{"key":"Xerash Fireblade","kind":"npc","ids":[36208],"name":"Xerash Fireblade","coords":[{"map":1444,"x":76.0,"y":37.0,"exact_version":false,"via":"location"}],"source":{"wiki":{"page":"Xerash Fireblade","revid":6939863}}},
+{"key":"Xerash Fireblade","kind":"npc","ids":[36208],"name":"Xerash Fireblade","coords":[{"map":1444,"x":76.0,"y":37.0,"exact_version":false,"via":"location","read_as":"retail","read_by":"zone-default","confidence":"low"}],"source":{"wiki":{"page":"Xerash Fireblade","revid":6939863}}},
 {"key":"Jona Ironstock","kind":"npc","ids":[37087,119332,119333],"name":"Jona Ironstock","coords":[],"source":{"wiki":{"page":"Jona Ironstock","revid":5680045}}},
-{"key":"Seer Ravenfeather","kind":"npc","ids":[37724],"name":"Seer Ravenfeather","coords":[{"map":1412,"x":44.7,"y":76.7,"exact_version":false,"via":"location"}],"source":{"wiki":{"page":"Seer Ravenfeather","revid":6754741}}}
+{"key":"Seer Ravenfeather","kind":"npc","ids":[37724],"name":"Seer Ravenfeather","coords":[{"map":1412,"x":44.7,"y":76.7,"exact_version":false,"via":"location","read_as":"retail","read_by":"zone-default","confidence":"low"}],"source":{"wiki":{"page":"Seer Ravenfeather","revid":6754741}}}
  ]
 }

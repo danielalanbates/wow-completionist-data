@@ -8,8 +8,8 @@
 {"key":"Herald Bran'daan","kind":"npc","ids":[20722],"name":"Herald Bran'daan","coords":[],"source":{"wiki":{"page":"Herald Bran'daan","revid":6567786}}},
 {"key":"Herald Amorlin","kind":"npc","ids":[20724],"name":"Herald Amorlin","coords":[],"source":{"wiki":{"page":"Herald Amorlin","revid":6926550}}},
 {"key":"Master Sergeant Thelaana","kind":"npc","ids":[21156],"name":"Master Sergeant Thelaana","coords":[],"source":{"wiki":{"page":"Master Sergeant Thelaana","revid":6738671}}},
-{"key":"Razorspine","kind":"npc","ids":[23841],"name":"Razorspine","coords":[{"map":1445,"x":57.0,"y":19.0,"exact_version":false,"via":"location"}],"source":{"wiki":{"page":"Razorspine","revid":6066081}}},
-{"key":"Lieutenant Aden","kind":"npc","ids":[23951],"name":"Lieutenant Aden","coords":[{"map":1445,"x":65.0,"y":47.0,"exact_version":false,"via":"location"}],"source":{"wiki":{"page":"Lieutenant Aden","revid":6713583}}},
+{"key":"Razorspine","kind":"npc","ids":[23841],"name":"Razorspine","coords":[{"map":1445,"x":57.0,"y":19.0,"exact_version":false,"via":"location","read_as":"retail","read_by":"zone-default","confidence":"low"}],"source":{"wiki":{"page":"Razorspine","revid":6066081}}},
+{"key":"Lieutenant Aden","kind":"npc","ids":[23951],"name":"Lieutenant Aden","coords":[{"map":1445,"x":65.0,"y":47.0,"exact_version":false,"via":"location","read_as":"retail","read_by":"check","confidence":"medium"}],"source":{"wiki":{"page":"Lieutenant Aden","revid":6713583}}},
 {"key":"PattyMack - Test - The Dummy","kind":"npc","ids":[25499],"name":"PattyMack - Test - The Dummy","coords":[],"source":{"wiki":{"page":"PattyMack - Test - The Dummy","revid":5776843}}}
  ]
 }

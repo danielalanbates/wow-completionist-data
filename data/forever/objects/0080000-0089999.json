@@ -4,7 +4,7 @@
  "bucket": "0080000-0089999",
  "count": 2,
  "records": [
-{"key":"Stolen Books","kind":"object","ids":[83763],"name":"Stolen Books","coords":[{"map":1429,"x":56.7,"y":44.0,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"Stolen Books","revid":5647040}}},
-{"key":"Ironband's Strongbox","kind":"object","ids":[85562],"name":"Ironband's Strongbox","coords":[{"map":1426,"x":70.7,"y":63.8,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"Ironband's Strongbox","revid":5647351}}}
+{"key":"Stolen Books","kind":"object","ids":[83763],"name":"Stolen Books","coords":[{"map":1429,"x":56.7,"y":44.0,"exact_version":false,"via":"lead","read_as":"retail","read_by":"zone-default","confidence":"low"}],"source":{"wiki":{"page":"Stolen Books","revid":5647040}}},
+{"key":"Ironband's Strongbox","kind":"object","ids":[85562],"name":"Ironband's Strongbox","coords":[{"map":1426,"x":77.9,"y":62.2,"exact_version":false,"via":"lead","read_as":"classic","read_by":"zone-default","confidence":"low"}],"source":{"wiki":{"page":"Ironband's Strongbox","revid":5647351}}}
  ]
 }

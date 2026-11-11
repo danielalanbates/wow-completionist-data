@@ -1,6 +1,6 @@
 {
  "flavor": "era",
- "source": {"tables": "UiMap + UiMapAssignment", "build": "1.15.7.61582"},
+ "source": {"tables": "UiMap + UiMapAssignment", "build": "1.15.9.70576"},
  "fields": ["id", "name", "instance", "topX", "leftY", "width", "height", "parent", "type"],
  "maps": [
   [947, "Azeroth", 1, 14824.53, 8723.96, 44878.66, 29916.1, 0, 1],

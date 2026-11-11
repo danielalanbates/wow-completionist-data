@@ -4,13 +4,13 @@
  "bucket": "0270000-0279999",
  "count": 8,
  "records": [
-{"key":"Calder Gray","kind":"npc","ids":[270038],"name":"Calder Gray","coords":[{"map":1413,"x":43.7,"y":72.2,"exact_version":false,"via":"npclocations"}],"source":{"wiki":{"page":"Calder Gray","revid":6913253}}},
-{"key":"Baron Marinous","kind":"npc","ids":[270294],"name":"Baron Marinous","coords":[{"map":1439,"x":59.2,"y":22.6,"exact_version":true,"via":"location"}],"source":{"wiki":{"page":"Baron Marinous","revid":6908964}}},
-{"key":"Glix Xizzix","kind":"npc","ids":[272526],"name":"Glix Xizzix","coords":[{"map":1458,"x":69.8,"y":47.0,"exact_version":true,"via":"location"}],"source":{"wiki":{"page":"Glix Xizzix","revid":6908862}}},
+{"key":"Calder Gray","kind":"npc","ids":[270038],"name":"Calder Gray","coords":[{"map":1413,"x":43.7,"y":72.2,"exact_version":false,"via":"npclocations","read_as":"retail","read_by":"check","confidence":"medium"}],"source":{"wiki":{"page":"Calder Gray","revid":6913253}}},
+{"key":"Baron Marinous","kind":"npc","ids":[270294],"name":"Baron Marinous","coords":[{"map":1439,"x":59.2,"y":22.6,"exact_version":true,"via":"location","read_as":"forever","read_by":"tag","confidence":"low"}],"source":{"wiki":{"page":"Baron Marinous","revid":6908964}}},
+{"key":"Glix Xizzix","kind":"npc","ids":[272526],"name":"Glix Xizzix","coords":[{"map":1458,"x":69.8,"y":47.0,"exact_version":true,"via":"location","read_as":"forever","read_by":"tag","confidence":"medium"}],"source":{"wiki":{"page":"Glix Xizzix","revid":6908862}}},
 {"key":"Dragonmaw Warder","kind":"npc","ids":[275044],"name":"Dragonmaw Warder","coords":[],"source":{"wiki":{"page":"Dragonmaw Warder","revid":6923716}}},
 {"key":"Dragonmaw Saboteur","kind":"npc","ids":[275045],"name":"Dragonmaw Saboteur","coords":[],"source":{"wiki":{"page":"Dragonmaw Saboteur","revid":6923700}}},
-{"key":"Dark Enforcer (Forever)","kind":"npc","ids":[275437],"name":"Dark Enforcer","coords":[{"map":1420,"x":68.0,"y":64.6,"exact_version":true,"via":"location"}],"source":{"wiki":{"page":"Dark Enforcer (Forever)","revid":6908908}}},
-{"key":"Pal'juh","kind":"npc","ids":[275811],"name":"Pal'juh","coords":[{"map":1411,"x":46.2,"y":78.6,"exact_version":true,"via":"location"}],"source":{"wiki":{"page":"Pal'juh","revid":6941364}}},
-{"key":"Bareth Dawnstone","kind":"npc","ids":[275954],"name":"Bareth Dawnstone","coords":[{"map":1420,"x":32.0,"y":46.4,"exact_version":true,"via":"location"}],"source":{"wiki":{"page":"Bareth Dawnstone","revid":6937949}}}
+{"key":"Dark Enforcer (Forever)","kind":"npc","ids":[275437],"name":"Dark Enforcer","coords":[{"map":1420,"x":68.0,"y":64.6,"exact_version":true,"via":"location","read_as":"forever","read_by":"tag","confidence":"medium"}],"source":{"wiki":{"page":"Dark Enforcer (Forever)","revid":6908908}}},
+{"key":"Pal'juh","kind":"npc","ids":[275811],"name":"Pal'juh","coords":[{"map":1411,"x":46.2,"y":78.6,"exact_version":true,"via":"location","read_as":"forever","read_by":"tag","confidence":"medium"}],"source":{"wiki":{"page":"Pal'juh","revid":6941364}}},
+{"key":"Bareth Dawnstone","kind":"npc","ids":[275954],"name":"Bareth Dawnstone","coords":[{"map":1420,"x":32.0,"y":46.4,"exact_version":true,"via":"location","read_as":"forever","read_by":"tag","confidence":"medium"}],"source":{"wiki":{"page":"Bareth Dawnstone","revid":6937949}}}
  ]
 }

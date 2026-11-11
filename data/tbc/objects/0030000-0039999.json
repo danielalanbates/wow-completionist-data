@@ -4,7 +4,7 @@
  "bucket": "0030000-0039999",
  "count": 2,
  "records": [
-{"key":"Galen's Strongbox","kind":"object","ids":[32569],"name":"Galen's Strongbox","coords":[{"map":1435,"x":47.9,"y":39.8,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Galen's Strongbox","revid":6595006}}},
-{"key":"Karnitol's Chest","kind":"object","ids":[35251],"name":"Karnitol's Chest","coords":[{"map":1443,"x":36.1,"y":30.4,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"Karnitol's Chest","revid":5615686}}}
+{"key":"Galen's Strongbox","kind":"object","ids":[32569],"name":"Galen's Strongbox","coords":[{"map":1435,"x":47.9,"y":39.8,"exact_version":true,"via":"lead","read_as":"classic","read_by":"tag","confidence":"medium"}],"source":{"wiki":{"page":"Galen's Strongbox","revid":6595006}}},
+{"key":"Karnitol's Chest","kind":"object","ids":[35251],"name":"Karnitol's Chest","coords":[{"map":1443,"x":36.1,"y":30.4,"exact_version":false,"via":"lead","read_as":"retail","read_by":"check","confidence":"medium"}],"source":{"wiki":{"page":"Karnitol's Chest","revid":5615686}}}
  ]
 }

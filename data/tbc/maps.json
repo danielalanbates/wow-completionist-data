@@ -1,6 +1,6 @@
 {
  "flavor": "tbc",
- "source": {"tables": "UiMap + UiMapAssignment", "build": "2.5.6.69110"},
+ "source": {"tables": "UiMap + UiMapAssignment", "build": "2.5.6.70577"},
  "fields": ["id", "name", "instance", "topX", "leftY", "width", "height", "parent", "type"],
  "maps": [
   [213, "Ragefire Chasm", 389, 39.62, 452.87, 738.86, 492.58, 1454, 4],

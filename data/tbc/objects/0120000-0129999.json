@@ -4,9 +4,9 @@
  "bucket": "0120000-0129999",
  "count": 4,
  "records": [
-{"key":"Lucius's Lockbox","kind":"object","ids":[121264],"name":"Lucius's Lockbox","coords":[{"map":1433,"x":52.0,"y":44.8,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Lucius's Lockbox","revid":5647737}}},
-{"key":"Duskwood Chest","kind":"object","ids":[123214],"name":"Duskwood Chest","coords":[{"map":1436,"x":70.3,"y":74.0,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Duskwood Chest","revid":6594928}}},
-{"key":"Ooze Covered Thorium Vein","kind":"object","ids":[123848],"name":"Ooze Covered Thorium Vein","coords":[{"map":1449,"x":50.0,"y":81.6,"exact_version":false,"via":"lead"},{"map":1444,"x":74.2,"y":61.8,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"Ooze Covered Thorium Vein","revid":6337178}}},
-{"key":"Gallywix's Lockbox","kind":"object","ids":[129127],"name":"Gallywix's Lockbox","coords":[{"map":1413,"x":54.8,"y":5.6,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Gallywix's Lockbox","revid":6594914}}}
+{"key":"Lucius's Lockbox","kind":"object","ids":[121264],"name":"Lucius's Lockbox","coords":[{"map":1433,"x":52.0,"y":44.8,"exact_version":true,"via":"lead","read_as":"classic","read_by":"tag","confidence":"medium"}],"source":{"wiki":{"page":"Lucius's Lockbox","revid":5647737}}},
+{"key":"Duskwood Chest","kind":"object","ids":[123214],"name":"Duskwood Chest","coords":[{"map":1436,"x":70.3,"y":74.0,"exact_version":true,"via":"lead","read_as":"classic","read_by":"tag","confidence":"medium"}],"source":{"wiki":{"page":"Duskwood Chest","revid":6594928}}},
+{"key":"Ooze Covered Thorium Vein","kind":"object","ids":[123848],"name":"Ooze Covered Thorium Vein","coords":[{"map":1449,"x":50.0,"y":81.6,"exact_version":false,"via":"lead","read_as":"retail","read_by":"zone-default","confidence":"low"},{"map":1444,"x":74.2,"y":61.8,"exact_version":false,"via":"lead","read_as":"retail","read_by":"zone-default","confidence":"low"}],"source":{"wiki":{"page":"Ooze Covered Thorium Vein","revid":6337178}}},
+{"key":"Gallywix's Lockbox","kind":"object","ids":[129127],"name":"Gallywix's Lockbox","coords":[{"map":1413,"x":54.8,"y":5.6,"exact_version":true,"via":"lead","read_as":"classic","read_by":"tag","confidence":"medium"}],"source":{"wiki":{"page":"Gallywix's Lockbox","revid":6594914}}}
  ]
 }

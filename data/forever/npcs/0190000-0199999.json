@@ -4,6 +4,6 @@
  "bucket": "0190000-0199999",
  "count": 1,
  "records": [
-{"key":"Chronormu","kind":"npc","ids":[190285],"name":"Chronormu","coords":[{"map":1422,"x":39.4,"y":66.8,"exact_version":true,"via":"npclocations"},{"map":1423,"x":33.7,"y":63.3,"exact_version":false,"via":"npclocations"},{"map":1453,"x":75.3,"y":9.3,"exact_version":false,"via":"npclocations"}],"source":{"wiki":{"page":"Chronormu","revid":6964660}}}
+{"key":"Chronormu","kind":"npc","ids":[190285],"name":"Chronormu","coords":[{"map":1422,"x":39.4,"y":66.8,"exact_version":false,"via":"npclocations","read_as":"classic","read_by":"tag","confidence":"low","check":{"against":"QuestPOIBlob","build":"wow 12.1.5.70783","id":53465,"yards":2467,"quest":27388}},{"map":1423,"x":33.7,"y":63.3,"exact_version":false,"via":"npclocations","read_as":"retail","read_by":"check","confidence":"medium"},{"map":1453,"x":75.3,"y":9.3,"exact_version":false,"via":"npclocations","read_as":"retail","read_by":"zone-default","confidence":"low"}],"source":{"wiki":{"page":"Chronormu","revid":6964660}}}
  ]
 }
