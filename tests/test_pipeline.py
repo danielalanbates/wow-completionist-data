@@ -89,6 +89,7 @@ class Corrections(unittest.TestCase):
         self.assertEqual(e["coords"], [{"map": 1429, "x": 42.1, "y": 65.9}])
         self.assertEqual(e["coord_source"], {"type": "correction", "correction": "era-11-end"})
         self.assertIs(e["exact_version"], True)
+        self.assertEqual(e["confidence"], "high")
         self.assertEqual(recs[11]["corrections"], ["era-11-end"])
         self.assertNotIn("corrections", recs[10])
         self.assertEqual([x[4] for x in log], ["applied"])
@@ -206,8 +207,15 @@ class SqliteBuild(unittest.TestCase):
                              [(10, 0), (11, 0)])
             self.assertEqual(con.execute("select status from questv2 where id=12").fetchone(), ("no_wiki_page",))
             self.assertEqual(con.execute("select x, y from npc_points where key='Test mob'").fetchall(), [(30.0, 70.0)])
-            self.assertEqual(con.execute("select correction, status from corrections_applied").fetchall(),
-                             [("c1", "applied")])
+            self.assertEqual(con.execute("select correction, key, status from corrections_applied").fetchall(),
+                             [("c1", "Test mob", "applied")])
+            # the corrected NPC point is marked, and nothing is added at the record level
+            rec = json.loads(con.execute("select json from npcs where key='Test mob'").fetchone()[0])
+            self.assertEqual(rec["coords"][0]["confidence"], "high")
+            self.assertEqual(rec["coords"][0]["correction"], "c1")
+            self.assertNotIn("coord_source", rec)
+            self.assertNotIn("exact_version", rec)
+            con.close()
             merged = json.loads((Path(t) / "json" / "era" / "quests.json").read_text())
             self.assertEqual([q["id"] for q in merged], [10, 11, 2500])
 

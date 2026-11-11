@@ -9,25 +9,26 @@ from pathlib import Path
 
 from cgdata import common as C
 
-WIKI = {"type": "wiki", "page": "Test NPC", "revid": 11, "via": "entity-page"}
+WIKI = {"type": "wiki", "page": "Test NPC", "revid": 11, "via": "entity-page", "read_as": "classic", "read_by": "tag"}
 
 
 def endpoint(name, mid=1429, x=40.0, y=50.0, located=True):
     return {"kind": "npc", "ids": [900001], "name": name, "page": "Test NPC", "faction": None,
             "coords": [{"map": mid, "x": x, "y": y}] if located else [],
-            "coord_source": dict(WIKI) if located else None, "exact_version": True if located else None}
+            "coord_source": dict(WIKI) if located else None, "exact_version": True if located else None,
+            "confidence": "medium" if located else None}
 
 
-def quest(qid, prereq=None, nxt=None):
+def quest(qid, prereq=None, nxt=None, faction="Both"):
     return {
-        "id": qid, "name": f"Test quest {qid}", "flavors": ["era"], "faction": "Both", "level": 5, "min_level": 3,
+        "id": qid, "name": f"Test quest {qid}", "flavors": ["era"], "faction": faction, "level": 5, "min_level": 3,
         "type": None, "category": "Elwynn Forest", "zone_map": 1429, "zone_map_source": "category", "classes": [],
         "races": [], "profession": None, "is_breadcrumb": None, "auto_accept": False,
         "start": [endpoint("Giver")], "end": [endpoint("Ender", located=False)], "end_same_as_start": False,
         "start_item": None, "objectives_text": "Do it.", "objectives_source": "wiki",
         "objectives": [{"index": 1, "kind": "kill", "text": "Test mob slain (3)", "count": 3, "optional": False,
                         "target": {"kind": "npc", "ids": [900002], "name": "Test mob", "page": "Test mob"},
-                        "coords": [], "coord_source": None, "exact_version": None}],
+                        "coords": [], "coord_source": None, "exact_version": None, "confidence": None}],
         "prerequisites": {"required": prereq or [], "breadcrumb": [], "optional": [], "in_progress": [],
                           "inferred_from_next": [], "basis": "single" if prereq else "none"},
         "next": nxt or [],
@@ -38,7 +39,8 @@ def quest(qid, prereq=None, nxt=None):
 
 def npc(key, nid, located=True):
     return {"key": key, "kind": "npc", "ids": [nid], "name": key,
-            "coords": [{"map": 1429, "x": 41.5, "y": 65.2, "exact_version": True, "via": "location"}] if located else [],
+            "coords": [{"map": 1429, "x": 41.5, "y": 65.2, "exact_version": True, "via": "location",
+                        "confidence": "medium", "read_as": "classic", "read_by": "tag"}] if located else [],
             "source": {"wiki": {"page": key, "revid": 7}}}
 
 
@@ -59,7 +61,7 @@ def write(data_dir, quests=None, npcs=None, questv2=(10, 11, 12, 2500), excluded
         "flavor": "era", "table": "QuestV2", "build": "test 0.0.0.1", "count": len(questv2),
         "excluded": [{"id": i, "page": f"Removed {i}", "revid": 1, "reason": "removed 1.0"} for i in excluded],
         "ids": list(questv2)}))
-    (data_dir / "meta.json").write_text(json.dumps({"schema_version": 1, "sources": {}, "counts": {}}))
+    (data_dir / "meta.json").write_text(json.dumps({"schema_version": C.SCHEMA_VERSION, "sources": {}, "counts": {}}))
     return data_dir
 
 
