@@ -1,0 +1,38 @@
+{
+ "_comment": "TEMPLATE ONLY. Files whose name starts with '_' are never applied. The values below are made up to show the format; copy an entry into a file without the underscore (for example corrections/era-duskwood.json) and replace the values with what you checked in game. See CONTRIBUTING.md.",
+ "corrections": [
+  {
+   "id": "era-quest-5-start-coords",
+   "flavor": "era",
+   "kind": "quest",
+   "key": 5,
+   "op": "set",
+   "path": "/start/0/coords",
+   "value": [{"map": 1431, "x": 18.0, "y": 56.0}],
+   "reason": "The wiki NPC page has no coordinates for this quest giver.",
+   "evidence": "Checked in game on Classic Era 1.15.x with /way; screenshot in the pull request."
+  },
+  {
+   "id": "era-quest-93-prereq-5",
+   "flavor": "era",
+   "kind": "quest",
+   "key": 93,
+   "op": "set",
+   "path": "/prerequisites/required",
+   "value": [[5]],
+   "reason": "The follow-up cannot be accepted before the first quest is turned in.",
+   "evidence": "In game, Classic Era 1.15.x, fresh character."
+  },
+  {
+   "id": "all-npc-example-coords",
+   "flavor": "all",
+   "kind": "npc",
+   "key": "Jitters",
+   "op": "set",
+   "path": "/coords",
+   "value": [{"map": 1431, "x": 18.0, "y": 56.0, "exact_version": true, "via": "correction"}],
+   "reason": "NPC page has no location.",
+   "evidence": "In game on each client listed; flavor 'all' skips clients that do not have the record."
+  }
+ ]
+}
