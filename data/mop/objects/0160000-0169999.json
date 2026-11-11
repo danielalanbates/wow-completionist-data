@@ -5,8 +5,8 @@
  "count": 4,
  "records": [
 {"key":"Spectral Chalice","kind":"object","ids":[164869],"name":"Spectral Chalice","coords":[],"source":{"wiki":{"page":"Spectral Chalice","revid":6279218}}},
-{"key":"Northern Crystal Pylon","kind":"object","ids":[164955],"name":"Northern Crystal Pylon","coords":[{"map":78,"x":56.5,"y":12.4,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"Northern Crystal Pylon","revid":6552593}}},
-{"key":"Western Crystal Pylon","kind":"object","ids":[164956],"name":"Western Crystal Pylon","coords":[{"map":78,"x":23.5,"y":50.0,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"Western Crystal Pylon","revid":6689210}}},
-{"key":"Eastern Crystal Pylon","kind":"object","ids":[164957],"name":"Eastern Crystal Pylon","coords":[{"map":78,"x":77.2,"y":50.0,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"Eastern Crystal Pylon","revid":6552594}}}
+{"key":"Northern Crystal Pylon","kind":"object","ids":[164955],"name":"Northern Crystal Pylon","coords":[{"map":78,"x":56.5,"y":12.4,"exact_version":false,"via":"lead","read_as":"retail","read_by":"zone-default","confidence":"low"}],"source":{"wiki":{"page":"Northern Crystal Pylon","revid":6552593}}},
+{"key":"Western Crystal Pylon","kind":"object","ids":[164956],"name":"Western Crystal Pylon","coords":[{"map":78,"x":23.5,"y":50.0,"exact_version":false,"via":"lead","read_as":"retail","read_by":"zone-default","confidence":"low"}],"source":{"wiki":{"page":"Western Crystal Pylon","revid":6689210}}},
+{"key":"Eastern Crystal Pylon","kind":"object","ids":[164957],"name":"Eastern Crystal Pylon","coords":[{"map":78,"x":77.2,"y":50.0,"exact_version":false,"via":"lead","read_as":"retail","read_by":"zone-default","confidence":"low"}],"source":{"wiki":{"page":"Eastern Crystal Pylon","revid":6552594}}}
  ]
 }

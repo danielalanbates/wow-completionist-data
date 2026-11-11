@@ -4,7 +4,7 @@
  "bucket": "0200000-0209999",
  "count": 3,
  "records": [
-{"key":"Drunzek Skullband","kind":"npc","ids":[200333],"name":"Drunzek Skullband","coords":[{"map":85,"x":41.0,"y":78.6,"exact_version":false,"via":"location"}],"source":{"wiki":{"page":"Drunzek Skullband","revid":6231144}}},
+{"key":"Drunzek Skullband","kind":"npc","ids":[200333],"name":"Drunzek Skullband","coords":[{"map":85,"x":41.0,"y":78.6,"exact_version":false,"via":"location","read_as":"retail","read_by":"zone-default","confidence":"low"}],"source":{"wiki":{"page":"Drunzek Skullband","revid":6231144}}},
 {"key":"Todd Abel","kind":"npc","ids":[203258,210920],"name":"Todd Abel","coords":[],"source":{"wiki":{"page":"Todd Abel","revid":6437596}}},
 {"key":"Deathstalker Commander Belmont","kind":"npc","ids":[203981],"name":"Deathstalker Commander Belmont","coords":[],"source":{"wiki":{"page":"Deathstalker Commander Belmont","revid":6967254}}}
  ]

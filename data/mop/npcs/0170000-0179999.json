@@ -4,6 +4,6 @@
  "bucket": "0170000-0179999",
  "count": 1,
  "records": [
-{"key":"Uther the Lightbringer","kind":"npc","ids":[178810],"name":"Uther the Lightbringer","coords":[{"map":22,"x":52.0,"y":83.4,"exact_version":false,"via":"npclocations"},{"map":130,"x":47.4,"y":33.4,"exact_version":true,"via":"npclocations"}],"source":{"wiki":{"page":"Uther the Lightbringer","revid":6943500}}}
+{"key":"Uther the Lightbringer","kind":"npc","ids":[178810],"name":"Uther the Lightbringer","coords":[{"map":22,"x":52.0,"y":83.4,"exact_version":false,"via":"npclocations","read_as":"classic","read_by":"tag","confidence":"low"},{"map":130,"x":47.4,"y":33.4,"exact_version":true,"via":"npclocations","read_as":"retail","read_by":"default","confidence":"medium"}],"source":{"wiki":{"page":"Uther the Lightbringer","revid":6943500}}}
  ]
 }

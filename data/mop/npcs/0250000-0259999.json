@@ -4,7 +4,7 @@
  "bucket": "0250000-0259999",
  "count": 2,
  "records": [
-{"key":"Bishop Lazaril","kind":"npc","ids":[250663],"name":"Bishop Lazaril","coords":[{"map":111,"x":53.8,"y":33.2,"exact_version":false,"via":"npclocations"}],"source":{"wiki":{"page":"Bishop Lazaril","revid":6650041}}},
+{"key":"Bishop Lazaril","kind":"npc","ids":[250663],"name":"Bishop Lazaril","coords":[{"map":111,"x":53.8,"y":33.2,"exact_version":false,"via":"npclocations","read_as":"retail","read_by":"zone-default","confidence":"low"}],"source":{"wiki":{"page":"Bishop Lazaril","revid":6650041}}},
 {"key":"Jojo Ironbrow","kind":"npc","ids":[255249],"name":"Jojo Ironbrow","coords":[],"source":{"wiki":{"page":"Jojo Ironbrow","revid":6564516}}}
  ]
 }

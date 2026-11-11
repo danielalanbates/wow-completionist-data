@@ -1,6 +1,6 @@
 {
  "flavor": "mop",
- "source": {"tables": "UiMap + UiMapAssignment", "build": "5.5.4.69383"},
+ "source": {"tables": "UiMap + UiMapAssignment", "build": "5.5.4.70631"},
  "fields": ["id", "name", "instance", "topX", "leftY", "width", "height", "parent", "type"],
  "maps": [
   [1, "Durotar", 1, 1808.33, -1962.5, 5287.5, 3525.0, 12, 3],

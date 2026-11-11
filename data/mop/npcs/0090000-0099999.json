@@ -4,6 +4,6 @@
  "bucket": "0090000-0099999",
  "count": 1,
  "records": [
-{"key":"Ariok","kind":"npc","ids":[91421],"name":"Ariok","coords":[{"map":36,"x":17.4,"y":51.6,"exact_version":false,"via":"npclocations"},{"map":36,"x":44.6,"y":44.6,"exact_version":false,"via":"npclocations"},{"map":36,"x":54.6,"y":24.6,"exact_version":false,"via":"npclocations"}],"source":{"wiki":{"page":"Ariok","revid":6928726}}}
+{"key":"Ariok","kind":"npc","ids":[91421],"name":"Ariok","coords":[{"map":36,"x":17.4,"y":51.6,"exact_version":false,"via":"npclocations","read_as":"retail","read_by":"check","confidence":"high","check":{"against":"QuestPOIBlob","build":"wow 12.1.5.70783","id":56038,"yards":2,"quest":28418}},{"map":36,"x":44.6,"y":44.6,"exact_version":false,"via":"npclocations","read_as":"retail","read_by":"zone-default","confidence":"low","check":{"against":"QuestPOIBlob","build":"wow 12.1.5.70783","id":56038,"yards":868,"quest":28418}},{"map":36,"x":54.6,"y":24.6,"exact_version":false,"via":"npclocations","read_as":"retail","read_by":"zone-default","confidence":"low","check":{"against":"QuestPOIBlob","build":"wow 12.1.5.70783","id":56038,"yards":1301,"quest":28418}}],"source":{"wiki":{"page":"Ariok","revid":6928726}}}
  ]
 }

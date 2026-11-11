@@ -5,6 +5,6 @@
  "count": 2,
  "records": [
 {"key":"Discs of Norgannon","kind":"object","ids":[131474],"name":"Discs of Norgannon","coords":[],"source":{"wiki":{"page":"Discs of Norgannon","revid":6928630}}},
-{"key":"Shards of Myzrael","kind":"object","ids":[138492],"name":"Shards of Myzrael","coords":[{"map":14,"x":66.0,"y":30.0,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"Shards of Myzrael","revid":6349653}}}
+{"key":"Shards of Myzrael","kind":"object","ids":[138492],"name":"Shards of Myzrael","coords":[{"map":14,"x":60.8,"y":30.7,"exact_version":false,"via":"lead","read_as":"classic","read_by":"zone-default","confidence":"low","check":{"against":"QuestPOIBlob","build":"wow 12.1.5.70783","id":52439,"yards":153,"quest":26912}}],"source":{"wiki":{"page":"Shards of Myzrael","revid":6349653}}}
  ]
 }

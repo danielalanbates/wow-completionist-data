@@ -5,7 +5,7 @@
  "count": 21,
  "records": [
 {"key":"Gelbin Mekkatorque","kind":"npc","ids":[162802],"name":"Gelbin Mekkatorque","coords":[],"source":{"wiki":{"page":"Gelbin Mekkatorque","revid":6904069}}},
-{"key":"Kelsey Steelspark","kind":"npc","ids":[162803],"name":"Kelsey Steelspark","coords":[{"map":469,"x":38.0,"y":33.6,"exact_version":false,"via":"npclocations"},{"map":27,"x":33.4,"y":36.8,"exact_version":false,"via":"npclocations"},{"map":110,"x":54.4,"y":68.4,"exact_version":false,"via":"npclocations"}],"source":{"wiki":{"page":"Kelsey Steelspark","revid":6851279}}},
+{"key":"Kelsey Steelspark","kind":"npc","ids":[162803],"name":"Kelsey Steelspark","coords":[{"map":469,"x":38.0,"y":33.6,"exact_version":false,"via":"npclocations","read_as":"retail","read_by":"zone-default","confidence":"low"},{"map":27,"x":40.4,"y":35.0,"exact_version":false,"via":"npclocations","read_as":"classic","read_by":"zone-default","confidence":"low"},{"map":110,"x":54.4,"y":68.4,"exact_version":false,"via":"npclocations","read_as":"retail","read_by":"zone-default","confidence":"low"}],"source":{"wiki":{"page":"Kelsey Steelspark","revid":6851279}}},
 {"key":"Signilda Hardforge","kind":"npc","ids":[164939],"name":"Signilda Hardforge","coords":[],"source":{"wiki":{"page":"Signilda Hardforge","revid":6420642}}},
 {"key":"Evelyn Thorn","kind":"npc","ids":[164942],"name":"Evelyn Thorn","coords":[],"source":{"wiki":{"page":"Evelyn Thorn","revid":6901546}}},
 {"key":"Mulric Boldrock","kind":"npc","ids":[164945],"name":"Mulric Boldrock","coords":[],"source":{"wiki":{"page":"Mulric Boldrock","revid":6517630}}},
@@ -14,15 +14,15 @@
 {"key":"Ezul'aan","kind":"npc","ids":[164952],"name":"Ezul'aan","coords":[],"source":{"wiki":{"page":"Ezul'aan","revid":6574776}}},
 {"key":"Frazzle Frostfingers","kind":"npc","ids":[164955],"name":"Frazzle Frostfingers","coords":[],"source":{"wiki":{"page":"Frazzle Frostfingers","revid":6529307}}},
 {"key":"Dalgrun Steelpine","kind":"npc","ids":[164960],"name":"Dalgrun Steelpine","coords":[],"source":{"wiki":{"page":"Dalgrun Steelpine","revid":6517621}}},
-{"key":"Darion Mograine","kind":"npc","ids":[166723],"name":"Darion Mograine","coords":[{"map":124,"x":38.8,"y":38.6,"exact_version":false,"via":"npclocations"},{"map":23,"x":82.0,"y":46.6,"exact_version":false,"via":"npclocations"},{"map":186,"x":42.8,"y":22.8,"exact_version":false,"via":"npclocations"}],"source":{"wiki":{"page":"Darion Mograine","revid":6957769}}},
+{"key":"Darion Mograine","kind":"npc","ids":[166723],"name":"Darion Mograine","coords":[{"map":124,"x":38.8,"y":38.6,"exact_version":false,"via":"npclocations","read_as":"retail","read_by":"zone-default","confidence":"low","check":{"against":"QuestPOIBlob","build":"wow 12.1.5.70783","id":35639,"yards":63,"quest":12801}},{"map":23,"x":82.0,"y":46.6,"exact_version":false,"via":"npclocations","read_as":"retail","read_by":"zone-default","confidence":"low","check":{"against":"QuestPOIBlob","build":"wow 12.1.5.70783","id":36231,"yards":96,"quest":13165}},{"map":186,"x":42.8,"y":22.8,"exact_version":false,"via":"npclocations","read_as":"retail","read_by":"default","confidence":"low"}],"source":{"wiki":{"page":"Darion Mograine","revid":6957769}}},
 {"key":"Thrall","kind":"npc","ids":[167827,177589],"name":"Thrall","coords":[],"source":{"wiki":{"page":"Thrall","revid":6964667}}},
 {"key":"Anduin Wrynn","kind":"npc","ids":[167907,172119],"name":"Anduin Wrynn","coords":[],"source":{"wiki":{"page":"Anduin Wrynn","revid":6954298}}},
-{"key":"Tamanji","kind":"npc","ids":[168551],"name":"Tamanji","coords":[{"map":85,"x":73.8,"y":43.8,"exact_version":false,"via":"location"}],"source":{"wiki":{"page":"Tamanji","revid":6517641}}},
+{"key":"Tamanji","kind":"npc","ids":[168551],"name":"Tamanji","coords":[{"map":85,"x":73.8,"y":43.8,"exact_version":false,"via":"location","read_as":"retail","read_by":"zone-default","confidence":"low"}],"source":{"wiki":{"page":"Tamanji","revid":6517641}}},
 {"key":"Gormok Ogrefist","kind":"npc","ids":[168596],"name":"Gormok Ogrefist","coords":[],"source":{"wiki":{"page":"Gormok Ogrefist","revid":6517643}}},
 {"key":"Avaros Dawnglaive","kind":"npc","ids":[168597],"name":"Avaros Dawnglaive","coords":[],"source":{"wiki":{"page":"Avaros Dawnglaive","revid":6938047}}},
 {"key":"Thega Graveblade","kind":"npc","ids":[168598,199151,200613],"name":"Thega Graveblade","coords":[],"source":{"wiki":{"page":"Thega Graveblade","revid":6949063}}},
 {"key":"Martin Goodchilde","kind":"npc","ids":[168621],"name":"Martin Goodchilde","coords":[],"source":{"wiki":{"page":"Martin Goodchilde","revid":6947584}}},
-{"key":"Kazak Darkscream","kind":"npc","ids":[168623],"name":"Kazak Darkscream","coords":[{"map":85,"x":74.6,"y":47.2,"exact_version":false,"via":"location"}],"source":{"wiki":{"page":"Kazak Darkscream","revid":6938142}}},
+{"key":"Kazak Darkscream","kind":"npc","ids":[168623],"name":"Kazak Darkscream","coords":[{"map":85,"x":74.6,"y":47.2,"exact_version":false,"via":"location","read_as":"retail","read_by":"zone-default","confidence":"low"}],"source":{"wiki":{"page":"Kazak Darkscream","revid":6938142}}},
 {"key":"Feenix Arcshine","kind":"npc","ids":[168626],"name":"Feenix Arcshine","coords":[],"source":{"wiki":{"page":"Feenix Arcshine","revid":6928716}}},
 {"key":"Hretar Riverspeaker","kind":"npc","ids":[168628],"name":"Hretar Riverspeaker","coords":[],"source":{"wiki":{"page":"Hretar Riverspeaker","revid":6644325}}}
  ]

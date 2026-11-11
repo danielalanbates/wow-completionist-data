@@ -4,7 +4,7 @@
  "bucket": "0230000-0239999",
  "count": 2,
  "records": [
-{"key":"Northsea Thug (Ratts' Revenge)","kind":"npc","ids":[230232],"name":"Northsea Thug","coords":[{"map":42,"x":45.1,"y":68.1,"exact_version":false,"via":"location"}],"source":{"wiki":{"page":"Northsea Thug (Ratts' Revenge)","revid":6631532}}},
-{"key":"Fleet Master Seahorn","kind":"npc","ids":[235849],"name":"Fleet Master Seahorn","coords":[{"map":210,"x":41.7,"y":73.1,"exact_version":true,"via":"npclocations"}],"source":{"wiki":{"page":"Fleet Master Seahorn","revid":6963754}}}
+{"key":"Northsea Thug (Ratts' Revenge)","kind":"npc","ids":[230232],"name":"Northsea Thug","coords":[{"map":42,"x":45.1,"y":68.1,"exact_version":false,"via":"location","read_as":"retail","read_by":"default","confidence":"low"}],"source":{"wiki":{"page":"Northsea Thug (Ratts' Revenge)","revid":6631532}}},
+{"key":"Fleet Master Seahorn","kind":"npc","ids":[235849],"name":"Fleet Master Seahorn","coords":[{"map":210,"x":41.7,"y":73.1,"exact_version":true,"via":"npclocations","read_as":"retail","read_by":"check","confidence":"high","check":{"against":"QuestPOIBlob","build":"wow 12.1.5.70783","id":51217,"yards":8,"quest":26698}}],"source":{"wiki":{"page":"Fleet Master Seahorn","revid":6963754}}}
  ]
 }

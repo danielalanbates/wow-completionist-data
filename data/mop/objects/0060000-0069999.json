@@ -4,7 +4,7 @@
  "bucket": "0060000-0069999",
  "count": 2,
  "records": [
-{"key":"Regulator Valve","kind":"object","ids":[61935],"name":"Regulator Valve","coords":[{"map":10,"x":50.1,"y":25.3,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"Regulator Valve","revid":5647218}}},
-{"key":"Fuel Control Valve","kind":"object","ids":[61936],"name":"Fuel Control Valve","coords":[{"map":10,"x":50.3,"y":25.2,"exact_version":false,"via":"lead"}],"source":{"wiki":{"page":"Fuel Control Valve","revid":5647217}}}
+{"key":"Regulator Valve","kind":"object","ids":[61935],"name":"Regulator Valve","coords":[{"map":10,"x":50.1,"y":25.3,"exact_version":false,"via":"lead","read_as":"retail","read_by":"zone-default","confidence":"low"}],"source":{"wiki":{"page":"Regulator Valve","revid":5647218}}},
+{"key":"Fuel Control Valve","kind":"object","ids":[61936],"name":"Fuel Control Valve","coords":[{"map":10,"x":50.3,"y":25.2,"exact_version":false,"via":"lead","read_as":"retail","read_by":"zone-default","confidence":"low"}],"source":{"wiki":{"page":"Fuel Control Valve","revid":5647217}}}
  ]
 }
