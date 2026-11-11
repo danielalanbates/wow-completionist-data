@@ -1,0 +1,17 @@
+{
+ "flavor": "retail",
+ "kind": "objects",
+ "bucket": "0550000-0559999",
+ "count": 9,
+ "records": [
+{"key":"Luminescent Ward","kind":"object","ids":[553747],"name":"Luminescent Ward","coords":[],"source":{"wiki":{"page":"Luminescent Ward","revid":6667476}}},
+{"key":"Invasive Fungi","kind":"object","ids":[553763],"name":"Invasive Fungi","coords":[],"source":{"wiki":{"page":"Invasive Fungi","revid":6700981}}},
+{"key":"Deed to the Umbral Atrium","kind":"object","ids":[555786],"name":"Deed to the Umbral Atrium","coords":[{"map":110,"x":54.3,"y":59.2,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Deed to the Umbral Atrium","revid":6786551}}},
+{"key":"The Silversun Compact (object)","kind":"object","ids":[556449],"name":"The Silversun Compact","coords":[{"map":110,"x":41.1,"y":88.7,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"The Silversun Compact (object)","revid":6691813}}},
+{"key":"A Dog-eared Book","kind":"object","ids":[558090],"name":"A Dog-eared Book","coords":[{"map":2472,"x":37.3,"y":25.7,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"A Dog-eared Book","revid":6431664}}},
+{"key":"Ba'key's Aromatic Broker Cookies Recipes","kind":"object","ids":[558109],"name":"Ba'key's Aromatic Broker Cookies Recipes","coords":[{"map":2472,"x":46.3,"y":18.6,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Ba'key's Aromatic Broker Cookies Recipes","revid":6431254}}},
+{"key":"I Have Become Void!","kind":"object","ids":[558117],"name":"I Have Become Void!","coords":[{"map":2472,"x":36.6,"y":58.1,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"I Have Become Void!","revid":6432865}}},
+{"key":"Geologist Field Journal","kind":"object","ids":[558372],"name":"Geologist Field Journal","coords":[{"map":2371,"x":48.9,"y":57.2,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Geologist Field Journal","revid":6431253}}},
+{"key":"Checklist of Minor Pleasures","kind":"object","ids":[558375],"name":"Checklist of Minor Pleasures","coords":[{"map":2472,"x":38.3,"y":45.6,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Checklist of Minor Pleasures","revid":6433018}}}
+ ]
+}

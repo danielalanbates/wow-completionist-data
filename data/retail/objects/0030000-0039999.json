@@ -1,0 +1,13 @@
+{
+ "flavor": "retail",
+ "kind": "objects",
+ "bucket": "0030000-0039999",
+ "count": 5,
+ "records": [
+{"key":"North Lightning Forge","kind":"object","ids":[30209],"name":"North Lightning Forge","coords":[{"map":120,"x":29.0,"y":45.9,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"North Lightning Forge","revid":6552398}}},
+{"key":"Central Lightning Forge","kind":"object","ids":[30211],"name":"Central Lightning Forge","coords":[{"map":120,"x":29.5,"y":45.9,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Central Lightning Forge","revid":6417876}}},
+{"key":"South Lightning Forge","kind":"object","ids":[30212],"name":"South Lightning Forge","coords":[{"map":120,"x":30.3,"y":46.2,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"South Lightning Forge","revid":6552397}}},
+{"key":"Hourglass of Eternity","kind":"object","ids":[32327],"name":"Hourglass of Eternity","coords":[],"source":{"wiki":{"page":"Hourglass of Eternity","revid":5673371}}},
+{"key":"Karnitol's Chest","kind":"object","ids":[35251],"name":"Karnitol's Chest","coords":[{"map":66,"x":36.1,"y":30.4,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Karnitol's Chest","revid":5615686}}}
+ ]
+}

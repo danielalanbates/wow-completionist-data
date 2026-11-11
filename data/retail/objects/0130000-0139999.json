@@ -1,0 +1,12 @@
+{
+ "flavor": "retail",
+ "kind": "objects",
+ "bucket": "0130000-0139999",
+ "count": 4,
+ "records": [
+{"key":"Discs of Norgannon","kind":"object","ids":[131474],"name":"Discs of Norgannon","coords":[],"source":{"wiki":{"page":"Discs of Norgannon","revid":6928630}}},
+{"key":"Bloodshed Compendium","kind":"object","ids":[131657],"name":"Bloodshed Compendium","coords":[],"source":{"wiki":{"page":"Bloodshed Compendium","revid":5791852}}},
+{"key":"Shards of Myzrael","kind":"object","ids":[138492],"name":"Shards of Myzrael","coords":[{"map":14,"x":66.0,"y":30.0,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Shards of Myzrael","revid":6349653}}},
+{"key":"Mission Command Table","kind":"object","ids":[138704],"name":"Mission Command Table","coords":[],"source":{"wiki":{"page":"Mission Command Table","revid":5765285}}}
+ ]
+}

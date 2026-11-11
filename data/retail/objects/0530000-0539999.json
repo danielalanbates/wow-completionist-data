@@ -1,0 +1,10 @@
+{
+ "flavor": "retail",
+ "kind": "objects",
+ "bucket": "0530000-0539999",
+ "count": 2,
+ "records": [
+{"key":"Portal to the Infinite Bazaar","kind":"object","ids":[531131],"name":"Portal to the Infinite Bazaar","coords":[],"source":{"wiki":{"page":"Portal to the Infinite Bazaar","revid":6505436}}},
+{"key":"Healing Waters of Ahl'ua","kind":"object","ids":[539208],"name":"Healing Waters of Ahl'ua","coords":[],"source":{"wiki":{"page":"Healing Waters of Ahl'ua","revid":6684655}}}
+ ]
+}

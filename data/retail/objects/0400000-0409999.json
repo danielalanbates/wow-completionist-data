@@ -1,0 +1,29 @@
+{
+ "flavor": "retail",
+ "kind": "objects",
+ "bucket": "0400000-0409999",
+ "count": 21,
+ "records": [
+{"key":"Cloaking Device","kind":"object","ids":[403337],"name":"Cloaking Device","coords":[],"source":{"wiki":{"page":"Cloaking Device","revid":5893806}}},
+{"key":"Red Dragon Egg","kind":"object","ids":[403651],"name":"Red Dragon Egg","coords":[],"source":{"wiki":{"page":"Red Dragon Egg","revid":6021085}}},
+{"key":"Amber Sword","kind":"object","ids":[404480],"name":"Amber Sword","coords":[],"source":{"wiki":{"page":"Amber Sword","revid":6842116}}},
+{"key":"Gilded Vase","kind":"object","ids":[404492],"name":"Gilded Vase","coords":[],"source":{"wiki":{"page":"Gilded Vase","revid":6848981}}},
+{"key":"Drakonid Grapple","kind":"object","ids":[405292],"name":"Drakonid Grapple","coords":[],"source":{"wiki":{"page":"Drakonid Grapple","revid":5603825}}},
+{"key":"Azerothian Archives!","kind":"object","ids":[405593],"name":"Azerothian Archives!","coords":[],"source":{"wiki":{"page":"Azerothian Archives!","revid":5996647}}},
+{"key":"Hidden Gem","kind":"object","ids":[405961],"name":"Hidden Gem","coords":[],"source":{"wiki":{"page":"Hidden Gem","revid":5855158}}},
+{"key":"Old Keyring","kind":"object","ids":[406829],"name":"Old Keyring","coords":[{"map":302,"x":48.3,"y":56.3,"exact_version":true,"via":"lead"},{"map":18,"x":83.9,"y":23.4,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Old Keyring","revid":6891254}}},
+{"key":"Triflesnatch's Roving Trove","kind":"object","ids":[407739],"name":"Triflesnatch's Roving Trove","coords":[{"map":2200,"x":34.1,"y":56.5,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Triflesnatch's Roving Trove","revid":6179794}}},
+{"key":"Hidden Moonkin Stash","kind":"object","ids":[407862],"name":"Hidden Moonkin Stash","coords":[{"map":2200,"x":47.5,"y":34.9,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Hidden Moonkin Stash","revid":5859308}}},
+{"key":"Disc of Tyr","kind":"object","ids":[408047],"name":"Disc of Tyr","coords":[],"source":{"wiki":{"page":"Disc of Tyr","revid":5900486}}},
+{"key":"Shandris's Mission Journal","kind":"object","ids":[408084],"name":"Shandris's Mission Journal","coords":[],"source":{"wiki":{"page":"Shandris's Mission Journal","revid":5958260}}},
+{"key":"Crystalline Glowblossom","kind":"object","ids":[408107],"name":"Crystalline Glowblossom","coords":[{"map":2200,"x":39.1,"y":65.5,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Crystalline Glowblossom","revid":6665946}}},
+{"key":"Kevo ya Siti Offering","kind":"object","ids":[408212],"name":"Kevo ya Siti Offering","coords":[],"source":{"wiki":{"page":"Kevo ya Siti Offering","revid":6641193}}},
+{"key":"Loa Offering","kind":"object","ids":[408213],"name":"Loa Offering","coords":[],"source":{"wiki":{"page":"Loa Offering","revid":6641309}}},
+{"key":"Lukou Offering","kind":"object","ids":[408241],"name":"Lukou Offering","coords":[],"source":{"wiki":{"page":"Lukou Offering","revid":6641334}}},
+{"key":"Magical Bloom","kind":"object","ids":[408706],"name":"Magical Bloom","coords":[{"map":2200,"x":61.7,"y":59.4,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Magical Bloom","revid":6666072}}},
+{"key":"Odd Burl","kind":"object","ids":[408707],"name":"Odd Burl","coords":[{"map":2200,"x":55.3,"y":57.3,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Odd Burl","revid":6666096}}},
+{"key":"Hataaru's Ashes","kind":"object","ids":[408949],"name":"Hataaru's Ashes","coords":[],"source":{"wiki":{"page":"Hataaru's Ashes","revid":6848980}}},
+{"key":"Singed Leaflet","kind":"object","ids":[409077],"name":"Singed Leaflet","coords":[],"source":{"wiki":{"page":"Singed Leaflet","revid":5886320}}},
+{"key":"Pineshrew Cache","kind":"object","ids":[409440],"name":"Pineshrew Cache","coords":[{"map":2200,"x":37.3,"y":30.7,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Pineshrew Cache","revid":5931495}}}
+ ]
+}

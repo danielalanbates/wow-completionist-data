@@ -1,0 +1,24 @@
+{
+ "flavor": "retail",
+ "kind": "objects",
+ "bucket": "0500000-0509999",
+ "count": 16,
+ "records": [
+{"key":"Gift of the Brothers","kind":"object","ids":[500046],"name":"Gift of the Brothers","coords":[{"map":2371,"x":76.1,"y":45.3,"exact_version":true,"via":"lead"},{"map":2371,"x":75.5,"y":39.8,"exact_version":true,"via":"lead"},{"map":2371,"x":68.3,"y":45.3,"exact_version":true,"via":"lead"},{"map":2371,"x":69.9,"y":60.6,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Gift of the Brothers","revid":6434391}}},
+{"key":"Wastelander Stash","kind":"object","ids":[502437],"name":"Wastelander Stash","coords":[{"map":2371,"x":60.5,"y":42.1,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Wastelander Stash","revid":6433885}}},
+{"key":"Void Presence","kind":"object","ids":[502448],"name":"Void Presence","coords":[],"source":{"wiki":{"page":"Void Presence","revid":6430480}}},
+{"key":"Tumbled Package","kind":"object","ids":[502452],"name":"Tumbled Package","coords":[{"map":2371,"x":65.3,"y":63.6,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Tumbled Package","revid":6433938}}},
+{"key":"Rashaal's Vase","kind":"object","ids":[502471],"name":"Rashaal's Vase","coords":[{"map":2371,"x":70.2,"y":47.7,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Rashaal's Vase","revid":6433884}}},
+{"key":"Shattered Crystals (K'aresh)","kind":"object","ids":[502485],"name":"Shattered Crystals","coords":[{"map":2371,"x":75.1,"y":55.3,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Shattered Crystals (K'aresh)","revid":6433881}}},
+{"key":"Skeletal Tail Bones","kind":"object","ids":[502547],"name":"Skeletal Tail Bones","coords":[{"map":2371,"x":77.8,"y":27.9,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Skeletal Tail Bones","revid":6466582}}},
+{"key":"Crudely Stitched Sack","kind":"object","ids":[502603],"name":"Crudely Stitched Sack","coords":[{"map":2371,"x":58.7,"y":34.2,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Crudely Stitched Sack","revid":6858941}}},
+{"key":"Second Half of Noggenfogger's Journal","kind":"object","ids":[502902],"name":"Second Half of Noggenfogger's Journal","coords":[{"map":2346,"x":32.9,"y":58.8,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Second Half of Noggenfogger's Journal","revid":6627966}}},
+{"key":"Extractor Drill X-78 Safety Guide","kind":"object","ids":[502914],"name":"Extractor Drill X-78 Safety Guide","coords":[{"map":2214,"x":71.5,"y":98.1,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Extractor Drill X-78 Safety Guide","revid":6628719}}},
+{"key":"Misplaced Work Order","kind":"object","ids":[502917],"name":"Misplaced Work Order","coords":[{"map":2346,"x":65.5,"y":14.2,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Misplaced Work Order","revid":6628697}}},
+{"key":"Ancient Coffer","kind":"object","ids":[503375],"name":"Ancient Coffer","coords":[{"map":2371,"x":60.9,"y":38.3,"exact_version":true,"via":"lead"},{"map":2371,"x":66.7,"y":44.6,"exact_version":true,"via":"lead"},{"map":2371,"x":76.4,"y":31.0,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Ancient Coffer","revid":6433914}}},
+{"key":"Mailroom Distribution","kind":"object","ids":[503823],"name":"Mailroom Distribution","coords":[{"map":2472,"x":47.8,"y":64.1,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Mailroom Distribution","revid":6690692}}},
+{"key":"Ixthar's Favorite Crystal","kind":"object","ids":[504172],"name":"Ixthar's Favorite Crystal","coords":[{"map":2371,"x":64.1,"y":44.0,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Ixthar's Favorite Crystal","revid":6433101}}},
+{"key":"Profane Research","kind":"object","ids":[507966],"name":"Profane Research","coords":[{"map":94,"x":36.0,"y":72.6,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Profane Research","revid":6684206}}},
+{"key":"Overly-Sealed Letter","kind":"object","ids":[509486],"name":"Overly-Sealed Letter","coords":[{"map":2346,"x":43.3,"y":51.7,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Overly-Sealed Letter","revid":6629297}}}
+ ]
+}

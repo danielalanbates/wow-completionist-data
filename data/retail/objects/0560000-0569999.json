@@ -1,0 +1,13 @@
+{
+ "flavor": "retail",
+ "kind": "objects",
+ "bucket": "0560000-0569999",
+ "count": 5,
+ "records": [
+{"key":"Writ of Repossession","kind":"object","ids":[563555],"name":"Writ of Repossession","coords":[],"source":{"wiki":{"page":"Writ of Repossession","revid":6660489}}},
+{"key":"Brann's Impounded Curios","kind":"object","ids":[564548],"name":"Brann's Impounded Curios","coords":[],"source":{"wiki":{"page":"Brann's Impounded Curios","revid":6660248}}},
+{"key":"Unsealed Letter","kind":"object","ids":[565733],"name":"Unsealed Letter","coords":[],"source":{"wiki":{"page":"Unsealed Letter","revid":6942334}}},
+{"key":"Communications Orb","kind":"object","ids":[565928],"name":"Communications Orb","coords":[],"source":{"wiki":{"page":"Communications Orb","revid":6822980}}},
+{"key":"Bright Feather","kind":"object","ids":[568243],"name":"Bright Feather","coords":[],"source":{"wiki":{"page":"Bright Feather","revid":6851985}}}
+ ]
+}

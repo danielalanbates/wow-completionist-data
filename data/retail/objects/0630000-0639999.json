@@ -1,0 +1,16 @@
+{
+ "flavor": "retail",
+ "kind": "objects",
+ "bucket": "0630000-0639999",
+ "count": 8,
+ "records": [
+{"key":"Troll Bones","kind":"object","ids":[631316],"name":"Troll Bones","coords":[{"map":2512,"x":72.0,"y":33.5,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Troll Bones","revid":6846044}}},
+{"key":"Leather Band","kind":"object","ids":[631317],"name":"Leather Band","coords":[{"map":2512,"x":62.4,"y":30.7,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Leather Band","revid":6843366}}},
+{"key":"Message in a Bottle (object)","kind":"object","ids":[633792],"name":"Message in a Bottle","coords":[{"map":2437,"x":54.9,"y":32.4,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Message in a Bottle (object)","revid":6738627}}},
+{"key":"Hastily-Scribbled Note","kind":"object","ids":[633805],"name":"Hastily-Scribbled Note","coords":[{"map":2437,"x":46.4,"y":41.3,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Hastily-Scribbled Note","revid":6739501}}},
+{"key":"Scrap of Singed Paper","kind":"object","ids":[633814],"name":"Scrap of Singed Paper","coords":[{"map":2437,"x":54.3,"y":20.6,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Scrap of Singed Paper","revid":6738630}}},
+{"key":"Moldy Diary","kind":"object","ids":[633815],"name":"Moldy Diary","coords":[{"map":2437,"x":35.7,"y":25.2,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Moldy Diary","revid":6739285}}},
+{"key":"Discarded Scroll","kind":"object","ids":[633820],"name":"Discarded Scroll","coords":[{"map":2437,"x":45.9,"y":66.0,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Discarded Scroll","revid":6739376}}},
+{"key":"Parting Note","kind":"object","ids":[633823],"name":"Parting Note","coords":[{"map":2437,"x":34.8,"y":17.2,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Parting Note","revid":6740649}}}
+ ]
+}

@@ -1,0 +1,16 @@
+{
+ "flavor": "retail",
+ "kind": "objects",
+ "bucket": "0300000-0309999",
+ "count": 8,
+ "records": [
+{"key":"Bloody Banner","kind":"object","ids":[302779],"name":"Bloody Banner","coords":[],"source":{"wiki":{"page":"Bloody Banner","revid":5787692}}},
+{"key":"Blight Barrel","kind":"object","ids":[307029],"name":"Blight Barrel","coords":[],"source":{"wiki":{"page":"Blight Barrel","revid":6356261}}},
+{"key":"Crawler Mine Parts","kind":"object","ids":[307434],"name":"Crawler Mine Parts","coords":[],"source":{"wiki":{"page":"Crawler Mine Parts","revid":5766160}}},
+{"key":"Venture Co. Letter","kind":"object","ids":[307748],"name":"Venture Co. Letter","coords":[],"source":{"wiki":{"page":"Venture Co. Letter","revid":5788292}}},
+{"key":"The Bloodied Glaive of Vol'jin","kind":"object","ids":[309488],"name":"The Bloodied Glaive of Vol'jin","coords":[],"source":{"wiki":{"page":"The Bloodied Glaive of Vol'jin","revid":5771315}}},
+{"key":"Armor Stand","kind":"object","ids":[309498],"name":"Armor Stand","coords":[],"source":{"wiki":{"page":"Armor Stand","revid":6617141}}},
+{"key":"Void Stone (quest item)","kind":"object","ids":[309505],"name":"Void Stone","coords":[],"source":{"wiki":{"page":"Void Stone (quest item)","revid":6385634}}},
+{"key":"Sef Iwen's Remains","kind":"object","ids":[309896],"name":"Sef Iwen's Remains","coords":[],"source":{"wiki":{"page":"Sef Iwen's Remains","revid":5788272}}}
+ ]
+}

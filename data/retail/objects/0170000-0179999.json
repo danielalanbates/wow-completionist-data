@@ -1,0 +1,16 @@
+{
+ "flavor": "retail",
+ "kind": "objects",
+ "bucket": "0170000-0179999",
+ "count": 8,
+ "records": [
+{"key":"Brazier of Pain","kind":"object","ids":[176158],"name":"Brazier of Pain","coords":[{"map":77,"x":36.0,"y":56.0,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Brazier of Pain","revid":6708226}}},
+{"key":"Brazier of Malice","kind":"object","ids":[176159],"name":"Brazier of Malice","coords":[{"map":77,"x":38.0,"y":53.0,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Brazier of Malice","revid":6708228}}},
+{"key":"Brazier of Suffering","kind":"object","ids":[176160],"name":"Brazier of Suffering","coords":[{"map":77,"x":37.0,"y":53.0,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Brazier of Suffering","revid":6708229}}},
+{"key":"Brazier of Hatred","kind":"object","ids":[176161],"name":"Brazier of Hatred","coords":[{"map":77,"x":37.0,"y":55.0,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Brazier of Hatred","revid":6708230}}},
+{"key":"Scourge Cauldron","kind":"object","ids":[176361],"name":"Scourge Cauldron","coords":[],"source":{"wiki":{"page":"Scourge Cauldron","revid":6800573}}},
+{"key":"Joseph's Chest","kind":"object","ids":[177544],"name":"Joseph's Chest","coords":[{"map":23,"x":32.0,"y":83.0,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Joseph's Chest","revid":6557537}}},
+{"key":"Murgut's Totem Basket","kind":"object","ids":[178227],"name":"Murgut's Totem Basket","coords":[{"map":63,"x":56.4,"y":63.5,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Murgut's Totem Basket","revid":5647159}}},
+{"key":"Treasure of the Shen'dralar","kind":"object","ids":[179517],"name":"Treasure of the Shen'dralar","coords":[],"source":{"wiki":{"page":"Treasure of the Shen'dralar","revid":5646620}}}
+ ]
+}

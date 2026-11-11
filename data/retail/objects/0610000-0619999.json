@@ -1,0 +1,30 @@
+{
+ "flavor": "retail",
+ "kind": "objects",
+ "bucket": "0610000-0619999",
+ "count": 22,
+ "records": [
+{"key":"Agitated Tome (Silvermoon City)","kind":"object","ids":[612038],"name":"Agitated Tome","coords":[{"map":110,"x":41.8,"y":61.4,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Agitated Tome (Silvermoon City)","revid":6839551}}},
+{"key":"Twilight Crypts (object)","kind":"object","ids":[612242],"name":"Twilight Crypts","coords":[{"map":2437,"x":43.7,"y":67.3,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Twilight Crypts (object)","revid":6687176}}},
+{"key":"Antique Nobleman's Signet Ring","kind":"object","ids":[613242],"name":"Antique Nobleman's Signet Ring","coords":[{"map":94,"x":52.3,"y":45.4,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Antique Nobleman's Signet Ring","revid":6822858}}},
+{"key":"Farstrider's Lost Quiver","kind":"object","ids":[613267],"name":"Farstrider's Lost Quiver","coords":[{"map":94,"x":60.7,"y":67.4,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Farstrider's Lost Quiver","revid":6822860}}},
+{"key":"Half-Digested Viscera","kind":"object","ids":[613317],"name":"Half-Digested Viscera","coords":[{"map":2405,"x":38.1,"y":68.7,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Half-Digested Viscera","revid":6681854}}},
+{"key":"Gift of the Phoenix","kind":"object","ids":[613697],"name":"Gift of the Phoenix","coords":[{"map":94,"x":40.9,"y":19.5,"exact_version":true,"via":"body"}],"source":{"wiki":{"page":"Gift of the Phoenix","revid":6967000}}},
+{"key":"Tarnished Mural","kind":"object","ids":[613818],"name":"Tarnished Mural","coords":[{"map":2413,"x":55.7,"y":54.0,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Tarnished Mural","revid":6845331}}},
+{"key":"Ancient Runestone (Harandar)","kind":"object","ids":[613823],"name":"Ancient Runestone","coords":[{"map":2413,"x":33.3,"y":60.9,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Ancient Runestone (Harandar)","revid":6685754}}},
+{"key":"Derelict Mural","kind":"object","ids":[613827],"name":"Derelict Mural","coords":[{"map":2413,"x":72.5,"y":38.2,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Derelict Mural","revid":6845336}}},
+{"key":"Forgotten Mural","kind":"object","ids":[613828],"name":"Forgotten Mural","coords":[{"map":2413,"x":68.2,"y":23.8,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Forgotten Mural","revid":6845341}}},
+{"key":"Mirveda's Notes","kind":"object","ids":[613847],"name":"Mirveda's Notes","coords":[{"map":94,"x":50.5,"y":43.5,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Mirveda's Notes","revid":6680274}}},
+{"key":"Hawkstrider Husbandry: Unabridged Edition","kind":"object","ids":[613850],"name":"Hawkstrider Husbandry: Unabridged Edition","coords":[{"map":94,"x":57.8,"y":51.0,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Hawkstrider Husbandry: Unabridged Edition","revid":6685802}}},
+{"key":"Unfinished Sheet Music","kind":"object","ids":[613887],"name":"Unfinished Sheet Music","coords":[{"map":110,"x":38.1,"y":77.1,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Unfinished Sheet Music","revid":6685807}}},
+{"key":"Broken Armor","kind":"object","ids":[617245],"name":"Broken Armor","coords":[{"map":107,"x":56.0,"y":37.4,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Broken Armor","revid":6693998}}},
+{"key":"Forgotten Ink and Quill","kind":"object","ids":[617432],"name":"Forgotten Ink and Quill","coords":[{"map":94,"x":43.3,"y":69.5,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Forgotten Ink and Quill","revid":6872184}}},
+{"key":"Yl'mul's Skull","kind":"object","ids":[618321],"name":"Yl'mul's Skull","coords":[{"map":2512,"x":58.2,"y":66.7,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Yl'mul's Skull","revid":6856672}}},
+{"key":"Void Armor","kind":"object","ids":[618542],"name":"Void Armor","coords":[{"map":2405,"x":63.4,"y":78.2,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Void Armor","revid":6685804}}},
+{"key":"Ancient Tablet (Voidstorm)","kind":"object","ids":[618554],"name":"Ancient Tablet","coords":[{"map":2405,"x":50.3,"y":87.7,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Ancient Tablet (Voidstorm)","revid":6841733}}},
+{"key":"Abandoned Telescope","kind":"object","ids":[618558],"name":"Abandoned Telescope","coords":[{"map":2405,"x":40.5,"y":58.6,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Abandoned Telescope","revid":6687804}}},
+{"key":"Tattered Page","kind":"object","ids":[618569],"name":"Tattered Page","coords":[{"map":2405,"x":60.4,"y":45.5,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Tattered Page","revid":6687809}}},
+{"key":"Shadowgraft Harness","kind":"object","ids":[618571],"name":"Shadowgraft Harness","coords":[{"map":2405,"x":27.8,"y":54.0,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Shadowgraft Harness","revid":6685842}}},
+{"key":"Pilfered Amani Tablet","kind":"object","ids":[619613],"name":"Pilfered Amani Tablet","coords":[{"map":94,"x":43.4,"y":84.6,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Pilfered Amani Tablet","revid":6872274}}}
+ ]
+}

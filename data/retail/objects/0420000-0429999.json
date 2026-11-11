@@ -1,0 +1,17 @@
+{
+ "flavor": "retail",
+ "kind": "objects",
+ "bucket": "0420000-0429999",
+ "count": 9,
+ "records": [
+{"key":"Webbed Knapsack","kind":"object","ids":[420053],"name":"Webbed Knapsack","coords":[{"map":2214,"x":68.9,"y":38.9,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Webbed Knapsack","revid":6859185}}},
+{"key":"Telescope (Dornogal)","kind":"object","ids":[420130],"name":"Telescope","coords":[],"source":{"wiki":{"page":"Telescope (Dornogal)","revid":6637240}}},
+{"key":"Golden Egg Heirloom","kind":"object","ids":[420195],"name":"Golden Egg Heirloom","coords":[{"map":1,"x":44.5,"y":35.2,"exact_version":true,"via":"lead"},{"map":37,"x":30.5,"y":91.3,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Golden Egg Heirloom","revid":5998492}}},
+{"key":"Disturbed Earth","kind":"object","ids":[422531],"name":"Disturbed Earth","coords":[],"source":{"wiki":{"page":"Disturbed Earth","revid":6637595}}},
+{"key":"Unstable Rift","kind":"object","ids":[423343],"name":"Unstable Rift","coords":[],"source":{"wiki":{"page":"Unstable Rift","revid":6642347}}},
+{"key":"Dropped Package","kind":"object","ids":[423987],"name":"Dropped Package","coords":[{"map":2248,"x":55.1,"y":59.3,"exact_version":true,"via":"lead"},{"map":2248,"x":71.1,"y":54.1,"exact_version":true,"via":"lead"},{"map":2248,"x":62.5,"y":31.2,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Dropped Package","revid":6634885}}},
+{"key":"Order of Night Propaganda","kind":"object","ids":[424436],"name":"Order of Night Propaganda","coords":[],"source":{"wiki":{"page":"Order of Night Propaganda","revid":6833240}}},
+{"key":"Discarded Botanist Notes","kind":"object","ids":[428135],"name":"Discarded Botanist Notes","coords":[{"map":2248,"x":35.8,"y":77.2,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Discarded Botanist Notes","revid":6634338}}},
+{"key":"Discarded Research Notes","kind":"object","ids":[428167],"name":"Discarded Research Notes","coords":[],"source":{"wiki":{"page":"Discarded Research Notes","revid":6634339}}}
+ ]
+}

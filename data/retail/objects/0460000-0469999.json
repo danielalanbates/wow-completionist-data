@@ -1,0 +1,15 @@
+{
+ "flavor": "retail",
+ "kind": "objects",
+ "bucket": "0460000-0469999",
+ "count": 7,
+ "records": [
+{"key":"For Rent Sign","kind":"object","ids":[461478],"name":"For Rent Sign","coords":[],"source":{"wiki":{"page":"For Rent Sign","revid":6782791}}},
+{"key":"Weapons Cache (Undermine)","kind":"object","ids":[461492],"name":"Weapons Cache","coords":[{"map":2346,"x":44.7,"y":66.3,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Weapons Cache (Undermine)","revid":6628669}}},
+{"key":"Arcane Device","kind":"object","ids":[466115],"name":"Arcane Device","coords":[{"map":46,"x":71.9,"y":44.8,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Arcane Device","revid":6631607}}},
+{"key":"Singing Tablet","kind":"object","ids":[467445],"name":"Singing Tablet","coords":[{"map":2369,"x":50.3,"y":15.5,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Singing Tablet","revid":6841725}}},
+{"key":"Damaged Echo Surveyor","kind":"object","ids":[469724],"name":"Damaged Echo Surveyor","coords":[],"source":{"wiki":{"page":"Damaged Echo Surveyor","revid":6432474}}},
+{"key":"Ways of the Priesthood","kind":"object","ids":[469911],"name":"Ways of the Priesthood","coords":[{"map":2371,"x":81.0,"y":50.0,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Ways of the Priesthood","revid":6433141}}},
+{"key":"K'areshi Priest's Bowl","kind":"object","ids":[469979],"name":"K'areshi Priest's Bowl","coords":[{"map":2371,"x":80.0,"y":47.6,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"K'areshi Priest's Bowl","revid":6433142}}}
+ ]
+}

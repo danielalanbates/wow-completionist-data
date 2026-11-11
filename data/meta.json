@@ -1,0 +1,212 @@
+{
+ "schema_version": 1,
+ "generator": "tools/build_db.py export",
+ "flavors": {
+  "era": "Classic Era (1.15.x)",
+  "tbc": "Burning Crusade Anniversary (2.5.x)",
+  "mop": "Mists of Pandaria Classic (5.5.x)",
+  "retail": "Retail (12.x)",
+  "forever": "WoW Forever (1.60.x)"
+ },
+ "sources": {
+  "wiki": {
+   "site": "https://warcraft.wiki.gg",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "pages_used": 62770,
+   "pages_without_revid": 0,
+   "oldest_revision": "2019-08-26T02:44:06Z",
+   "newest_revision": "2026-11-07T23:35:01Z"
+  },
+  "db2": {
+   "era": {
+    "build": "wow_classic_era 1.15.9.70576",
+    "tables": [
+     "QuestV2"
+    ],
+    "maps": {
+     "tables": "UiMap + UiMapAssignment",
+     "build": "1.15.7.61582"
+    }
+   },
+   "tbc": {
+    "build": "wow_anniversary 2.5.6.70577",
+    "tables": [
+     "QuestV2"
+    ],
+    "maps": {
+     "tables": "UiMap + UiMapAssignment",
+     "build": "2.5.6.69110"
+    }
+   },
+   "mop": {
+    "build": "wow_classic 5.5.4.70631",
+    "tables": [
+     "Achievement",
+     "Achievement_Category",
+     "Criteria",
+     "CriteriaTree",
+     "QuestV2"
+    ],
+    "maps": {
+     "tables": "UiMap + UiMapAssignment",
+     "build": "5.5.4.69383"
+    }
+   },
+   "retail": {
+    "build": "wow 12.1.5.70783",
+    "tables": [
+     "Achievement",
+     "Achievement_Category",
+     "Criteria",
+     "CriteriaTree",
+     "GarrMission",
+     "QuestObjective",
+     "QuestPOIBlob",
+     "QuestPOIPoint",
+     "QuestV2"
+    ],
+    "maps": {
+     "tables": "UiMap + UiMapAssignment",
+     "build": "12.1.0.69382"
+    }
+   },
+   "forever": {
+    "build": "wowf 1.60.1.70790",
+    "tables": [
+     "QuestV2"
+    ],
+    "maps": {
+     "tables": "UiMap + UiMapAssignment",
+     "build": "1.60.1.70790"
+    }
+   }
+  }
+ },
+ "counts": {
+  "era": {
+   "quests": 3299,
+   "npcs": 2136,
+   "objects": 367,
+   "achievements": 0,
+   "missions": 0,
+   "maps": 54,
+   "questv2": 4807,
+   "questv2_excluded_by_wiki": 692,
+   "questv2_without_wiki_page": 816,
+   "addon_crosscheck": {
+    "addon_flavor_quests": 3299,
+    "addon_only": 0,
+    "data_only": 0,
+    "prereq_quests": 1622,
+    "prereq_same_ids_as_addon": 1621
+   },
+   "prerequisite_split": {
+    "prereq_breadcrumb_split": 2,
+    "prereq_optional_split": 7,
+    "prereq_multi_group": 22
+   }
+  },
+  "tbc": {
+   "quests": 5021,
+   "npcs": 3453,
+   "objects": 546,
+   "achievements": 0,
+   "missions": 0,
+   "maps": 182,
+   "questv2": 6160,
+   "questv2_excluded_by_wiki": 285,
+   "questv2_without_wiki_page": 854,
+   "addon_crosscheck": {
+    "addon_flavor_quests": 5021,
+    "addon_only": 0,
+    "data_only": 0,
+    "prereq_quests": 2495,
+    "prereq_same_ids_as_addon": 2493
+   },
+   "prerequisite_split": {
+    "prereq_breadcrumb_split": 2,
+    "prereq_optional_split": 8,
+    "prereq_multi_group": 40
+   }
+  },
+  "mop": {
+   "quests": 10562,
+   "npcs": 6787,
+   "objects": 1035,
+   "achievements": 3998,
+   "missions": 0,
+   "maps": 530,
+   "questv2": 17140,
+   "questv2_excluded_by_wiki": 3682,
+   "questv2_without_wiki_page": 2896,
+   "addon_crosscheck": {
+    "addon_flavor_quests": 10562,
+    "addon_only": 0,
+    "data_only": 0,
+    "prereq_quests": 6386,
+    "prereq_same_ids_as_addon": 6367
+   },
+   "prerequisite_split": {
+    "prereq_breadcrumb_split": 6,
+    "prereq_optional_split": 73,
+    "prereq_multi_group": 614
+   }
+  },
+  "retail": {
+   "quests": 29498,
+   "npcs": 15305,
+   "objects": 2949,
+   "achievements": 14139,
+   "missions": 1757,
+   "maps": 1950,
+   "questv2": 66552,
+   "questv2_excluded_by_wiki": 5392,
+   "questv2_without_wiki_page": 31662,
+   "addon_crosscheck": {
+    "addon_flavor_quests": 26642,
+    "addon_only": 0,
+    "data_only": 0,
+    "prereq_quests": 16849,
+    "prereq_same_ids_as_addon": 16822
+   },
+   "prerequisite_split": {
+    "prereq_breadcrumb_split": 33,
+    "prereq_optional_split": 153,
+    "prereq_multi_group": 2042
+   },
+   "retail_turnin_check": {
+    "compared": 6549,
+    "over_50_yd": 693
+   },
+   "retail_poi_blobs": {
+    "blobs": 45132,
+    "skipped_map_not_in_maps_file": 26,
+    "skipped_off_map": 77
+   }
+  },
+  "forever": {
+   "quests": 3486,
+   "npcs": 2264,
+   "objects": 372,
+   "achievements": 0,
+   "missions": 0,
+   "maps": 60,
+   "questv2": 6616,
+   "questv2_excluded_by_wiki": 693,
+   "questv2_without_wiki_page": 2437,
+   "addon_crosscheck": {
+    "addon_flavor_quests": 3486,
+    "addon_only": 0,
+    "data_only": 0,
+    "prereq_quests": 1702,
+    "prereq_same_ids_as_addon": 1701
+   },
+   "prerequisite_split": {
+    "prereq_breadcrumb_split": 3,
+    "prereq_optional_split": 10,
+    "prereq_multi_group": 24
+   }
+  }
+ }
+}

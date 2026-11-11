@@ -1,0 +1,16 @@
+{
+ "flavor": "retail",
+ "kind": "objects",
+ "bucket": "0390000-0399999",
+ "count": 8,
+ "records": [
+{"key":"Chest of the Flights","kind":"object","ids":[392591],"name":"Chest of the Flights","coords":[{"map":2133,"x":56.0,"y":3.1,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Chest of the Flights","revid":6241294}}},
+{"key":"Prisoner Transfer Notes","kind":"object","ids":[393963],"name":"Prisoner Transfer Notes","coords":[],"source":{"wiki":{"page":"Prisoner Transfer Notes","revid":6132158}}},
+{"key":"Interrogation Notes","kind":"object","ids":[393964],"name":"Interrogation Notes","coords":[],"source":{"wiki":{"page":"Interrogation Notes","revid":6132157}}},
+{"key":"Prisoner Update Notes","kind":"object","ids":[393965],"name":"Prisoner Update Notes","coords":[],"source":{"wiki":{"page":"Prisoner Update Notes","revid":6132159}}},
+{"key":"Remains of a Fallen Shikaar","kind":"object","ids":[395900],"name":"Remains of a Fallen Shikaar","coords":[],"source":{"wiki":{"page":"Remains of a Fallen Shikaar","revid":6833140}}},
+{"key":"Spear of a Fallen Shikaar","kind":"object","ids":[395901],"name":"Spear of a Fallen Shikaar","coords":[],"source":{"wiki":{"page":"Spear of a Fallen Shikaar","revid":6689888}}},
+{"key":"Shovel (Ohn'ahran Plains)","kind":"object","ids":[396017],"name":"Shovel","coords":[],"source":{"wiki":{"page":"Shovel (Ohn'ahran Plains)","revid":6838148}}},
+{"key":"Secured Shipment","kind":"object","ids":[398815],"name":"Secured Shipment","coords":[],"source":{"wiki":{"page":"Secured Shipment","revid":6102205}}}
+ ]
+}

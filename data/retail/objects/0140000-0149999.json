@@ -1,0 +1,15 @@
+{
+ "flavor": "retail",
+ "kind": "objects",
+ "bucket": "0140000-0149999",
+ "count": 7,
+ "records": [
+{"key":"Sealed Barrel","kind":"object","ids":[142151],"name":"Sealed Barrel","coords":[{"map":56,"x":13.6,"y":38.1,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Sealed Barrel","revid":6859752}}},
+{"key":"Woodpaw Battle Map","kind":"object","ids":[142195],"name":"Woodpaw Battle Map","coords":[{"map":69,"x":71.6,"y":55.9,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Woodpaw Battle Map","revid":6372899}}},
+{"key":"Sparklematic 5200","kind":"object","ids":[142487],"name":"Sparklematic 5200","coords":[],"source":{"wiki":{"page":"Sparklematic 5200","revid":6572863}}},
+{"key":"Highvale Records","kind":"object","ids":[144071],"name":"Highvale Records","coords":[{"map":26,"x":31.9,"y":46.6,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Highvale Records","revid":5645372}}},
+{"key":"Highvale Notes","kind":"object","ids":[144072],"name":"Highvale Notes","coords":[{"map":26,"x":29.5,"y":48.5,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Highvale Notes","revid":5645370}}},
+{"key":"Highvale Report","kind":"object","ids":[144073],"name":"Highvale Report","coords":[{"map":26,"x":28.4,"y":46.1,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Highvale Report","revid":5645371}}},
+{"key":"Stolen Silver Lockbox","kind":"object","ids":[147557],"name":"Stolen Silver Lockbox","coords":[{"map":10,"x":63.7,"y":58.9,"exact_version":true,"via":"lead"}],"source":{"wiki":{"page":"Stolen Silver Lockbox","revid":5712254}}}
+ ]
+}

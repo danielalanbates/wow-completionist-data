@@ -1,0 +1,9 @@
+{
+ "flavor": "retail",
+ "kind": "npcs",
+ "bucket": "0360000-0369999",
+ "count": 1,
+ "records": [
+{"key":"Bloodbound Memory","kind":"npc","ids":[362151],"name":"Bloodbound Memory","coords":[],"source":{"wiki":{"page":"Bloodbound Memory","revid":6356424}}}
+ ]
+}

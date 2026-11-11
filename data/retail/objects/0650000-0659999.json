@@ -1,0 +1,16 @@
+{
+ "flavor": "retail",
+ "kind": "objects",
+ "bucket": "0650000-0659999",
+ "count": 8,
+ "records": [
+{"key":"Portal to Magisters' Terrace","kind":"object","ids":[650304],"name":"Portal to Magisters' Terrace","coords":[],"source":{"wiki":{"page":"Portal to Magisters' Terrace","revid":6832612}}},
+{"key":"Dark Charms","kind":"object","ids":[651486],"name":"Dark Charms","coords":[],"source":{"wiki":{"page":"Dark Charms","revid":6855452}}},
+{"key":"Revealed Gateway","kind":"object","ids":[651744],"name":"Revealed Gateway","coords":[],"source":{"wiki":{"page":"Revealed Gateway","revid":6834147}}},
+{"key":"Pulsing Void Magicule","kind":"object","ids":[651783],"name":"Pulsing Void Magicule","coords":[],"source":{"wiki":{"page":"Pulsing Void Magicule","revid":6834203}}},
+{"key":"Belo'vir's Arcane Vault","kind":"object","ids":[652051],"name":"Belo'vir's Arcane Vault","coords":[],"source":{"wiki":{"page":"Belo'vir's Arcane Vault","revid":6832964}}},
+{"key":"Whispering Tablet","kind":"object","ids":[653170],"name":"Whispering Tablet","coords":[],"source":{"wiki":{"page":"Whispering Tablet","revid":6841677}}},
+{"key":"Spiritwing Feather","kind":"object","ids":[653846],"name":"Spiritwing Feather","coords":[],"source":{"wiki":{"page":"Spiritwing Feather","revid":6851407}}},
+{"key":"Mysterious Tablet","kind":"object","ids":[656417],"name":"Mysterious Tablet","coords":[],"source":{"wiki":{"page":"Mysterious Tablet","revid":6841081}}}
+ ]
+}

@@ -1,0 +1,9 @@
+{
+ "flavor": "retail",
+ "kind": "objects",
+ "bucket": "0150000-0159999",
+ "count": 1,
+ "records": [
+{"key":"Hidden Treasure Chest","kind":"object","ids":[155733],"name":"Hidden Treasure Chest","coords":[],"source":{"wiki":{"page":"Hidden Treasure Chest","revid":5791044}}}
+ ]
+}

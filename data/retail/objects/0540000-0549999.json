@@ -1,0 +1,11 @@
+{
+ "flavor": "retail",
+ "kind": "objects",
+ "bucket": "0540000-0549999",
+ "count": 3,
+ "records": [
+{"key":"Scorched Poster","kind":"object","ids":[547529],"name":"Scorched Poster","coords":[],"source":{"wiki":{"page":"Scorched Poster","revid":6452002}}},
+{"key":"Console of Infinite Chaos","kind":"object","ids":[548011],"name":"Console of Infinite Chaos","coords":[],"source":{"wiki":{"page":"Console of Infinite Chaos","revid":6791268}}},
+{"key":"Infinite Bonfire","kind":"object","ids":[549217],"name":"Infinite Bonfire","coords":[],"source":{"wiki":{"page":"Infinite Bonfire","revid":6605964}}}
+ ]
+}
