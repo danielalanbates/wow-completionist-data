@@ -8,11 +8,15 @@
     python3 tools/build_db.py export [--addon PATH] [flavor ...]
                                                              the addon's wiki/DB2 caches -> data/ (maintainers)
     python3 tools/build_db.py all [--addon PATH]             export, then build
+    python3 tools/fetch_db2.py                               (maintainers) map + flight-point tables of the
+                                                             addon's pinned DB2 builds -> cache/db2/
 
 `build` needs only this repository.  It streams data/<flavor>/<kind>/*.json one bucket at a time, applies every
 corrections/*.json entry last (file-name order, then file order) and writes build/completionist.sqlite
 (gitignored).  --json also writes build/json/<flavor>/<kind>.json (one corrected record per line).  A correction
-that does not apply stops the build; --lenient logs it in the corrections_applied table instead.
+that does not apply, or a corrected record that breaks the schema or puts a point off its map, stops the build;
+--lenient logs it in the corrections_applied table instead.  The cross-record checks (prerequisites resolve, QuestV2
+membership, ...) are tools/validate.py: run it before relying on a build.
 
 `export` regenerates data/ from the addon repository's pipeline outputs (see docs/HANDOFF.md).  The addon path is
 --addon, else $CG_ADDON_REPO, else ../wow-completionist-guide, else ../repo.  Both stages are deterministic: the
@@ -59,7 +63,11 @@ def do_build(args):
     from cgdata.sqlite_build import build_sqlite
     t0 = time.time()
     out = C.BUILD / "completionist.sqlite"
-    counts, log = build_sqlite(out, json_dir=(C.BUILD / "json") if args.json else None, strict=not args.lenient)
+    try:
+        counts, log = build_sqlite(out, json_dir=(C.BUILD / "json") if args.json else None, strict=not args.lenient)
+    except ValueError as e:
+        print(f"build stopped: {e}", file=sys.stderr)
+        return 1
     applied = sum(1 for x in log if x[4] == "applied")
     errors = [x for x in log if x[4] == "error"]
     print(f"built {out.relative_to(C.REPO)} in {time.time() - t0:.0f}s: "

@@ -92,7 +92,7 @@ def _prepare(field):
     out, pos = [], 0
     for s, e, inner in list(_templates(f)):
         out.append(f[pos:s])
-        name = re.split(r"[|\n]", inner, 1)[0].strip().lower()
+        name = re.split(r"[|\n]", inner, maxsplit=1)[0].strip().lower()
         if LIST_TEMPLATES.match(inner):
             items = [p.strip() for p in _split_top(inner)[1:] if "=" not in p.split("[[")[0]]
             out.append("\n" + "\n".join(_prepare(p) for p in items) + "\n")

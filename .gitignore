@@ -10,3 +10,5 @@ venv/
 *.swp
 .idea/
 .vscode/
+# DB2 tables fetched by tools/fetch_db2.py
+cache/

@@ -26,6 +26,8 @@ REPO = Path(__file__).resolve().parents[2]
 DATA = REPO / "data"
 CORRECTIONS = REPO / "corrections"
 BUILD = REPO / "build"
+# extra Blizzard DB2 tables fetched by tools/fetch_db2.py (gitignored)
+CACHE_DB2 = REPO / "cache" / "db2"
 FLAVORS = ("era", "tbc", "mop", "retail", "forever")
 FLAVOR_NAMES = {
     "era": "Classic Era (1.15.x)",
@@ -46,7 +48,7 @@ KINDS = {
 # the singular names used in corrections files
 KIND_ALIASES = {"quest": "quests", "achievement": "achievements", "mission": "missions", "npc": "npcs",
                 "object": "objects"}
-SCHEMA_VERSION = 1
+SCHEMA_VERSION = 2
 
 
 def bucket_of(kind, rec):
@@ -271,10 +273,12 @@ def corrections_for(flavor, kind, corrections):
 
 
 def apply_corrections(flavor, kind, records, corrections, strict=True):
-    """records: {key: record} for one flavor/kind, changed in place.  Returns [(correction id, status, message)].
-    A correction with an empty path adds (op add) or deletes (op remove) a whole record.  Every touched record
-    lists the correction ids it received in record["corrections"]; a correction that sets coordinates
-    ("…/coords") marks the sibling coord_source as {"type": "correction", ...} and exact_version true."""
+    """records: {key: record} for one flavor/kind, changed in place.  Returns [(correction id, key, status,
+    message)].  A correction with an empty path adds (op add) or deletes (op remove) a whole record.  Every touched
+    record lists the correction ids it received in record["corrections"].  A correction that sets an endpoint's or
+    objective's coordinates ("…/coords") marks the sibling coord_source as {"type": "correction", ...},
+    exact_version true and confidence "high"; on an NPC or object record each new point gets exact_version true,
+    via "correction", confidence "high" and correction <id> unless the correction gives them."""
     log = []
     for fname, idx, c in corrections_for(flavor, kind, corrections):
         cid = c.get("id") or f"{fname}#{idx}"
@@ -291,7 +295,7 @@ def apply_corrections(flavor, kind, records, corrections, strict=True):
                         raise ValueError("the new record's key does not match 'key'")
                     if key in records:
                         if c.get("flavor") == "all":
-                            log.append((cid, "skipped", f"{flavor}: record {key!r} already exists"))
+                            log.append((cid, key, "skipped", f"{flavor}: record {key!r} already exists"))
                             continue
                         raise ValueError("record already exists")
                     rec.setdefault("corrections", []).append(cid)
@@ -302,26 +306,37 @@ def apply_corrections(flavor, kind, records, corrections, strict=True):
                     del records[key]
                 else:
                     raise ValueError("a whole record can only be added or removed")
-                log.append((cid, "applied", ""))
+                log.append((cid, key, "applied", ""))
                 continue
             if key not in records:
                 if c.get("flavor") == "all":
-                    log.append((cid, "skipped", f"{flavor}: no record {key!r}"))
+                    log.append((cid, key, "skipped", f"{flavor}: no record {key!r}"))
                     continue
                 raise KeyError(f"no {kind} record {key!r}")
             rec = records[key]
             trial = copy.deepcopy(rec)
+            before = [json.dumps(p, sort_keys=True) for p in rec.get("coords", [])] \
+                if kind in ("npcs", "objects") else []
             parent, last = pointer_apply(trial, c["op"], path, c.get("value"))
-            if last == "coords" and isinstance(parent, dict) and c["op"] in ("set", "add"):
+            if kind in ("npcs", "objects"):
+                if pointer_parts(path)[:1] == ["coords"] and c["op"] in ("set", "add"):
+                    for pt in trial.get("coords", []):
+                        if isinstance(pt, dict) and json.dumps(pt, sort_keys=True) not in before:
+                            pt.setdefault("exact_version", True)
+                            pt.setdefault("via", "correction")
+                            pt.setdefault("confidence", "high")
+                            pt.setdefault("correction", cid)
+            elif last == "coords" and isinstance(parent, dict) and c["op"] in ("set", "add"):
                 parent["coord_source"] = {"type": "correction", "correction": cid}
                 parent["exact_version"] = True
+                parent["confidence"] = "high"
             trial.setdefault("corrections", [])
             if cid not in trial["corrections"]:
                 trial["corrections"].append(cid)
             records[key] = trial
-            log.append((cid, "applied", ""))
+            log.append((cid, key, "applied", ""))
         except (KeyError, ValueError, TypeError) as e:
             if strict:
                 raise ValueError(f"correction {cid} ({fname}): {e}") from None
-            log.append((cid, "error", str(e)))
+            log.append((cid, key, "error", str(e)))
     return log

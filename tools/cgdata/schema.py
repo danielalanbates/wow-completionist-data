@@ -7,40 +7,59 @@ Spec language: a Python type (int, str, bool, float = any number), None, a tuple
 these literal values, [spec] = list of spec, {name: spec} = object with exactly these members ("?name" = may be
 absent; any other member is an error).
 """
+from .names import CLASSES, FACTIONS, RACES
+
 NUM = float
 COORD = {"map": int, "x": NUM, "y": NUM}
-SOURCE_WIKI = {"type": frozenset({"wiki"}), "page": str, "revid": (int, None), "via": str, "?item_page": str}
-SOURCE_DB2 = {"type": frozenset({"db2"}), "table": str, "build": str, "blob": int, "via": str}
+CONFIDENCE = frozenset({"high", "medium", "low"})
+READ_AS = frozenset({"retail", "classic", "tbc", "forever", "mop"})
+READ_BY = frozenset({"tag", "check", "zone-default", "default"})
+CHECK = {"against": frozenset({"QuestPOIBlob", "TaxiNodes"}), "build": str, "id": int, "yards": int, "?quest": int}
+SOURCE_WIKI = {"type": frozenset({"wiki"}), "page": str, "revid": (int, None), "via": str, "?item_page": str,
+               "read_as": READ_AS, "read_by": READ_BY, "?check": CHECK}
+REPLACED = {"page": (str, None), "revid": (int, None), "via": (str, None), "map": int, "x": NUM, "y": NUM,
+            "yards": int}
+SOURCE_DB2 = {"type": frozenset({"db2"}), "table": str, "build": str, "blob": int, "via": str, "?replaces": REPLACED}
 SOURCE_FIX = {"type": frozenset({"correction"}), "correction": str}
 COORD_SOURCE = (None, SOURCE_WIKI, SOURCE_DB2, SOURCE_FIX)
 KIND = frozenset({"npc", "object", "item", "place", "quest", "achievement", "auto", "unknown"})
-ENDPOINT = {"kind": KIND, "ids": [int], "name": (str, None), "page": (str, None), "faction": (str, None),
-            "coords": [COORD], "coord_source": COORD_SOURCE, "exact_version": (bool, None)}
+SIDE = (None, frozenset({"Alliance", "Horde"}))
+ENDPOINT = {"kind": KIND, "ids": [int], "name": (str, None), "page": (str, None), "faction": SIDE,
+            "coords": [COORD], "coord_source": COORD_SOURCE, "exact_version": (bool, None),
+            "confidence": (None, CONFIDENCE)}
 TARGET = {"kind": KIND, "ids": [int], "name": (str, None), "page": (str, None)}
 OBJECTIVE = {"index": int, "kind": frozenset({"kill", "item", "talk", "use", "progress", "other", "provided", "object"}),
              "text": (str, None), "count": (int, None), "optional": bool, "target": (None, TARGET), "coords": [COORD],
-             "coord_source": COORD_SOURCE, "exact_version": (bool, None), "?db2_objective": int, "?db2_type": int}
+             "coord_source": COORD_SOURCE, "exact_version": (bool, None), "confidence": (None, CONFIDENCE),
+             "?db2_objective": int, "?db2_type": int}
 PREREQS = {"required": [[int]], "breadcrumb": [int], "optional": [int], "in_progress": [int],
            "inferred_from_next": [int], "basis": frozenset({"none", "single", "explicit", "list"}),
            "?faction": dict, "?wiki_text": str, "?unresolved_links": int}
 WIKI_REF = {"page": str, "revid": (int, None)}
 DB2_REF = {"table": str, "build": str}
-QUEST = {
-    "id": int, "name": str, "flavors": [str], "faction": str, "level": (int, None), "min_level": (int, None),
+FLAVOR = frozenset({"era", "tbc", "mop", "retail", "forever"})
+QUEST_BODY = {
+    "name": str, "faction": frozenset(FACTIONS), "level": (int, None), "min_level": (int, None),
     "type": (str, None), "category": (str, None), "zone_map": (int, None),
-    "zone_map_source": (None, frozenset({"category", "coords"})), "classes": [str], "races": [str],
+    "zone_map_source": (None, frozenset({"category", "coords"})), "classes": [frozenset(CLASSES)],
+    "races": [frozenset(RACES)],
     "profession": (str, None), "is_breadcrumb": (None, frozenset({"yes", "optional"})), "auto_accept": bool,
     "start": [ENDPOINT], "end": [ENDPOINT], "end_same_as_start": bool,
     "start_item": (None, {"ids": [int], "name": (str, None), "page": (str, None)}),
     "objectives_text": (str, None), "objectives_source": (None, frozenset({"wiki", "db2"})), "objectives": [OBJECTIVE],
-    "prerequisites": PREREQS, "next": [int], "source": {"wiki": WIKI_REF, "db2": DB2_REF},
-    "?corrections": [str],
+    "prerequisites": PREREQS, "next": [int],
 }
-NPC_COORD = {"map": int, "x": NUM, "y": NUM, "exact_version": bool, "via": (str, None), "?coord_source": COORD_SOURCE}
+VARIANT = dict(QUEST_BODY, source={"wiki": WIKI_REF})
+ID_CLAIM = {"page": str, "revid": (int, None), "name": str, "faction": str}
+QUEST = dict({"id": int, "flavors": [FLAVOR]}, **QUEST_BODY, **{
+    "source": {"wiki": WIKI_REF, "db2": DB2_REF}, "?variants": [VARIANT], "?id_conflict": [ID_CLAIM],
+    "?corrections": [str]})
+NPC_COORD = {"map": int, "x": NUM, "y": NUM, "exact_version": bool, "via": (str, None), "confidence": CONFIDENCE,
+             "?read_as": READ_AS, "?read_by": READ_BY, "?check": CHECK, "?correction": str}
 NPC = {"key": str, "kind": frozenset({"npc", "object"}), "ids": [int], "name": str, "coords": [NPC_COORD],
-       "source": {"wiki": WIKI_REF}, "?corrections": [str], "?coord_source": COORD_SOURCE, "?exact_version": bool}
+       "source": {"wiki": WIKI_REF}, "?corrections": [str]}
 LOCATION = (None, {"map": int, "x": NUM, "y": NUM, "via": str, "?quest": int, "?page": str, "?revid": (int, None),
-                   "?exact_version": bool})
+                   "?exact_version": bool, "?confidence": CONFIDENCE})
 CRITERION = {"tree": int, "criteria": int, "type": (int, None), "type_name": (str, None), "asset": (int, None),
              "amount": (int, None), "text": (str, None), "location": LOCATION}
 WIKI_CRITERION = {"text": (str, None), "link": (str, None), "quest": (int, None), "location": LOCATION}

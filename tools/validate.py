@@ -15,6 +15,11 @@ Checks (errors unless marked):
   * every coordinate is on a map listed in data/<flavor>/maps.json, with 0 <= x, y <= 100, and says where it came from
   * every quest: its id is in the client's QuestV2 (data/<flavor>/questv2.json), not also listed as excluded, its
     `flavors` include this flavor, prerequisites and `next` resolve to quests of the same flavor
+  * prerequisites some player can meet: after the documented faction filter, every required group must keep a quest
+    that the player's faction can take (an Alliance quest that needs a Horde-only quest, or a quest both factions take
+    that needs one Alliance-only and one Horde-only quest, is an error)
+  * warnings: a wiki point more than 50 yd from Blizzard's position for the same NPC (coord_source.check), an id
+    that other wiki pages give to a differently named quest (id_conflict)
   * provenance: wiki page + revision id, or DB2 table + build, on every record
   * corrections: well-formed, unique ids, and each one applies (a correction that matches nothing is an error)
 Streams one bucket file at a time.
@@ -88,8 +93,11 @@ def coord_ok(c, maps, rep, where):
     return ok
 
 
-def located(points_holder, maps, rep, where):
-    """check a dict with coords/coord_source/exact_version; -> source type or None"""
+TOL = 50
+
+
+def located(points_holder, maps, rep, where, cv=None, role=None):
+    """check a dict with coords/coord_source/exact_version/confidence; -> source type or None"""
     cs = points_holder.get("coords") or []
     for c in cs:
         coord_ok(c, maps, rep, where)
@@ -102,8 +110,47 @@ def located(points_holder, maps, rep, where):
             rep.warn("provenance", f"{where}: wiki coordinate page {src.get('page')!r} has no revision id")
         if not isinstance(points_holder.get("exact_version"), bool):
             rep.err("schema", f"{where}: exact_version must be true/false when coordinates are given")
+        if points_holder.get("confidence") not in ("high", "medium", "low"):
+            rep.err("schema", f"{where}: confidence must be high/medium/low when coordinates are given")
+        chk = src.get("check")
+        if chk and chk.get("yards", 0) > TOL:
+            rep.warn("check", f"{where}: wiki point is {chk['yards']} yd from Blizzard's {chk['against']} "
+                              f"{chk['id']} for the same NPC (confidence {points_holder.get('confidence')})")
+        if cv is not None and role:
+            cv[f"{role}_confidence_{points_holder.get('confidence')}"] += 1
+            if chk:
+                cv[f"{role}_checked"] += 1
+                cv[f"{role}_checked_within_{TOL}yd"] += chk["yards"] <= TOL
+            if (src.get("replaces") or {}).get("yards") is not None:
+                cv[f"{role}_wiki_point_replaced_by_pin"] += 1
         return src.get("type")
+    elif points_holder.get("confidence") is not None:
+        rep.err("schema", f"{where}: confidence without coordinates")
     return None
+
+
+def sides_of(rec):
+    """the factions that can take a quest record (with its faction variants)"""
+    out = set()
+    for h in [rec] + rec.get("variants", []):
+        f = h.get("faction")
+        out |= {f} if f in ("Alliance", "Horde") else {"Alliance", "Horde"}
+    return out
+
+
+def unmeetable(holder, avail):
+    """-> [(faction, group)] required groups that no player of that faction can complete, after the documented
+    faction filter (drop ids tagged with the other faction, then empty groups)"""
+    pr = holder["prerequisites"]
+    tags = pr.get("faction", {})
+    f = holder.get("faction")
+    bad = []
+    for side in ([f] if f in ("Alliance", "Horde") else ["Alliance", "Horde"]):
+        for grp in pr["required"]:
+            keep = [i for i in grp if tags.get(str(i)) in (None, side)]
+            if keep and not any(side in avail.get(i, ()) for i in keep):
+                bad.append((side, keep))
+    return bad
 
 
 def validate_flavor(fl, rep, cov, corrections, data_dir):
@@ -133,7 +180,7 @@ def validate_flavor(fl, rep, cov, corrections, data_dir):
     for kind in C.KINDS:
         check_files(fl, kind, rep, data_dir)
     # ---- quests ----
-    quest_ids, refs = set(), []
+    quest_ids, refs, avail, holders = set(), [], {}, []
     for q in corrected_records(fl, "quests", corrections, data_dir, log, strict=False):
         where = f"{fl} quest {q.get('id')}"
         probs = check(q, SCHEMAS["quests"])
@@ -156,17 +203,33 @@ def validate_flavor(fl, rep, cov, corrections, data_dir):
         w = q["source"]["wiki"]
         if not w.get("revid"):
             rep.warn("provenance", f"{where}: wiki page {w.get('page')!r} has no revision id")
+        avail[qid] = sides_of(q)
+        for vi, h in enumerate([q] + q.get("variants", [])):
+            pr = h["prerequisites"]
+            for grp in pr["required"]:
+                if not grp:
+                    rep.err("prereq", f"{where}: empty required group")
+                refs += [(qid, p, "required") for p in grp]
+            for cls in ("breadcrumb", "optional", "in_progress", "inferred_from_next"):
+                refs += [(qid, p, cls) for p in pr[cls]]
+            refs += [(qid, n, "next") for n in h["next"]]
+            holders.append((qid, vi, {"faction": h["faction"], "prerequisites": pr}))
+            if vi:
+                for role in ("start", "end"):
+                    for i, e in enumerate(h[role]):
+                        located(e, maps, rep, f"{where} variant {vi} {role}[{i}]")
+                for o in h["objectives"]:
+                    located(o, maps, rep, f"{where} variant {vi} objective {o.get('index')}")
+        if q.get("variants"):
+            cv["quests_with_faction_variants"] += 1
+        if q.get("id_conflict"):
+            cv["quests_with_id_conflict"] += 1
+            rep.warn("id-conflict", f"{where}: the wiki also gives this id to "
+                                    + ", ".join(repr(c["page"]) for c in q["id_conflict"][:3]))
         pr = q["prerequisites"]
-        for grp in pr["required"]:
-            if not grp:
-                rep.err("prereq", f"{where}: empty required group")
-            refs += [(qid, p, "required") for p in grp]
-        for cls in ("breadcrumb", "optional", "in_progress", "inferred_from_next"):
-            refs += [(qid, p, cls) for p in pr[cls]]
-        refs += [(qid, n, "next") for n in q["next"]]
         cv["quests"] += 1
-        st = [located(e, maps, rep, f"{where} start[{i}]") for i, e in enumerate(q["start"])]
-        en = [located(e, maps, rep, f"{where} end[{i}]") for i, e in enumerate(q["end"])]
+        st = [located(e, maps, rep, f"{where} start[{i}]", cv, "start") for i, e in enumerate(q["start"])]
+        en = [located(e, maps, rep, f"{where} end[{i}]", cv, "end") for i, e in enumerate(q["end"])]
         s_any, e_any = any(st), any(en)
         cv["quests_start_located"] += s_any
         cv["quests_end_located"] += e_any
@@ -180,8 +243,13 @@ def validate_flavor(fl, rep, cov, corrections, data_dir):
         if first_e:
             cv[f"quests_end_located_from_{first_e}"] += 1
         cv["quests_with_objectives"] += bool(q["objectives"])
+        cv["quests_start_located_confidence_high"] += any(e["coords"] and e["confidence"] == "high" for e in q["start"])
+        cv["quests_start_located_confidence_high_or_medium"] += any(
+            e["coords"] and e["confidence"] in ("high", "medium") for e in q["start"])
+        cv["quests_end_located_confidence_high_or_medium"] += any(
+            e["coords"] and e["confidence"] in ("high", "medium") for e in q["end"])
         for i, o in enumerate(q["objectives"]):
-            t = located(o, maps, rep, f"{where} objective {o.get('index')}")
+            t = located(o, maps, rep, f"{where} objective {o.get('index')}", cv, "objective")
             if o["kind"] != "provided":
                 cv["objectives"] += 1
                 if t:
@@ -200,6 +268,11 @@ def validate_flavor(fl, rep, cov, corrections, data_dir):
     for qid, p, cls in refs:
         if p not in quest_ids:
             rep.err("prereq", f"{fl} quest {qid}: {cls} quest {p} is not a {fl} quest")
+    for qid, vi, h in holders:
+        for side, grp in unmeetable(h, avail):
+            cv["prerequisite_groups_no_player_can_meet"] += 1
+            rep.err("prereq-faction", f"{fl} quest {qid}{f' variant {vi}' if vi else ''}: no {side} player can "
+                                      f"complete any of the required quests {grp}")
     cv["questv2_ids_without_wiki_page"] = len(q2_ids - quest_ids - q2_exc)
     # ---- npcs / objects ----
     for kind in ("npcs", "objects"):
@@ -220,6 +293,7 @@ def validate_flavor(fl, rep, cov, corrections, data_dir):
                 rep.warn("provenance", f"{where}: no wiki revision id")
             for c in r["coords"]:
                 coord_ok(c, maps, rep, where)
+                cv[f"{kind}_points_confidence_{c['confidence']}"] += 1
             cv[kind] += 1
             cv[f"{kind}_located"] += bool(r["coords"])
             cv[f"{kind}_located_exact_version"] += any(c["exact_version"] for c in r["coords"])
@@ -329,17 +403,40 @@ def write_coverage(cov, meta, flavors):
 
     row("QuestV2 ids in the client", lambda fl: f"{cov[fl].get('questv2_ids', 0):,}")
     row("quests in this dataset (wiki page, membership rules pass)", lambda fl: f"{cov[fl].get('quests', 0):,}")
-    row("QuestV2 ids the wiki rules exclude (removed, other version...)",
+    row("QuestV2 ids the wiki rules exclude (removed, other version, ambiguous id...)",
         lambda fl: f"{cov[fl].get('questv2_excluded_by_wiki_rules', 0):,}")
     row("QuestV2 ids with no wiki quest page", lambda fl: f"{cov[fl].get('questv2_ids_without_wiki_page', 0):,}")
+    row("QuestV2 ids left out as ambiguous (3+ differently named wiki pages)",
+        lambda fl: f"{meta.get('counts', {}).get(fl, {}).get('questv2_excluded_ambiguous_id', 0):,}")
+    row("quests with a faction twin in `variants`", lambda fl: f"{cov[fl].get('quests_with_faction_variants', 0):,}")
+    row("quests whose id another wiki page also claims (`id_conflict`)",
+        lambda fl: f"{cov[fl].get('quests_with_id_conflict', 0):,}")
     row("start located", lambda fl: pct(fl, "quests_start_located", "quests"))
     row("... written for this game version", lambda fl: pct(fl, "quests_start_located_exact_version", "quests"))
+    row("... confidence high (agrees with a Blizzard position)",
+        lambda fl: pct(fl, "quests_start_located_confidence_high", "quests"))
+    row("... confidence high or medium", lambda fl: pct(fl, "quests_start_located_confidence_high_or_medium", "quests"))
     row("end located", lambda fl: pct(fl, "quests_end_located", "quests"))
     row("... from the wiki", lambda fl: pct(fl, "quests_end_located_from_wiki", "quests"))
     row("... from DB2 turn-in pins (retail)", lambda fl: pct(fl, "quests_end_located_from_db2", "quests"))
+    row("... confidence high or medium", lambda fl: pct(fl, "quests_end_located_confidence_high_or_medium", "quests"))
     row("start and end located", lambda fl: pct(fl, "quests_start_and_end_located", "quests"))
     row("objectives located", lambda fl: pct(fl, "objectives_located", "objectives"))
     row("... from DB2 objective areas (retail)", lambda fl: pct(fl, "objectives_located_from_db2", "objectives"))
+    lines += ["", "### Confidence of located points", "",
+              "Every located endpoint, objective and NPC point says how far to trust it (`confidence`, "
+              "docs/SCHEMA.md#coordinates). Counts are points, not quests.", "",
+              "| | " + " | ".join(flavors) + " |", "|---|" + "---:|" * len(flavors)]
+    for role, label in (("start", "start points"), ("end", "end points"), ("objective", "objective points")):
+        for lvl in ("high", "medium", "low"):
+            row(f"{label}: {lvl}", lambda fl, k=f"{role}_confidence_{lvl}": f"{cov[fl].get(k, 0):,}")
+        row(f"{label}: checked against a Blizzard position / within 50 yd of it",
+            lambda fl, r=role: f"{cov[fl].get(f'{r}_checked', 0):,} / {cov[fl].get(f'{r}_checked_within_50yd', 0):,}")
+    row("end points: wiki point replaced by the turn-in pin (more than 50 yd off)",
+        lambda fl: f"{cov[fl].get('end_wiki_point_replaced_by_pin', 0):,}")
+    for lvl in ("high", "medium", "low"):
+        row(f"NPC points: {lvl}", lambda fl, k=f"npcs_points_confidence_{lvl}": f"{cov[fl].get(k, 0):,}")
+    lines += ["", "### Quest structure", "", "| | " + " | ".join(flavors) + " |", "|---|" + "---:|" * len(flavors)]
     row("quests with prerequisites", lambda fl: pct(fl, "quests_with_prerequisites", "quests"))
     row("... with an any-of group", lambda fl: f"{cov[fl].get('quests_with_any_of_group', 0):,}")
     row("... with breadcrumb prerequisites", lambda fl: f"{cov[fl].get('quests_with_breadcrumb_prerequisites', 0):,}")
@@ -365,26 +462,56 @@ def write_coverage(cov, meta, flavors):
     row("corrections applied", lambda fl: f"{cov[fl].get('corrections_applied', 0):,}")
     counts = meta.get("counts", {})
     rt = counts.get("retail", {}).get("retail_turnin_check")
+    cr = meta.get("coordinate_reading", {})
     lines += ["", "## Cross-checks", ""]
     if rt and rt.get("compared"):
-        lines.append(f"* Retail: where both exist, the wiki's end point was more than 50 yd from Blizzard's turn-in pin "
-                     f"for {rt['over_50_yd']:,} of {rt['compared']:,} quests ({100.0 * rt['over_50_yd'] / rt['compared']:.1f}%). "
-                     "The pin is an area centroid, so part of that is the pin, not the wiki.")
+        n = rt.get("over_50_yd_replaced_by_pin", rt.get("over_50_yd", 0))
+        lines.append(f"* Retail: where the wiki gives an end point and Blizzard's turn-in pin is a single point "
+                     f"(QuestPOIBlob with one QuestPOIPoint: the client's own turn-in marker, not an area), the two "
+                     f"were compared in world coordinates for {rt['compared']:,} quest records (faction variants "
+                     f"included); {n:,} "
+                     f"({100.0 * n / rt['compared']:.1f}%) were more than 50 yd apart, and for those the pin is shipped "
+                     "and the wiki point is kept under `coord_source.replaces`. Whole zones can be off (The Ringing "
+                     "Deeps: most wiki points sit about 4 map units east of the pins while the map itself is unchanged "
+                     "between builds 12.1.0 and 12.1.5), so a stale wiki number is the usual cause.")
+    for kind, label in (("npc_page_rows", "NPC / object page rows"), ("quest_page_rows", "quest page {{co}} rows")):
+        e = cr.get(kind)
+        if e:
+            v = e.get("verdicts", {})
+            lines.append(f"* Coordinate reading, {label} with a Blizzard position to compare (retail turn-in pins, "
+                         f"flight points): {e['untagged_rows_with_evidence']:,} untagged rows; retail-map numbers "
+                         f"{v.get('retail', 0):,}, Classic-map numbers {v.get('classic', 0):,}, either (the maps agree "
+                         f"there) {v.get('either', 0):,}, more than 50 yd off both ways {v.get('conflict', 0):,}, no "
+                         f"position inside the row's zone {v.get('no-evidence', 0):,}. Zones whose unchecked rows are "
+                         f"read as Classic numbers: {', '.join(e['zones_read_as_classic']) or 'none'}.")
     for fl in flavors:
         ac = counts.get(fl, {}).get("addon_crosscheck")
+        ps = counts.get(fl, {}).get("prerequisite_split", {})
         if ac:
+            amb = ac.get("addon_only_ambiguous", 0)
             lines.append(f"* {fl}: the addon's own generator assigned {ac['addon_flavor_quests']:,} quests to this client; "
-                         f"this dataset has every one of them ({ac['addon_only']} missing, {ac['data_only']} extra apart from "
-                         f"the world quests / callings / emissary quests the addon leaves out on purpose). Prerequisite ids "
-                         f"match the addon's chain for {ac['prereq_same_ids_as_addon']:,} of {ac['prereq_quests']:,} quests "
-                         f"that have one. The others differ for two reasons, both checked by hand: this dataset applies an "
-                         f"\"(optional)\" qualifier to every link it covers (\"A or B (both optional)\"), where the "
-                         f"addon's parser keeps those links as requirements, and it reads {{{{quest|...}}}} links in "
-                         f"`previous` that the addon's parser does not see.")
+                         f"this dataset has all but {ac['addon_only']} of them ({amb} left out here as ambiguous ids), "
+                         f"{ac['data_only']} extra apart from the world quests / callings / emissary quests the addon "
+                         f"leaves out on purpose. Prerequisite ids match the addon's chain for "
+                         f"{ac['prereq_same_ids_as_addon']:,} of {ac['prereq_quests']:,} quests that have one. The "
+                         f"others differ for reasons checked by hand: this dataset applies an \"(optional)\" qualifier "
+                         f"to every link it covers (\"A or B (both optional)\"); it reads {{{{quest|...}}}} links the "
+                         f"addon's parser does not see; it does not follow a link to a page that lost its id to another "
+                         f"page when the shipped quest is not open to the linking quest's faction "
+                         f"({ps.get('prereq_link_to_other_page_of_id', 0)}); and a one-faction quest linking the other "
+                         f"faction's quest is pointed at the same-named quest of its own faction "
+                         f"({ps.get('prereq_other_faction_to_own_faction_page', 0)}) or, with none, left unresolved "
+                         f"({ps.get('prereq_other_faction_dropped', 0)}). "
+                         f"{ps.get('prereq_faction_merged', 0)} quests both factions take had one Alliance-only and one "
+                         f"Horde-only prerequisite listed as if both were needed; they are one any-of group now.")
     lines += ["", "## What the gaps mean", "",
-              "* The Warcraft Wiki is retail-first. On Classic clients a point copied from a retail NPC page is kept "
-              "(it is usually right for NPCs that never moved) but `exact_version` is false. Era, TBC and Forever have "
-              "no Blizzard coordinate data to fall back on, so their located share is what the wiki gives.",
+              "* The Warcraft Wiki is retail-first, and many pages still carry numbers read off the pre-Cataclysm map. "
+              "Each untagged row is read on the map a Blizzard position for the same NPC agrees with; without one, "
+              "by its zone's evidence (`read_by` `zone-default`), and the point is `confidence` low. On Classic "
+              "clients a point carried over from a retail page is right only if the NPC did not move in Cataclysm or "
+              "later; nothing shippable says which NPCs moved, so those points are medium at best. Era, TBC and "
+              "Forever have no Blizzard quest coordinates to fall back on, so their located share is what the wiki "
+              "gives.",
               "* Retail ends and objectives fall back to Blizzard's quest POI (QuestPOIBlob) when the wiki has no point. "
               "Retail starts never use the POI: the turn-in pin is not the quest giver.",
               "* MoP Classic's QuestPOIBlob carries no quest rows, so MoP has no DB2 fallback either.",
