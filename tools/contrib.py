@@ -68,7 +68,8 @@ def parse(text):
     if len(text.encode("utf-8", "replace")) > MAX_BYTES:
         return {}, [f"too large (over {MAX_BYTES} bytes)"]
     lines = [ln.strip() for ln in text.replace("\r", "\n").split("\n")]
-    lines = [ln for ln in lines if ln and not ln.startswith("#") and not ln.startswith("```")]
+    # the issue form adds headings, code fences, its licence tick box and "_No response_": not export lines
+    lines = [ln for ln in lines if ln and not ln.startswith(("#", "```", "- [", "_No response_"))]
     if len(lines) > MAX_LINES:
         return {}, [f"too many lines (over {MAX_LINES})"]
     for n, ln in enumerate(lines, 1):

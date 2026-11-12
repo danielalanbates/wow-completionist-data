@@ -39,4 +39,5 @@ from areas where flavor = 'era' and key = 'A:179' order by rank;
 select key, count(*) from areas where flavor = 'retail' and key like 'C:%' group by key having count(*) > 1;
 ```
 
-Licence: CC BY-SA 4.0, like the rest of the data (see `LICENSE-DATA`). Tool: `tools/contrib.py`.
+Licence: CC BY-SA 4.0, like the rest of the data (see `LICENSE-DATA`). By sending a contribution you agree to publish it under that licence
+and confirm that you recorded the positions yourself by playing. Tool: `tools/contrib.py`.

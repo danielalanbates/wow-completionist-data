@@ -1,7 +1,7 @@
 Copyright (c) 2026 Daniel Bates. All rights reserved.
 
 Scope: this licence covers the CODE in this repository (tools/ and tests/).
-The DATA (data/, corrections/, docs/COVERAGE.md, docs/coverage.csv) is licensed separately under
+The DATA (data/, corrections/, contributions/, docs/COVERAGE.md, docs/coverage.csv) is licensed separately under
 CC BY-SA 4.0; see LICENSE-DATA.
 
 Licensed under the PolyForm Noncommercial License 1.0.0, reproduced in full below,
