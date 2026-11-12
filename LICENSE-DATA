@@ -1,6 +1,6 @@
 wow-completionist-data: DATA LICENCE
 
-The data in this repository - everything under data/ and corrections/, and the generated docs/COVERAGE.md and
+The data in this repository - everything under data/, corrections/ and contributions/, and the generated docs/COVERAGE.md and
 docs/coverage.csv - is licensed under the Creative Commons Attribution-ShareAlike 4.0 International licence
 (CC BY-SA 4.0): https://creativecommons.org/licenses/by-sa/4.0/
 The full legal code is reproduced at the end of this file. The code (tools/, tests/) is under LICENSE instead.

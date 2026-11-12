@@ -9,6 +9,7 @@ body:
         Paste the text from **Contribute** in the Completionist's Guide addon (click the word Contribute, or type `/cr contribute export`).
         If it is long, save it as a `.txt` file and drag the file into the box.
         It holds quest ids, map positions and weights only. Sending again replaces your earlier contribution.
+        By sending it you agree that your contribution is published in this repository under CC BY-SA 4.0 (see LICENSE-DATA).
   - type: textarea
     id: export
     attributes:
@@ -16,3 +17,10 @@ body:
       render: text
     validations:
       required: true
+  - type: checkboxes
+    id: licence
+    attributes:
+      label: Licence
+      options:
+        - label: I recorded these positions myself by playing, and I agree to publish them under CC BY-SA 4.0.
+          required: true
