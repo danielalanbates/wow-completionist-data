@@ -1,0 +1,42 @@
+name: Contributions
+on:
+  issues:
+    types: [opened, edited, reopened]
+permissions:
+  contents: write
+  issues: write
+concurrency:
+  group: contributions
+  cancel-in-progress: false
+jobs:
+  merge:
+    if: contains(github.event.issue.labels.*.name, 'contribution') && github.event.issue.state == 'open'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check and merge the contribution
+        env:
+          BODY: ${{ github.event.issue.body }}
+          WHO: ${{ github.event.issue.user.login }}
+          ASSOC: ${{ github.event.issue.author_association }}
+        run: |
+          python3 tools/contrib_issue.py > report.txt 2>&1 || true
+          cat report.txt
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add contributions
+          if git diff --cached --quiet; then echo "nothing to commit"; else
+            git commit -m "Contributions: issue #${{ github.event.issue.number }}"
+            git push
+          fi
+      - name: Report and close
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue comment ${{ github.event.issue.number }} --repo ${{ github.repository }} --body-file report.txt
+          gh issue close ${{ github.event.issue.number }} --repo ${{ github.repository }}

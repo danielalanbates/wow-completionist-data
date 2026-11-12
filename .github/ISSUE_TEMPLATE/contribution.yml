@@ -1,0 +1,18 @@
+name: Location contribution
+description: Send the text from the addon's Contribute export
+title: "Location contribution"
+labels: ["contribution"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Paste the text from **Contribute** in the Completionist's Guide addon (click the word Contribute, or type `/cr contribute export`).
+        If it is long, save it as a `.txt` file and drag the file into the box.
+        It holds quest ids, map positions and weights only. Sending again replaces your earlier contribution.
+  - type: textarea
+    id: export
+    attributes:
+      label: Export text
+      render: text
+    validations:
+      required: true
