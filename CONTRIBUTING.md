@@ -96,3 +96,9 @@ By opening a pull request you agree that your data changes are licensed CC BY-SA
 
 Standard library only (Python 3.9+). Output must stay deterministic: the same inputs must give byte-identical
 `data/` files. Add a test in `tests/` for new behaviour. Questions: help@batesai.org.
+
+## Location contributions from play
+
+The Completionist's Guide addon can note where you stand when you accept, progress and turn in quests (its
+**Contribute** box). Send the export through the **Location contribution** issue form; a GitHub Action merges it into
+`contributions/` (CSV, JSON and a SQLite file). See [contributions/README.md](contributions/README.md).

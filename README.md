@@ -124,3 +124,9 @@ World of Warcraft and Blizzard Entertainment are trademarks of Blizzard Entertai
 affiliated with or endorsed by Blizzard Entertainment or by Warcraft Wiki.
 
 Contact: help@batesai.org · https://batesai.org
+
+## Player contributions
+
+`contributions/` holds positions players recorded with the addon's Contribute box, merged by a GitHub Action from the
+**Location contribution** issue form: `spots/<flavor>.csv`, `areas/<flavor>.json` and `contributions.sqlite`.
+How to send yours and how to query it: [contributions/README.md](contributions/README.md).
