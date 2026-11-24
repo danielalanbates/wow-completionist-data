@@ -22,7 +22,7 @@ step. Collected by the Completionist's Guide addon's **Contribute** box, sent in
 3. Open a new issue here with the **Location contribution** form and paste the text. If it is long, save it as a
    `.txt` file and drag the file into the box instead.
 
-A GitHub Action checks the text, merges it and closes the issue with a short report. Sending again replaces your
+The maintainer runs `tools/process_issues.py` locally: it checks the text, merges it and closes the issue with a short report (the project uses no GitHub compute, so this is not instant). Sending again replaces your
 earlier contribution, so always send the full export.
 
 What is in the text: a client flavor and build, quest ids or step keys, map ids, positions and weights. No character,

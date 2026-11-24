@@ -2,7 +2,7 @@
 # wow-completionist-data :: tools/contrib_issue.py
 # Copyright (c) 2026 Daniel Bates. All rights reserved. PolyForm Noncommercial 1.0.0 + commercial rider (see LICENSE).
 # https://batesai.org - help@batesai.org
-"""Run by .github/workflows/contributions.yml: merge the contribution in an issue.
+"""Run by tools/process_issues.py on the maintainer's machine: merge the contribution in an issue.
 
 Reads the issue from the environment (BODY, WHO, ASSOC), never from the command line, so nothing a submitter writes
 is ever part of a shell command. A long export can be attached as a .txt file: only links to GitHub's own issue
