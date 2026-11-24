@@ -100,5 +100,5 @@ Standard library only (Python 3.9+). Output must stay deterministic: the same in
 ## Location contributions from play
 
 The Completionist's Guide addon can note where you stand when you accept, progress and turn in quests (its
-**Contribute** box). Send the export through the **Location contribution** issue form; a GitHub Action merges it into
+**Contribute** box). Send the export through the **Location contribution** issue form; the maintainer merges it (`tools/process_issues.py`, run locally) into
 `contributions/` (CSV, JSON and a SQLite file). See [contributions/README.md](contributions/README.md).
